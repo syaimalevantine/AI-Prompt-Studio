@@ -1,0 +1,121 @@
+/*
+----------------------------------------------------
+AI Prompt Studio
+Version : 1.0.0
+
+Author : Syaima Levantine
+
+File : style.css
+Purpose : Global Styles
+
+Created with ChatGPT
+----------------------------------------------------
+*/
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Display",
+    "SF Pro Text",
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+    background:#F8F7F4;
+    color:#222222;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+/* ==========================
+   APP CONTAINER
+========================== */
+
+.app{
+
+    width:100%;
+    max-width:900px;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:60px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+h1{
+
+    font-size:48px;
+    font-weight:700;
+
+    margin-bottom:12px;
+
+}
+
+.tagline{
+
+    font-size:20px;
+
+    color:#666;
+
+    margin-bottom:40px;
+
+}
+
+button{
+
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:16px 28px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    opacity:.85;
+
+}
