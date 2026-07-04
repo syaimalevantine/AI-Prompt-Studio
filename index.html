@@ -1,7 +1,7 @@
 <!--
 ────────────────────────────────────────────
 AI Prompt Studio
-Version : 0.5.0
+Version : 0.5.1
 
 Author  : Syaima Levantine
 
@@ -17,14 +17,11 @@ Created with ChatGPT
 
 <head>
 
-    <!-- Basic -->
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO -->
 
     <title>AI Prompt Studio</title>
 
@@ -40,8 +37,6 @@ Created with ChatGPT
         name="theme-color"
         content="#F8F6F1">
 
-    <!-- CSS -->
-
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -49,10 +44,6 @@ Created with ChatGPT
 </head>
 
 <body>
-
-    <!-- ===================================== -->
-    <!-- Header -->
-    <!-- ===================================== -->
 
     <header class="site-header">
 
@@ -70,15 +61,7 @@ Created with ChatGPT
 
     </header>
 
-    <!-- ===================================== -->
-    <!-- Main -->
-    <!-- ===================================== -->
-
     <main class="container app-layout">
-
-        <!-- ================================= -->
-        <!-- Prompt Workspace -->
-        <!-- ================================= -->
 
         <section class="prompt-canvas">
 
@@ -159,7 +142,9 @@ Created with ChatGPT
 
             </div>
 
-            <button class="primary-button">
+            <button
+                id="generateButton"
+                class="primary-button">
 
                 Generate Prompt
 
@@ -167,11 +152,9 @@ Created with ChatGPT
 
         </section>
 
-        <!-- ================================= -->
-        <!-- Preview -->
-        <!-- ================================= -->
-
-        <aside class="generated-prompt">
+        <aside
+            id="previewPanel"
+            class="generated-prompt">
 
             <h2>Generated Prompt</h2>
 
@@ -195,10 +178,6 @@ Created with ChatGPT
 
     </main>
 
-    <!-- ===================================== -->
-    <!-- Footer -->
-    <!-- ===================================== -->
-
     <footer class="site-footer">
 
         <div class="container">
@@ -218,8 +197,6 @@ Created with ChatGPT
         </div>
 
     </footer>
-
-    <!-- JavaScript -->
 
     <script
         type="module"
