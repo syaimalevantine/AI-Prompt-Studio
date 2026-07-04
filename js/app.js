@@ -2,7 +2,7 @@
 ========================================================
 AI Prompt Studio
 
-Version : 0.6.0
+Version : 0.6.1
 
 Author  : Syaima Levantine
 
@@ -27,55 +27,62 @@ const modelSelect = document.getElementById("model");
 const languageSelect = document.getElementById("language");
 
 const generateButton = document.getElementById("generateButton");
-const previewPanel = document.getElementById("previewPanel");
+const previewContent = document.getElementById("previewContent");
 
 /* ==========================================
-   Generate Preview
+   Preview Renderer
 ========================================== */
 
-function generatePrompt() {
+function renderEmptyState() {
+
+    previewContent.className = "empty-state";
+
+    previewContent.innerHTML = `
+        <h3>Every great prompt begins with an idea.</h3>
+
+        <p>
+            Your generated prompt will appear here after you press Generate.
+        </p>
+    `;
+
+}
+
+function renderPrompt() {
 
     const idea = ideaInput.value.trim();
 
     if (idea === "") {
 
-        previewPanel.innerHTML = `
-            <h2>Generated Prompt</h2>
+        previewContent.className = "empty-state";
 
-            <div class="empty-state">
+        previewContent.innerHTML = `
+            <h3>Please write your idea first.</h3>
 
-                <h3>Please write your idea first.</h3>
-
-                <p>
-                    Your generated prompt will appear here after you describe your idea.
-                </p>
-
-            </div>
+            <p>
+                Describe your idea before generating a prompt.
+            </p>
         `;
 
         return;
+
     }
 
-    previewPanel.innerHTML = `
-        <h2>Generated Prompt</h2>
+    previewContent.className = "generated-content";
 
-        <div class="generated-content">
+    previewContent.innerHTML = `
+        <p><strong>Idea</strong></p>
+        <p>${idea}</p>
 
-            <p><strong>Idea</strong></p>
-            <p>${idea}</p>
+        <hr>
 
-            <hr>
+        <p><strong>Tone</strong></p>
+        <p>${toneSelect.value}</p>
 
-            <p><strong>Tone</strong></p>
-            <p>${toneSelect.value}</p>
+        <p><strong>AI Model</strong></p>
+        <p>${modelSelect.value}</p>
 
-            <p><strong>AI Model</strong></p>
-            <p>${modelSelect.value}</p>
-
-            <p><strong>Language</strong></p>
-            <p>${languageSelect.value}</p>
-
-        </div>
+        <p><strong>Language</strong></p>
+        <p>${languageSelect.value}</p>
     `;
 
 }
@@ -84,4 +91,10 @@ function generatePrompt() {
    Events
 ========================================== */
 
-generateButton.addEventListener("click", generatePrompt);
+generateButton.addEventListener("click", renderPrompt);
+
+/* ==========================================
+   Initial State
+========================================== */
+
+renderEmptyState();
