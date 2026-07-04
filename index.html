@@ -57,15 +57,6 @@ Created with ChatGPT
 
         <p>Type Ideas into Perfect Prompts</p>
 
-        <nav>
-
-            <a href="#">Home</a>
-            <a href="#">Prompt Library</a>
-            <a href="#">Projects</a>
-            <a href="#">About</a>
-
-        </nav>
-
     </header>
 
     <!-- ===================================== -->
@@ -74,27 +65,92 @@ Created with ChatGPT
 
     <main>
 
+        <!-- ============================= -->
         <!-- Workspace -->
+        <!-- ============================= -->
 
         <section id="workspace">
 
             <h2>Workspace</h2>
 
-            <p>
-                Prompt Builder will be here.
-            </p>
+            <label for="promptType">
+                Prompt Type
+            </label>
+
+            <select id="promptType">
+
+                <option>General</option>
+                <option>Marketing</option>
+                <option>Programming</option>
+                <option>Writing</option>
+
+            </select>
+
+            <label for="goal">
+                Goal
+            </label>
+
+            <input
+                type="text"
+                id="goal"
+                placeholder="What do you want AI to do?">
+
+            <label for="audience">
+                Audience
+            </label>
+
+            <input
+                type="text"
+                id="audience"
+                placeholder="Who is this for?">
+
+            <label for="tone">
+                Tone
+            </label>
+
+            <input
+                type="text"
+                id="tone"
+                placeholder="Professional, Friendly, Casual...">
+
+            <label for="length">
+                Length
+            </label>
+
+            <select id="length">
+
+                <option>Short</option>
+                <option selected>Medium</option>
+                <option>Long</option>
+
+            </select>
+
+            <button id="generateButton">
+
+                Generate Prompt
+
+            </button>
 
         </section>
 
+        <!-- ============================= -->
         <!-- Preview -->
+        <!-- ============================= -->
 
         <aside id="preview">
 
             <h2>Preview</h2>
 
-            <p>
-                Generated Prompt will appear here.
-            </p>
+            <textarea
+                id="result"
+                readonly
+                placeholder="Your generated prompt will appear here..."></textarea>
+
+            <button id="copyButton">
+
+                Copy Prompt
+
+            </button>
 
         </aside>
 
