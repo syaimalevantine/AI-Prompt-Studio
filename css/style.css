@@ -1,20 +1,23 @@
 /*
 ────────────────────────────────────────────
 AI Prompt Studio
-Version : 1.0.0
+
+Version : 0.4.1
 
 Author  : Syaima Levantine
 
 File    : style.css
-Purpose : Global Styles
+
+Purpose :
+Application Layout Foundation
 
 Created with ChatGPT
 ────────────────────────────────────────────
 */
 
-/* ==========================
-   RESET
-========================== */
+/* ==========================================
+   Reset
+========================================== */
 
 *{
     margin:0;
@@ -22,115 +25,180 @@ Created with ChatGPT
     box-sizing:border-box;
 }
 
-/* ==========================
-   BODY
-========================== */
+/* ==========================================
+   Body
+========================================== */
 
 body{
 
-    background:var(--color-background);
-
-    color:var(--color-text);
-
     font-family:
+        system-ui,
         -apple-system,
         BlinkMacSystemFont,
-        "SF Pro Display",
         "Segoe UI",
         sans-serif;
 
-    line-height:1.6;
+    background:#F8F6F1;
 
-    min-height:100vh;
+    color:#2E2E2E;
+
+    line-height:1.6;
 
 }
 
-/* ==========================
-   HEADER
-========================== */
+/* ==========================================
+   Container
+========================================== */
 
-header{
+.container{
+
+    width:min(1120px,92%);
+
+    margin-inline:auto;
+
+}
+
+/* ==========================================
+   Header
+========================================== */
+
+.site-header{
+
+    padding:64px 0 32px;
 
     text-align:center;
 
-    padding:64px 24px;
-
 }
 
-header h1{
+.site-header h1{
 
-    font-size:2.6rem;
+    font-size:2.5rem;
 
     margin-bottom:12px;
 
 }
 
-header p{
+.tagline{
 
-    color:var(--color-text-light);
+    color:#666;
 
 }
 
-/* ==========================
-   MAIN
-========================== */
+/* ==========================================
+   Main Layout
+========================================== */
 
-main{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:24px;
+.app-layout{
 
     display:grid;
 
-    grid-template-columns:
-        1fr
-        1fr;
+    grid-template-columns:1fr 1fr;
 
-    gap:24px;
+    gap:32px;
 
-}
-
-/* ==========================
-   CARD
-========================== */
-
-section,
-aside{
-
-    background:var(--color-surface);
-
-    border:1px solid var(--color-border);
-
-    border-radius:var(--radius-medium);
-
-    padding:24px;
-
-    box-shadow:var(--shadow-soft);
-
-    min-height:350px;
+    margin:48px auto;
 
 }
 
-section h2,
-aside h2{
+/* ==========================================
+   Paper
+========================================== */
+
+.prompt-canvas,
+.generated-prompt{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:32px;
+
+    box-shadow:
+        0 8px 24px
+        rgba(0,0,0,.05);
+
+}
+
+/* ==========================================
+   Headings
+========================================== */
+
+h2{
+
+    margin-bottom:12px;
+
+}
+
+.section-description{
+
+    margin-bottom:28px;
+
+    color:#666;
+
+}
+
+/* ==========================================
+   Placeholder
+========================================== */
+
+.placeholder-field{
+
+    background:#F3F3F3;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    margin-bottom:16px;
+
+    color:#777;
+
+}
+
+/* ==========================================
+   Empty State
+========================================== */
+
+.empty-state{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    min-height:420px;
+
+}
+
+.empty-state h3{
 
     margin-bottom:16px;
 
 }
 
-/* ==========================
-   FOOTER
-========================== */
+.empty-state p{
 
-footer{
+    color:#666;
+
+    max-width:320px;
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+.site-footer{
 
     text-align:center;
 
-    padding:48px 24px;
+    padding:48px 0;
 
-    color:var(--color-text-light);
+    color:#777;
 
 }
