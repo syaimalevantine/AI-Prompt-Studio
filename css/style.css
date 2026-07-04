@@ -419,3 +419,33 @@ select:focus{
         rgba(90,72,245,.12);
 
 }
+
+/* ==========================================
+   Levantine Card Enhancement
+========================================== */
+
+section,
+aside{
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+
+}
+
+section:hover,
+aside:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 32px rgba(0,0,0,.08);
+
+}
+
+section:focus-within,
+aside:focus-within{
+
+    border-color:var(--color-primary);
+
+}
