@@ -1,8 +1,7 @@
 /*
 ========================================================
-AI Prompt Studio
 
-Version : 0.7.2
+AI Prompt Studio
 
 Author  : Syaima Levantine
 
@@ -12,12 +11,14 @@ Purpose :
 Application Entry Point
 
 Created with ChatGPT
+
 ========================================================
 */
 
 "use strict";
 
 import { buildPrompt } from "./generator.js";
+import { promptTemplates } from "./templates.js";
 
 /* ==========================================
    DOM Elements
@@ -37,6 +38,14 @@ const previewContent = document.getElementById("previewContent");
 ========================================== */
 
 let generatedPrompt = "";
+
+/* ==========================================
+   Template Registry
+========================================== */
+
+console.log("Available Templates:");
+
+console.log(promptTemplates);
 
 /* ==========================================
    Preview
@@ -112,7 +121,11 @@ function renderPrompt() {
 
 async function copyPrompt() {
 
-    if (!generatedPrompt) return;
+    if (!generatedPrompt) {
+
+        return;
+
+    }
 
     try {
 
