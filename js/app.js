@@ -2,7 +2,7 @@
 ========================================================
 AI Prompt Studio
 
-Version : 0.7.1
+Version : 0.7.2
 
 Author  : Syaima Levantine
 
@@ -39,7 +39,7 @@ const previewContent = document.getElementById("previewContent");
 let generatedPrompt = "";
 
 /* ==========================================
-   Preview Renderer
+   Preview
 ========================================== */
 
 function renderEmptyState() {
@@ -107,6 +107,40 @@ function renderPrompt() {
 }
 
 /* ==========================================
+   Clipboard
+========================================== */
+
+async function copyPrompt() {
+
+    if (!generatedPrompt) return;
+
+    try {
+
+        await navigator.clipboard.writeText(
+
+            generatedPrompt
+
+        );
+
+        copyButton.textContent = "✓ Copied!";
+
+        setTimeout(() => {
+
+            copyButton.textContent = "Copy Prompt";
+
+        }, 2000);
+
+    }
+
+    catch (error) {
+
+        alert("Unable to copy the prompt.");
+
+    }
+
+}
+
+/* ==========================================
    Events
 ========================================== */
 
@@ -115,6 +149,14 @@ generateButton.addEventListener(
     "click",
 
     renderPrompt
+
+);
+
+copyButton.addEventListener(
+
+    "click",
+
+    copyPrompt
 
 );
 
