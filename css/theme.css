@@ -3,58 +3,52 @@
 AI Prompt Studio
 Version : 1.0.0
 
-Author : Syaima Levantine
+Author  : Syaima Levantine
 
-File : theme.css
-Purpose : Design Tokens
+File    : theme.css
+Purpose : Design System
 
 Created with ChatGPT
 ────────────────────────────────────────────
 */
 
+/* ==========================
+   CSS VARIABLES
+========================== */
+
 :root{
 
-    /* Background */
+    /* Primary Colors */
+    --color-primary:#5A48F5;
+    --color-primary-light:#7B68EE;
 
+    /* Background */
     --color-background:#F8F6F1;
     --color-surface:#FFFFFF;
 
     /* Text */
-
-    --color-text:#2C2C2C;
+    --color-text:#222222;
     --color-text-light:#666666;
 
-    /* Brand */
-
-    --color-primary:#4C6FFF;
-    --color-primary-hover:#3556E8;
-
     /* Border */
+    --color-border:#E5E5E5;
 
-    --color-border:#E3E3E3;
+    /* Success */
+    --color-success:#16A34A;
 
-    /* Status */
-
-    --color-success:#2ECC71;
-    --color-warning:#F39C12;
-    --color-danger:#E74C3C;
+    /* Danger */
+    --color-danger:#DC2626;
 
     /* Radius */
-
     --radius-small:8px;
-    --radius-medium:12px;
-    --radius-large:18px;
+    --radius-medium:16px;
+    --radius-large:24px;
 
     /* Shadow */
-
-    --shadow-small:
-        0 2px 8px rgba(0,0,0,.08);
-
-    --shadow-medium:
-        0 8px 24px rgba(0,0,0,.10);
+    --shadow-soft:
+        0 8px 20px rgba(0,0,0,.08);
 
     /* Transition */
-
-    --transition:.25s ease;
+    --transition:.3s ease;
 
 }
