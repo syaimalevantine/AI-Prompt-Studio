@@ -1,0 +1,60 @@
+/*
+────────────────────────────────────────────
+AI Prompt Studio
+Version : 1.0.0
+
+Author : Syaima Levantine
+
+File : theme.css
+Purpose : Design Tokens
+
+Created with ChatGPT
+────────────────────────────────────────────
+*/
+
+:root{
+
+    /* Background */
+
+    --color-background:#F8F6F1;
+    --color-surface:#FFFFFF;
+
+    /* Text */
+
+    --color-text:#2C2C2C;
+    --color-text-light:#666666;
+
+    /* Brand */
+
+    --color-primary:#4C6FFF;
+    --color-primary-hover:#3556E8;
+
+    /* Border */
+
+    --color-border:#E3E3E3;
+
+    /* Status */
+
+    --color-success:#2ECC71;
+    --color-warning:#F39C12;
+    --color-danger:#E74C3C;
+
+    /* Radius */
+
+    --radius-small:8px;
+    --radius-medium:12px;
+    --radius-large:18px;
+
+    /* Shadow */
+
+    --shadow-small:
+        0 2px 8px rgba(0,0,0,.08);
+
+    --shadow-medium:
+        0 8px 24px rgba(0,0,0,.10);
+
+    /* Transition */
+
+    --transition:.25s ease;
+
+}

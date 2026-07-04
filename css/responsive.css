@@ -1,0 +1,83 @@
+/*
+────────────────────────────────────────────
+AI Prompt Studio
+Version : 1.0.0
+
+Author : Syaima Levantine
+
+File : responsive.css
+Purpose : Responsive Layout
+
+Created with ChatGPT
+────────────────────────────────────────────
+*/
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width: 992px){
+
+    main{
+
+        display:flex;
+        flex-direction:column;
+
+    }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    header{
+
+        text-align:center;
+
+    }
+
+    nav{
+
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        margin-top:20px;
+
+    }
+
+    main{
+
+        gap:20px;
+
+    }
+
+}
+
+/* ==========================================
+   Small Mobile
+========================================== */
+
+@media (max-width:480px){
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.3rem;
+
+    }
+
+}
