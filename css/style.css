@@ -1,15 +1,15 @@
 /*
-----------------------------------------------------
+────────────────────────────────────────────
 AI Prompt Studio
 Version : 1.0.0
 
-Author : Syaima Levantine
+Author  : Syaima Levantine
 
-File : style.css
+File    : style.css
 Purpose : Global Styles
 
 Created with ChatGPT
-----------------------------------------------------
+────────────────────────────────────────────
 */
 
 /* ==========================
@@ -22,100 +22,115 @@ Created with ChatGPT
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
-}
+/* ==========================
+   BODY
+========================== */
 
 body{
 
-    font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "SF Pro Display",
-    "SF Pro Text",
-    "Segoe UI",
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif;
+    background:var(--color-background);
 
-    background:#F8F7F4;
-    color:#222222;
+    color:var(--color-text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "Segoe UI",
+        sans-serif;
+
+    line-height:1.6;
 
     min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:40px;
 }
 
 /* ==========================
-   APP CONTAINER
+   HEADER
 ========================== */
 
-.app{
+header{
 
-    width:100%;
-    max-width:900px;
+    text-align:center;
 
-    background:white;
-
-    border-radius:24px;
-
-    padding:60px;
-
-    box-shadow:
-    0 20px 60px rgba(0,0,0,.08);
+    padding:64px 24px;
 
 }
 
-/* ==========================
-   TYPOGRAPHY
-========================== */
+header h1{
 
-h1{
-
-    font-size:48px;
-    font-weight:700;
+    font-size:2.6rem;
 
     margin-bottom:12px;
 
 }
 
-.tagline{
+header p{
 
-    font-size:20px;
-
-    color:#666;
-
-    margin-bottom:40px;
+    color:var(--color-text-light);
 
 }
 
-button{
+/* ==========================
+   MAIN
+========================== */
 
-    background:#111;
+main{
 
-    color:white;
+    max-width:1200px;
 
-    border:none;
+    margin:auto;
 
-    border-radius:14px;
+    padding:24px;
 
-    padding:16px 28px;
+    display:grid;
 
-    font-size:16px;
+    grid-template-columns:
+        1fr
+        1fr;
 
-    cursor:pointer;
-
-    transition:.25s;
+    gap:24px;
 
 }
 
-button:hover{
+/* ==========================
+   CARD
+========================== */
 
-    opacity:.85;
+section,
+aside{
+
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--radius-medium);
+
+    padding:24px;
+
+    box-shadow:var(--shadow-soft);
+
+    min-height:350px;
+
+}
+
+section h2,
+aside h2{
+
+    margin-bottom:16px;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:48px 24px;
+
+    color:var(--color-text-light);
 
 }
