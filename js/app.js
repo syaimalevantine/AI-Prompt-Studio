@@ -2,20 +2,22 @@
 ========================================================
 AI Prompt Studio
 
-Version : 0.6.1
+Version : 0.7.0
 
 Author  : Syaima Levantine
 
 File    : app.js
 
 Purpose :
-Application Interaction
+Application Entry Point
 
 Created with ChatGPT
 ========================================================
 */
 
 "use strict";
+
+import { buildPrompt } from "./generator.js";
 
 /* ==========================================
    DOM Elements
@@ -30,7 +32,7 @@ const generateButton = document.getElementById("generateButton");
 const previewContent = document.getElementById("previewContent");
 
 /* ==========================================
-   Preview Renderer
+   Preview
 ========================================== */
 
 function renderEmptyState() {
@@ -51,7 +53,7 @@ function renderPrompt() {
 
     const idea = ideaInput.value.trim();
 
-    if (idea === "") {
+    if (!idea) {
 
         previewContent.className = "empty-state";
 
@@ -67,22 +69,22 @@ function renderPrompt() {
 
     }
 
+    const prompt = buildPrompt({
+
+        idea,
+
+        tone: toneSelect.value,
+
+        model: modelSelect.value,
+
+        language: languageSelect.value
+
+    });
+
     previewContent.className = "generated-content";
 
     previewContent.innerHTML = `
-        <p><strong>Idea</strong></p>
-        <p>${idea}</p>
-
-        <hr>
-
-        <p><strong>Tone</strong></p>
-        <p>${toneSelect.value}</p>
-
-        <p><strong>AI Model</strong></p>
-        <p>${modelSelect.value}</p>
-
-        <p><strong>Language</strong></p>
-        <p>${languageSelect.value}</p>
+        <pre>${prompt}</pre>
     `;
 
 }
@@ -92,9 +94,5 @@ function renderPrompt() {
 ========================================== */
 
 generateButton.addEventListener("click", renderPrompt);
-
-/* ==========================================
-   Initial State
-========================================== */
 
 renderEmptyState();
