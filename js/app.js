@@ -2,7 +2,7 @@
 ========================================================
 AI Prompt Studio
 
-Version : 0.7.0
+Version : 0.7.1
 
 Author  : Syaima Levantine
 
@@ -29,10 +29,17 @@ const modelSelect = document.getElementById("model");
 const languageSelect = document.getElementById("language");
 
 const generateButton = document.getElementById("generateButton");
+const copyButton = document.getElementById("copyButton");
 const previewContent = document.getElementById("previewContent");
 
 /* ==========================================
-   Preview
+   Application State
+========================================== */
+
+let generatedPrompt = "";
+
+/* ==========================================
+   Preview Renderer
 ========================================== */
 
 function renderEmptyState() {
@@ -46,6 +53,10 @@ function renderEmptyState() {
             Your generated prompt will appear here after you press Generate.
         </p>
     `;
+
+    generatedPrompt = "";
+
+    copyButton.disabled = true;
 
 }
 
@@ -65,11 +76,15 @@ function renderPrompt() {
             </p>
         `;
 
+        generatedPrompt = "";
+
+        copyButton.disabled = true;
+
         return;
 
     }
 
-    const prompt = buildPrompt({
+    generatedPrompt = buildPrompt({
 
         idea,
 
@@ -84,8 +99,10 @@ function renderPrompt() {
     previewContent.className = "generated-content";
 
     previewContent.innerHTML = `
-        <pre>${prompt}</pre>
+        <pre>${generatedPrompt}</pre>
     `;
+
+    copyButton.disabled = false;
 
 }
 
@@ -93,6 +110,16 @@ function renderPrompt() {
    Events
 ========================================== */
 
-generateButton.addEventListener("click", renderPrompt);
+generateButton.addEventListener(
+
+    "click",
+
+    renderPrompt
+
+);
+
+/* ==========================================
+   Initial State
+========================================== */
 
 renderEmptyState();
