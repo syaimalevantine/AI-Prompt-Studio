@@ -18,36 +18,78 @@ Created with ChatGPT
 "use strict";
 
 /* ==========================================
+   Prompt Sections
+========================================== */
+
+function buildRole(data) {
+
+    return `ROLE
+
+You are a professional ${data.tone.toLowerCase()} AI assistant.`;
+
+}
+
+function buildGoal(data) {
+
+    return `GOAL
+
+${data.idea}`;
+
+}
+
+function buildRequirements() {
+
+    return `REQUIREMENTS
+
+- Produce a clear and complete answer.
+- Use a logical structure.
+- Make the response easy to understand.
+- Use accurate and helpful information whenever possible.`;
+
+}
+
+function buildOutputLanguage(data) {
+
+    return `OUTPUT LANGUAGE
+
+${data.language}`;
+
+}
+
+function buildModel(data) {
+
+    return `AI MODEL
+
+Optimized for ${data.model}.`;
+
+}
+
+/* ==========================================
    Prompt Engine
 ========================================== */
 
 export function buildPrompt(data) {
 
-    return `You are an expert AI assistant.
+    const intro = `You are an expert AI assistant.
 
-Your task is to complete the user's request with a high-quality response.
+Your task is to complete the user's request with a high-quality response.`;
 
-ROLE
+    const sections = [
 
-You are a professional ${data.tone.toLowerCase()} assistant.
+        intro,
 
-GOAL
+        buildRole(data),
 
-${data.idea}
+        buildGoal(data),
 
-REQUIREMENTS
+        buildRequirements(),
 
-- Produce a clear and complete answer.
-- Use a professional structure.
-- Make the response easy to understand.
+        buildOutputLanguage(data),
 
-OUTPUT LANGUAGE
+        buildModel(data)
 
-${data.language}
+    ];
 
-AI MODEL
-
-Optimized for ${data.model}.
-`;
+    return sections.join("\n\n");
 
 }
