@@ -1,7 +1,7 @@
 <!--
 ────────────────────────────────────────────
 AI Prompt Studio
-Version : 0.6.1
+Version : 0.7.1
 
 Author  : Syaima Levantine
 
@@ -45,6 +45,10 @@ Created with ChatGPT
 
 <body>
 
+    <!-- ===================================== -->
+    <!-- Header -->
+    <!-- ===================================== -->
+
     <header class="site-header">
 
         <div class="container">
@@ -61,7 +65,15 @@ Created with ChatGPT
 
     </header>
 
+    <!-- ===================================== -->
+    <!-- Main -->
+    <!-- ===================================== -->
+
     <main class="container app-layout">
+
+        <!-- ================================= -->
+        <!-- Prompt Workspace -->
+        <!-- ================================= -->
 
         <section class="prompt-canvas">
 
@@ -75,7 +87,11 @@ Created with ChatGPT
 
             <div class="form-group">
 
-                <label for="idea">Your Idea</label>
+                <label for="idea">
+
+                    Your Idea
+
+                </label>
 
                 <textarea
                     id="idea"
@@ -85,7 +101,11 @@ Created with ChatGPT
 
             <div class="form-group">
 
-                <label for="tone">Tone</label>
+                <label for="tone">
+
+                    Tone
+
+                </label>
 
                 <select id="tone">
 
@@ -101,7 +121,11 @@ Created with ChatGPT
 
             <div class="form-group">
 
-                <label for="model">AI Model</label>
+                <label for="model">
+
+                    AI Model
+
+                </label>
 
                 <select id="model">
 
@@ -115,7 +139,11 @@ Created with ChatGPT
 
             <div class="form-group">
 
-                <label for="language">Output Language</label>
+                <label for="language">
+
+                    Output Language
+
+                </label>
 
                 <select id="language">
 
@@ -136,11 +164,19 @@ Created with ChatGPT
 
         </section>
 
+        <!-- ================================= -->
+        <!-- Generated Prompt -->
+        <!-- ================================= -->
+
         <aside
             id="previewPanel"
             class="generated-prompt">
 
-            <h2>Generated Prompt</h2>
+            <h2>
+
+                Generated Prompt
+
+            </h2>
 
             <div
                 id="previewContent"
@@ -160,9 +196,26 @@ Created with ChatGPT
 
             </div>
 
+            <div class="preview-actions">
+
+                <button
+                    id="copyButton"
+                    class="primary-button"
+                    disabled>
+
+                    Copy Prompt
+
+                </button>
+
+            </div>
+
         </aside>
 
     </main>
+
+    <!-- ===================================== -->
+    <!-- Footer -->
+    <!-- ===================================== -->
 
     <footer class="site-footer">
 
@@ -172,13 +225,21 @@ Created with ChatGPT
 
                 Crafted with ☕ by
 
-                <strong>Syaima Levantine</strong>
+                <strong>
+
+                    Syaima Levantine
+
+                </strong>
 
             </small>
 
         </div>
 
     </footer>
+
+    <!-- ===================================== -->
+    <!-- JavaScript -->
+    <!-- ===================================== -->
 
     <script
         type="module"
