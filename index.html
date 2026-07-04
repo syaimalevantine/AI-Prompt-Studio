@@ -1,7 +1,7 @@
 <!--
 ────────────────────────────────────────────
 AI Prompt Studio
-Version : 0.4.0
+Version : 0.5.0
 
 Author  : Syaima Levantine
 
@@ -19,10 +19,13 @@ Created with ChatGPT
 
     <!-- Basic -->
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
+
     <title>AI Prompt Studio</title>
 
     <meta
@@ -38,6 +41,7 @@ Created with ChatGPT
         content="#F8F6F1">
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="css/theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -72,7 +76,9 @@ Created with ChatGPT
 
     <main class="container app-layout">
 
-        <!-- Prompt Canvas -->
+        <!-- ================================= -->
+        <!-- Prompt Workspace -->
+        <!-- ================================= -->
 
         <section class="prompt-canvas">
 
@@ -80,31 +86,80 @@ Created with ChatGPT
 
             <p class="section-description">
 
-                Start by describing your idea.
+                Transform your ideas into clear and effective AI prompts.
 
             </p>
 
-            <div class="placeholder-field">
-                What do you want to create?
+            <div class="form-group">
+
+                <label for="idea">
+
+                    Your Idea
+
+                </label>
+
+                <textarea
+                    id="idea"
+                    placeholder="Describe your idea here..."></textarea>
+
             </div>
 
-            <div class="placeholder-field">
-                Who is this prompt for?
+            <div class="form-group">
+
+                <label for="tone">
+
+                    Tone
+
+                </label>
+
+                <select id="tone">
+
+                    <option>Professional</option>
+                    <option>Friendly</option>
+                    <option>Creative</option>
+                    <option>Formal</option>
+                    <option>Casual</option>
+
+                </select>
+
             </div>
 
-            <div class="placeholder-field">
-                Which AI model will you use?
+            <div class="form-group">
+
+                <label for="model">
+
+                    AI Model
+
+                </label>
+
+                <select id="model">
+
+                    <option>ChatGPT</option>
+                    <option>Claude</option>
+                    <option>Gemini</option>
+
+                </select>
+
             </div>
 
-            <div class="placeholder-field">
-                Preferred tone
+            <div class="form-group">
+
+                <label for="language">
+
+                    Output Language
+
+                </label>
+
+                <select id="language">
+
+                    <option>English</option>
+                    <option>Bahasa Indonesia</option>
+
+                </select>
+
             </div>
 
-            <div class="placeholder-field">
-                Output language
-            </div>
-
-            <button class="button-primary">
+            <button class="primary-button">
 
                 Generate Prompt
 
@@ -112,7 +167,9 @@ Created with ChatGPT
 
         </section>
 
-        <!-- Generated Prompt -->
+        <!-- ================================= -->
+        <!-- Preview -->
+        <!-- ================================= -->
 
         <aside class="generated-prompt">
 
@@ -128,7 +185,7 @@ Created with ChatGPT
 
                 <p>
 
-                    Describe your idea on the left and your generated prompt will appear here.
+                    Your generated prompt will appear here after you press Generate.
 
                 </p>
 
@@ -148,7 +205,7 @@ Created with ChatGPT
 
             <small>
 
-                Crafted by
+                Crafted with ☕ by
 
                 <strong>
 
