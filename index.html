@@ -19,8 +19,7 @@ Created with ChatGPT
 
     <!-- Basic -->
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
     <title>AI Prompt Studio</title>
@@ -65,65 +64,84 @@ Created with ChatGPT
 
     <main>
 
-        <!-- ============================= -->
+        <!-- ================================= -->
         <!-- Workspace -->
-        <!-- ============================= -->
+        <!-- ================================= -->
 
         <section id="workspace">
 
             <h2>Workspace</h2>
 
-            <label for="promptType">
-                Prompt Type
-            </label>
+            <!-- Prompt Type -->
+            <div class="field">
 
-            <select id="promptType">
+                <label for="promptType">
 
-                <option>General</option>
-                <option>Marketing</option>
-                <option>Programming</option>
-                <option>Writing</option>
+                    Prompt Type
 
-            </select>
+                </label>
 
-            <label for="goal">
-                Goal
-            </label>
+                <select id="promptType">
 
-            <input
-                type="text"
-                id="goal"
-                placeholder="What do you want AI to do?">
+                    <option value="general">
+                        General
+                    </option>
 
-            <label for="audience">
-                Audience
-            </label>
+                    <option value="creative">
+                        Creative Writing
+                    </option>
 
-            <input
-                type="text"
-                id="audience"
-                placeholder="Who is this for?">
+                    <option value="marketing">
+                        Marketing
+                    </option>
 
-            <label for="tone">
-                Tone
-            </label>
+                    <option value="coding">
+                        Programming
+                    </option>
 
-            <input
-                type="text"
-                id="tone"
-                placeholder="Professional, Friendly, Casual...">
+                    <option value="translation">
+                        Translation
+                    </option>
 
-            <label for="length">
-                Length
-            </label>
+                </select>
 
-            <select id="length">
+            </div>
 
-                <option>Short</option>
-                <option selected>Medium</option>
-                <option>Long</option>
+            <!-- Goal -->
 
-            </select>
+            <div class="field">
+
+                <label for="goal">
+
+                    Goal
+
+                </label>
+
+                <input
+                    id="goal"
+                    type="text"
+                    placeholder="What do you want AI to do?">
+
+            </div>
+
+            <!-- Context -->
+
+            <div class="field">
+
+                <label for="context">
+
+                    Context
+
+                </label>
+
+                <textarea
+                    id="context"
+                    rows="8"
+                    placeholder="Describe your project..."></textarea>
+
+            </div>
+
+            <!-- Generate -->
 
             <button id="generateButton">
 
@@ -133,16 +151,17 @@ Created with ChatGPT
 
         </section>
 
-        <!-- ============================= -->
+        <!-- ================================= -->
         <!-- Preview -->
-        <!-- ============================= -->
+        <!-- ================================= -->
 
         <aside id="preview">
 
-            <h2>Preview</h2>
+            <h2>Generated Prompt</h2>
 
             <textarea
-                id="result"
+                id="output"
+                rows="18"
                 readonly
                 placeholder="Your generated prompt will appear here..."></textarea>
 
@@ -169,7 +188,12 @@ Created with ChatGPT
             <br>
 
             Designed by
-            <strong>Syaima Levantine</strong>
+
+            <strong>
+
+                Syaima Levantine
+
+            </strong>
 
         </small>
 
