@@ -17,6 +17,12 @@ Created with ChatGPT
 
 "use strict";
 
+/* ==========================================
+   Constants
+========================================== */
+
+const MAX_CHARACTERS = 5000;
+
 import { buildPrompt } from "./generator.js";
 import { promptTemplates } from "./templates.js";
 
@@ -39,6 +45,9 @@ const copyButton = document.getElementById("copyButton");
 const clearButton = document.getElementById("clearButton");
 
 const previewContent = document.getElementById("previewContent");
+
+const characterCounter =
+    document.getElementById("characterCounter");
 
 /* ==========================================
    Application State
@@ -202,7 +211,22 @@ function clearWorkspace() {
 
     languageSelect.selectedIndex = 0;
 
+    updateCharacterCounter();
+    
     renderEmptyState();
+
+}
+
+/* ==========================================
+   Character Counter
+========================================== */
+
+function updateCharacterCounter() {
+
+    const count = ideaInput.value.length;
+
+    characterCounter.textContent =
+        `${count} / ${MAX_CHARACTERS} characters`;
 
 }
 
@@ -226,9 +250,19 @@ function initializeApp() {
         "click",
         clearWorkspace
     );
+    
+    ideaInput.addEventListener(
+
+    "input",
+
+    updateCharacterCounter
+
+);
 
     renderEmptyState();
 
 }
 
+
+updateCharacterCounter();
 initializeApp();
