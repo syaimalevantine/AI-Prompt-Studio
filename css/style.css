@@ -114,10 +114,11 @@ body{
 }
 
 .tagline{
-    margin-top:12px;
-    color:#6B705C;
+    margin-top:16px;
+    color:var(--color-primary);
+    font-size:1.05rem;
     font-weight:400;
-    letter-spacing:0.02em;
+    letter-spacing:.02em;
 }
 
 /* ==========================================
