@@ -223,15 +223,18 @@ function clearWorkspace() {
 
 function updateCharacterCounter() {
 
- if (ideaInput.value.length > MAX_CHARACTERS) {
-  ideaInput.value =
-   ideaInput.value.slice(0, MAX_CHARACTERS);
- }
+    if (ideaInput.value.length > MAX_CHARACTERS) {
+        ideaInput.value =
+            ideaInput.value.slice(0, MAX_CHARACTERS);
+    }
 
- const count = ideaInput.value.length;
+    const count = Math.min(
+        ideaInput.value.length,
+        MAX_CHARACTERS
+    );
 
- characterCounter.textContent =
- `${count} / ${MAX_CHARACTERS} characters`;
+    characterCounter.textContent =
+        `${count} / ${MAX_CHARACTERS} characters`;
 
 }
 
