@@ -25,12 +25,19 @@ import { promptTemplates } from "./templates.js";
 ========================================== */
 
 const ideaInput = document.getElementById("idea");
+
 const toneSelect = document.getElementById("tone");
+
 const modelSelect = document.getElementById("model");
+
 const languageSelect = document.getElementById("language");
 
 const generateButton = document.getElementById("generateButton");
+
 const copyButton = document.getElementById("copyButton");
+
+const clearButton = document.getElementById("clearButton");
+
 const previewContent = document.getElementById("previewContent");
 
 /* ==========================================
@@ -56,18 +63,32 @@ function renderEmptyState() {
     previewContent.className = "empty-state";
 
     previewContent.innerHTML = `
-        <h3>Every great prompt begins with an idea.</h3>
+
+        <h3>
+
+            Every great prompt begins with an idea.
+
+        </h3>
 
         <p>
+
             Your generated prompt will appear here after you press Generate.
+
         </p>
+
     `;
 
     generatedPrompt = "";
 
     copyButton.disabled = true;
 
+    clearButton.disabled = true;
+
 }
+
+/* ==========================================
+   Generate Prompt
+========================================== */
 
 function renderPrompt() {
 
@@ -78,16 +99,26 @@ function renderPrompt() {
         previewContent.className = "empty-state";
 
         previewContent.innerHTML = `
-            <h3>Please write your idea first.</h3>
+
+            <h3>
+
+                Please write your idea first.
+
+            </h3>
 
             <p>
+
                 Describe your idea before generating a prompt.
+
             </p>
+
         `;
 
         generatedPrompt = "";
 
         copyButton.disabled = true;
+
+        clearButton.disabled = true;
 
         return;
 
@@ -108,15 +139,19 @@ function renderPrompt() {
     previewContent.className = "generated-content";
 
     previewContent.innerHTML = `
+
         <pre>${generatedPrompt}</pre>
+
     `;
 
     copyButton.disabled = false;
 
+    clearButton.disabled = false;
+
 }
 
 /* ==========================================
-   Clipboard
+   Copy Prompt
 ========================================== */
 
 async function copyPrompt() {
@@ -154,6 +189,24 @@ async function copyPrompt() {
 }
 
 /* ==========================================
+   Clear Workspace
+========================================== */
+
+function clearWorkspace() {
+
+    ideaInput.value = "";
+
+    toneSelect.selectedIndex = 0;
+
+    modelSelect.selectedIndex = 0;
+
+    languageSelect.selectedIndex = 0;
+
+    renderEmptyState();
+
+}
+
+/* ==========================================
    Events
 ========================================== */
 
@@ -170,6 +223,14 @@ copyButton.addEventListener(
     "click",
 
     copyPrompt
+
+);
+
+clearButton.addEventListener(
+
+    "click",
+
+    clearWorkspace
 
 );
 
