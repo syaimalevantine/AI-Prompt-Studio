@@ -22,11 +22,8 @@ Created with ChatGPT
 ========================================== */
 
 function buildRole(data) {
-
-    return `ROLE
-
-You are a professional ${data.tone.toLowerCase()} AI assistant.`;
-
+  return `ROLE
+You are a ${data.tone} AI assistant.`;
 }
 
 function buildGoal(data) {
