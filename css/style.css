@@ -79,9 +79,10 @@ body{
 }
 
 .tagline{
-
-    color:#666;
-
+    margin-top:12px;
+    color:#6B705C;
+    font-weight:400;
+    letter-spacing:0.02em;
 }
 
 /* ==========================================
