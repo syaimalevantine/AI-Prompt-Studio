@@ -207,35 +207,28 @@ function clearWorkspace() {
 }
 
 /* ==========================================
-   Events
+   Initialization
 ========================================== */
 
-generateButton.addEventListener(
+function initializeApp() {
 
-    "click",
+    generateButton.addEventListener(
+        "click",
+        renderPrompt
+    );
 
-    renderPrompt
+    copyButton.addEventListener(
+        "click",
+        copyPrompt
+    );
 
-);
+    clearButton.addEventListener(
+        "click",
+        clearWorkspace
+    );
 
-copyButton.addEventListener(
+    renderEmptyState();
 
-    "click",
+}
 
-    copyPrompt
-
-);
-
-clearButton.addEventListener(
-
-    "click",
-
-    clearWorkspace
-
-);
-
-/* ==========================================
-   Initial State
-========================================== */
-
-renderEmptyState();
+initializeApp();
