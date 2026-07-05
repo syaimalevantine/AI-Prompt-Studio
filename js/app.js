@@ -155,7 +155,12 @@ function renderPrompt() {
 
     copyButton.disabled = false;
 
-    clearButton.disabled = false;
+clearButton.disabled = false;
+
+previewContent.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+});
 
 }
 
