@@ -31,27 +31,6 @@ Created with ChatGPT
     box-sizing:border-box;
 }
 
-:root{
-
-    /* Levantine Olive Palette */
-    --color-primary:#6B705C;
-    --color-primary-light:#87986A;
-
-    --color-surface:#FFFFFF;
-    --color-border:#E6E2D8;
-
-    --color-text:#2E2E2E;
-    --color-text-light:#666666;
-
-    --radius-medium:14px;
-    --radius-large:20px;
-
-    --shadow-soft:0 8px 24px rgba(0,0,0,.05);
-
-    --transition:.25s ease;
-
-}
-
 /*
 ==========================================
     Body
