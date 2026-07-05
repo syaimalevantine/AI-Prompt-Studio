@@ -21,7 +21,7 @@ Created with ChatGPT
    Constants
 ========================================== */
 
-const MAX_CHARACTERS = 5000;
+const MAX_CHARACTERS = 500;
 
 import { buildPrompt } from "./generator.js";
 import { promptTemplates } from "./templates.js";
