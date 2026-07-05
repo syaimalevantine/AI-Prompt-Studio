@@ -277,5 +277,5 @@ function initializeApp() {
 }
 
 
-updateCharacterCounter();
 initializeApp();
+updateCharacterCounter();
