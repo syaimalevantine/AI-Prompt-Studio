@@ -1,0 +1,32 @@
+{
+  "publisher": {
+    "name": "Knowledge Publisher",
+    "version": "1.0.0"
+  },
+
+  "source": {
+    "baseline": "UKA Official Master Baseline",
+    "version": "1.0"
+  },
+
+  "profile": "core",
+
+  "schema": {
+    "file": "schema/knowledge-runtime.schema.json"
+  },
+
+  "profileFile": {
+    "file": "profiles/core.json"
+  },
+
+  "output": {
+    "directory": "../runtime",
+    "filename": "knowledge-runtime-core.json",
+    "format": "json"
+  },
+
+  "validation": {
+    "enabled": true,
+    "failOnError": true
+  }
+}

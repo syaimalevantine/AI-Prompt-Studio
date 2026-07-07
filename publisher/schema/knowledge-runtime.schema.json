@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Knowledge Runtime Package",
+  "description": "Runtime package generated from the UKA Official Master Baseline.",
+  "type": "object",
+
+  "required": [
+    "metadata",
+    "registries"
+  ],
+
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "version",
+        "generatedAt",
+        "sourceVersion",
+        "publishProfile"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sourceVersion": {
+          "type": "string"
+        },
+        "publishProfile": {
+          "type": "string",
+          "enum": [
+            "core",
+            "full",
+            "mobile",
+            "enterprise"
+          ]
+        }
+      }
+    },
+
+    "registries": {
+      "type": "object",
+
+      "required": [
+        "intents",
+        "domains",
+        "canonicals",
+        "relationships"
+      ],
+
+      "properties": {
+
+        "intents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
+          }
+        },
+
+        "canonicals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "context": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+
+        "relationships": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "source",
+              "target"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

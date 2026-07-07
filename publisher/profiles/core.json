@@ -1,0 +1,30 @@
+{
+  "profile": "core",
+  "version": "1.0.0",
+  "description": "Core runtime profile for AI Prompt Studio.",
+
+  "source": {
+    "baseline": "UKA Official Master Baseline",
+    "publisher": "Knowledge Publisher"
+  },
+
+  "runtime": {
+    "includeRegistries": [
+      "intents",
+      "domains",
+      "canonicals",
+      "relationships"
+    ],
+
+    "includeMetadata": true,
+
+    "validateSchema": true,
+
+    "compressOutput": false
+  },
+
+  "output": {
+    "format": "json",
+    "filename": "knowledge-runtime-core.json"
+  }
+}
