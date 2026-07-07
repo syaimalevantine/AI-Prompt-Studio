@@ -1,282 +1,20 @@
-# Architecture
-
-Version: 1.0.0
-
-Last Updated: July 2026
-
-Purpose:
-Describe the overall architecture of AI Prompt Studio.
-
-—
-
-# Overview
-
-AI Prompt Studio is designed as a lightweight, modular, and maintainable web application.
-
-Every folder has a single responsibility.
-
-Every file should have a clear purpose.
-
-The project follows the philosophy:
-
-Build foundations once. Reuse them forever.
-
-—
-
-# Project Structure
-
-AI-Prompt-Studio/
-
-├── assets/
-
-Application assets such as icons, images, and illustrations.
-
-—
-
-├── components/
-
-Reusable HTML components.
-
-Examples:
-
-- Header
-- Footer
-- Cards
-- Buttons
-- Dialogs
-
-—
-
-├── css/
-
-Application styling.
-
-Files:
-
-- theme.css
-- style.css
-- responsive.css
-
-—
-
-├── docs/
-
-Project documentation.
-
-Contains philosophy, architecture, roadmap, and design documentation.
-
-—
-
-├── js/
-
-Application logic.
-
-Examples:
-
-- app.js
-- prompt-engine.js
-- storage.js
-- ui.js
-
-—
-
-index.html
-
-Application entry point.
-
-—
-
-README.md
-
-Project introduction.
-
-—
-
-LICENSE
-
-Open-source license.
-
-—
-
-# Design Architecture
-
-The application is divided into three layers.
-
-Presentation
-
-↓
-
-Business Logic
-
-↓
-
-Data
-
-Each layer should remain independent whenever possible.
-
-—
-
-# Component Philosophy
-
-Components should be:
-
-Reusable
-
-Independent
-
-Easy to understand
-
-Easy to extend
-
-—
-
-# CSS Architecture
-
-CSS follows a component-first approach.
-
-Global styles
-
-↓
-
-Layout
-
-↓
-
-Components
-
-↓
-
-Utilities
-
-Avoid duplicated styles whenever possible.
-
-—
-
-# JavaScript Architecture
-
-JavaScript modules should have one responsibility.
-
-Example:
-
-app.js
-
-Application bootstrap.
-
-ui.js
-
-User interface interactions.
-
-prompt-engine.js
-
-Prompt generation.
-
-storage.js
-
-Local storage management.
-
-Each module should remain small and focused.
-
-—
-
-# Folder Philosophy
-
-A folder should answer one question.
-
-Examples:
-
-assets
-
-“What resources does the application use?”
-
-css
-
-“How does the application look?”
-
-js
-
-“How does the application behave?”
-
-docs
-
-“How does the project work?”
-
-—
-
-# Performance Goals
-
-Fast startup.
-
-Minimal dependencies.
-
-Efficient rendering.
-
-Smooth interaction.
-
-Offline-ready architecture for future PWA support.
-
-—
-
-# Scalability
-
-New features should be added without modifying unrelated files.
-
-The architecture should encourage modular growth.
-
-—
-
-# Coding Standard
-
-Readable before clever.
-
-Simple before complex.
-
-Consistent before unique.
-
-Maintainable before short.
-
-—
-
-# Long-Term Vision
-
-The architecture should support future versions including:
-
-- Prompt Library
-- Multi AI Providers
-- Local Projects
-- Template Marketplace
-- Offline Mode
-- Progressive Web App
-- Cloud Synchronization
-
-without requiring major structural changes.
-
-—
-
-Designed by
-
-**Syaima Levantine**
-
-Created with ChatGPT
-
-—
-
 # Knowledge Engine Architecture
 
 Status: LOCKED
 
 ## Overview
 
-AI Prompt Studio adopts **UKA Official Master Baseline v1.0** as its official Knowledge Engine.
+AI Prompt Studio adopts **UKA Official Master Baseline v1.0** as its official Knowledge Source.
 
-The application separates user experience from knowledge management.
+The UKA workbook is never consumed directly by AI Prompt Studio.
 
-AI Prompt Studio is responsible for the creator experience.
+Instead, UKA publishes a versioned **Knowledge Runtime Package** through the Publisher subsystem.
 
-UKA is responsible for knowledge organization.
+AI Prompt Studio consumes the published runtime package as its runtime knowledge layer.
 
 —
 
-## Architecture
+## Runtime Architecture
 
 ```
 Creator
@@ -288,15 +26,13 @@ Idea
 Intent Search
         │
         ▼
-UKA Knowledge Engine
+Knowledge Runtime Package
         │
- ├── Intent Library
- ├── Master Domains
- ├── Canonical
- ├── Context
- ├── Alias
- ├── Cluster
- └── Hub
+ ├── Intent Registry
+ ├── Domain Registry
+ ├── Canonical Registry
+ ├── Relationship Registry
+ └── Runtime Metadata
         │
         ▼
 Prompt Generator
@@ -307,80 +43,163 @@ Generated Prompt
 
 —
 
+## Knowledge Publishing Pipeline
+
+```
+UKA Official Master Baseline
+        │
+        ▼
+Publisher
+        │
+        ▼
+Knowledge Runtime Package
+        │
+        ▼
+AI Prompt Studio
+```
+
+The Publisher transforms authoring data into optimized runtime packages.
+
+AI Prompt Studio never reads the UKA workbook directly.
+
+—
+
 ## Layer Responsibilities
 
-### Experience Layer
+### Authoring Layer
+
+UKA Official Master Baseline
+
+Responsible for:
+
+- Knowledge authoring
+- Master Domains
+- Canonical Registry
+- Context
+- Alias
+- Cluster
+- Hub
+- Governance
+
+—
+
+### Publishing Layer
+
+Publisher
+
+Responsible for:
+
+- Validation
+- Transformation
+- Runtime optimization
+- Package generation
+- Versioning
+
+—
+
+### Runtime Layer
 
 AI Prompt Studio
 
 Responsible for:
 
+- Creator Experience
+- Intent Search
+- Prompt Generation
 - UI
-- Creator workflow
-- Prompt generation
-- Search experience
 - Settings
 
 —
 
-### Knowledge Layer
+## Runtime Registries
 
-UKA
+The Knowledge Runtime Package is composed of independent registries.
 
-Responsible for:
+### Intent Registry
 
-- Intent Library
-- Canonical registry
-- Context
-- Alias
-- Knowledge relationships
-- Semantic organization
+Contains creator intents and their relationships to domains.
 
-—
+### Domain Registry
 
-## Intent Engine
+Contains published runtime domains.
 
-Creators never interact with internal categories.
+### Canonical Registry
 
-Creators search intents.
+Contains canonical concepts and semantic metadata.
 
-The Intent Engine resolves:
+### Relationship Registry
 
-Idea
+Contains ID-based relationships between runtime entities.
 
-↓
+### Runtime Metadata
 
-Intent
+Contains:
 
-↓
-
-Canonical
-
-↓
-
-Knowledge Context
-
-↓
-
-Prompt Generation
+- version
+- generatedAt
+- publishProfile
+- sourceVersion
 
 —
 
-## Design Principles
+## Intent Resolution
 
-- Mobile First
-- Privacy by Design
-- Knowledge-driven Prompt Generation
-- Intent-first Navigation
-- Creator-centric Experience
+The Intent Engine performs the following flow.
+
+```
+Creator Idea
+
+↓
+
+Intent Detection
+
+↓
+
+Intent Registry
+
+↓
+
+Domain Registry
+
+↓
+
+Canonical Registry
+
+↓
+
+Context Resolution
+
+↓
+
+Prompt Generator
+
+↓
+
+Generated Prompt
+```
+
+—
+
+## Runtime Principles
+
+- Runtime is ID-first.
+- Runtime is immutable.
+- Runtime packages are generated, never edited manually.
+- AI Prompt Studio consumes published runtime packages only.
+- UKA remains the single source of truth.
 
 —
 
 ## Future Expansion
 
-New knowledge is added through UKA.
+Future runtime packages may include additional registries such as:
 
-AI Prompt Studio consumes the updated knowledge without requiring architectural changes.
+- Vocabulary Registry
+- Persona Registry
+- Style Registry
+- Workflow Registry
+
+without requiring changes to AI Prompt Studio architecture.
 
 —
 
@@ -390,4 +209,4 @@ Status
 
 LOCKED
 
-This architecture becomes the official implementation model for AI Prompt Studio v1.0.
+The Knowledge Runtime Package becomes the official runtime contract between UKA Publisher and AI Prompt Studio.

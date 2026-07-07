@@ -1,9 +1,10 @@
 # AI Prompt Studio
+
 ## PUBLISHER_SPEC.md
 
 Status: LOCKED
 
-Version: 1.0
+Version: 2.0
 
 Last Updated: July 2026
 
@@ -11,7 +12,9 @@ Last Updated: July 2026
 
 # Purpose
 
-This document defines the publishing pipeline that transforms the UKA Official Master Baseline into runtime packages consumable by AI Prompt Studio.
+This document defines the Publisher subsystem of AI Prompt Studio.
+
+The Publisher transforms the UKA Official Master Baseline into versioned Knowledge Runtime Packages.
 
 The Publisher separates authoring data from runtime data.
 
@@ -21,9 +24,11 @@ The Publisher separates authoring data from runtime data.
 
 UKA is the Authoring System.
 
+Publisher is the Build System.
+
 AI Prompt Studio is the Runtime System.
 
-The Publisher is the bridge between them.
+Knowledge is authored once, published once, and consumed many times.
 
 —
 
@@ -31,126 +36,146 @@ The Publisher is the bridge between them.
 
 Publisher reads only:
 
-UKA Official Master Baseline
+**UKA Official Master Baseline**
 
-No runtime data is edited manually.
+No runtime package is edited manually.
+
+All runtime packages are generated.
 
 —
 
 # Input
 
-Publisher may consume the following UKA registries:
+Publisher consumes the following UKA registries:
 
 - Master Domains
-- Canonical Outputs
-- Knowledge Clusters
-- Hub Domains
+- Canonical Registry
 - Context
 - Alias
+- Hub
+- Cluster
+- Relationships
 - Intent Mapping
 
-Governance artifacts are excluded from runtime.
+Governance documents are excluded.
+
+Release Notes are excluded.
+
+Audit History is excluded.
+
+Architecture Decisions are excluded.
 
 —
 
-# Transformation Pipeline
+# Publishing Pipeline
 
-Publisher performs the following steps:
-
-1. Read UKA Master Baseline
-2. Validate registry integrity
-3. Resolve relationships
-4. Normalize runtime structure
-5. Remove authoring-only data
-6. Generate runtime packages
-7. Validate generated packages
+```
+UKA Official Master Baseline
+        │
+        ▼
+Registry Validation
+        │
+        ▼
+Relationship Resolution
+        │
+        ▼
+Runtime Transformation
+        │
+        ▼
+Package Validation
+        │
+        ▼
+Knowledge Runtime Package
+```
 
 —
 
-# Runtime Packages
+# Knowledge Runtime Package
 
-Publisher may generate multiple packages.
+The Publisher generates runtime packages composed of independent registries.
+
+## Intent Registry
+
+Contains runtime intents.
+
+—
+
+## Domain Registry
+
+Contains published domains.
+
+—
+
+## Canonical Registry
+
+Contains canonical concepts.
+
+—
+
+## Relationship Registry
+
+Contains ID-based relationships between runtime entities.
+
+—
+
+## Runtime Metadata
+
+Contains:
+
+- version
+- generatedAt
+- sourceVersion
+- publishProfile
+
+—
+
+# Publish Profiles
+
+Publisher supports multiple runtime profiles.
 
 ## Core
 
-intent-library-core.json
-
-Contains only high-priority intents.
+High-priority runtime knowledge.
 
 —
 
 ## Full
 
-intent-library-full.json
-
-Contains the complete published knowledge base.
+Complete published runtime knowledge.
 
 —
 
 ## Mobile
 
-intent-library-mobile.json
-
-Optimized for lightweight devices.
+Optimized runtime package for lightweight devices.
 
 —
 
 ## Enterprise
 
-intent-library-enterprise.json
-
-Contains enterprise-specific runtime packages.
+Enterprise-specific runtime package.
 
 —
 
-# Runtime Data
+# Runtime Principles
 
-Each Intent includes:
+Runtime follows the following principles.
 
-- Intent ID
-- Intent Name
-- Master Domain
-- Canonical
-- Alias
-- Context
-
-Optional:
-
-- Cluster
-- Hub
-
-—
-
-# Metadata
-
-Every published package contains:
-
-- version
-- generatedAt
-- source
-- publishProfile
-
-Example
-
-Version
-
-1.0.0
-
-Publish Profile
-
-Core
-
-Generated
-
-2026-07-07T10:15:00Z
+- Registry-based
+- ID-first
+- Immutable
+- Versioned
+- Platform-independent
 
 —
 
 # Runtime Contract
 
-AI Prompt Studio never reads the UKA workbook directly.
+AI Prompt Studio never consumes the UKA workbook.
 
-AI Prompt Studio only consumes published runtime packages.
+AI Prompt Studio consumes only published Knowledge Runtime Packages.
+
+Knowledge Runtime Packages become the official runtime contract.
 
 —
 
@@ -162,8 +187,8 @@ Responsible for:
 
 - Knowledge authoring
 - Governance
-- Canonical maintenance
 - Registry management
+- Canonical maintenance
 
 —
 
@@ -174,6 +199,7 @@ Responsible for:
 - Validation
 - Transformation
 - Packaging
+- Runtime optimization
 - Versioning
 
 —
@@ -188,14 +214,16 @@ Responsible for:
 
 —
 
-# Design Principles
+# Validation
 
-- Single Source of Truth
-- Publish Once
-- Read Many
-- Immutable Runtime Packages
-- Versioned Outputs
-- Platform Independent
+Every published runtime package must:
+
+- pass schema validation
+- preserve registry integrity
+- preserve relationship integrity
+- preserve runtime compatibility
+
+Publishing fails if validation fails.
 
 —
 
@@ -215,7 +243,13 @@ Incremental Publishing
 
 Version 2.0
 
-Automated Continuous Publishing
+Continuous Publishing
+
+↓
+
+Version 3.0
+
+Automated Knowledge Distribution
 
 —
 
@@ -225,4 +259,4 @@ Status
 
 LOCKED
 
-Changes to the Publisher Specification require a new Architecture Decision Record.
+Changes to the Publisher architecture require a new Architecture Decision Record.
