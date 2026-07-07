@@ -257,3 +257,137 @@ Designed by
 **Syaima Levantine**
 
 Created with ChatGPT
+
+—
+
+# Knowledge Engine Architecture
+
+Status: LOCKED
+
+## Overview
+
+AI Prompt Studio adopts **UKA Official Master Baseline v1.0** as its official Knowledge Engine.
+
+The application separates user experience from knowledge management.
+
+AI Prompt Studio is responsible for the creator experience.
+
+UKA is responsible for knowledge organization.
+
+—
+
+## Architecture
+
+```
+Creator
+        │
+        ▼
+Idea
+        │
+        ▼
+Intent Search
+        │
+        ▼
+UKA Knowledge Engine
+        │
+ ├── Intent Library
+ ├── Master Domains
+ ├── Canonical
+ ├── Context
+ ├── Alias
+ ├── Cluster
+ └── Hub
+        │
+        ▼
+Prompt Generator
+        │
+        ▼
+Generated Prompt
+```
+
+—
+
+## Layer Responsibilities
+
+### Experience Layer
+
+AI Prompt Studio
+
+Responsible for:
+
+- UI
+- Creator workflow
+- Prompt generation
+- Search experience
+- Settings
+
+—
+
+### Knowledge Layer
+
+UKA
+
+Responsible for:
+
+- Intent Library
+- Canonical registry
+- Context
+- Alias
+- Knowledge relationships
+- Semantic organization
+
+—
+
+## Intent Engine
+
+Creators never interact with internal categories.
+
+Creators search intents.
+
+The Intent Engine resolves:
+
+Idea
+
+↓
+
+Intent
+
+↓
+
+Canonical
+
+↓
+
+Knowledge Context
+
+↓
+
+Prompt Generation
+
+—
+
+## Design Principles
+
+- Mobile First
+- Privacy by Design
+- Knowledge-driven Prompt Generation
+- Intent-first Navigation
+- Creator-centric Experience
+
+—
+
+## Future Expansion
+
+New knowledge is added through UKA.
+
+AI Prompt Studio consumes the updated knowledge without requiring architectural changes.
+
+—
+
+## Final Status
+
+Status
+
+LOCKED
+
+This architecture becomes the official implementation model for AI Prompt Studio v1.0.
