@@ -358,6 +358,7 @@ function buildReport(config, profile, source, runtimePath, runtime) {
     runtime.registries.canonicals.length +
     runtime.registries.relationships.length,
         runtime: runtimePath,
+        generatedAt: new Date().toISOString(),
         status: "SUCCESS"
     };
 }
