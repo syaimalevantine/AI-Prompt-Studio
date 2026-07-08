@@ -204,6 +204,31 @@ function loadSource() {
   return entries;
 
 }
+
+/**
+ * Build empty runtime package.
+ */
+function buildRuntime(config, profile) {
+
+  return {
+
+    metadata: {
+      version: config.publisher.version,
+      generatedAt: new Date().toISOString(),
+      sourceVersion: config.source.version,
+      publishProfile: profile.profile
+    },
+
+    registries: {
+      intents: [],
+      domains: [],
+      canonicals: [],
+      relationships: []
+    }
+
+  };
+
+}
 /**
  * Print configuration summary.
  */
@@ -289,7 +314,21 @@ const source = loadSource();
 console.log(
   `✓ Knowledge source loaded (${source.length} entries).`
 );
+// --------------------------------------------------------
+// P5
+// --------------------------------------------------------
 
+const runtime = buildRuntime(
+  config,
+  profile
+);
+
+console.log(
+  "✓ Runtime object created."
+);
+console.log(
+  `✓ Runtime registries initialized (${Object.keys(runtime.registries).length} registries).`
+);
   } catch (error) {
 
     console.error(`✗ ${error.message}`);
