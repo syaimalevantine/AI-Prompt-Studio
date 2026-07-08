@@ -8,7 +8,7 @@ Author  : Syaima Levantine
 File    : generator.js
 
 Purpose :
-Prompt Engine
+Runtime Prompt Engine
 
 Created with ChatGPT
 
@@ -17,13 +17,28 @@ Created with ChatGPT
 
 "use strict";
 
+import { getRuntime } from "./runtime-loader.js";
+
+/* ==========================================
+   Runtime
+========================================== */
+
+function getActiveRuntime() {
+
+    return getRuntime();
+
+}
+
 /* ==========================================
    Prompt Sections
 ========================================== */
 
 function buildRole(data) {
-  return `ROLE
+
+    return `ROLE
+
 You are a ${data.tone} AI assistant.`;
+
 }
 
 function buildGoal(data) {
@@ -66,6 +81,22 @@ Optimized for ${data.model}.`;
 ========================================== */
 
 export function buildPrompt(data) {
+
+    const runtime = getActiveRuntime();
+
+    const runtimeProfile =
+    runtime?.metadata?.profile ?? "unknown";
+
+const runtimeVersion =
+    runtime?.metadata?.version ?? "unknown";
+
+console.log(
+    `Runtime Profile: ${runtimeProfile}`
+);
+
+console.log(
+    `Runtime Version: ${runtimeVersion}`
+);
 
     const intro = `You are an expert AI assistant.
 
