@@ -229,6 +229,37 @@ function buildRuntime(config, profile) {
   };
 
 }
+
+/**
+ * Write runtime package.
+ */
+function writeRuntime(config, runtime) {
+
+  const outputDirectory = path.resolve(
+    process.cwd(),
+    config.output.directory
+  );
+
+  if (!fs.existsSync(outputDirectory)) {
+    fs.mkdirSync(outputDirectory, {
+      recursive: true
+    });
+  }
+
+  const outputPath = path.join(
+    outputDirectory,
+    config.output.runtimeFile
+  );
+
+  fs.writeFileSync(
+    outputPath,
+    JSON.stringify(runtime, null, 2),
+    "utf8"
+  );
+
+  return outputPath;
+
+}
 /**
  * Print configuration summary.
  */
@@ -328,6 +359,18 @@ console.log(
 );
 console.log(
   `✓ Runtime registries initialized (${Object.keys(runtime.registries).length} registries).`
+);
+// --------------------------------------------------------
+// P6
+// --------------------------------------------------------
+
+const runtimePath = writeRuntime(
+  config,
+  runtime
+);
+
+console.log(
+  `✓ Runtime written to ${runtimePath}`
 );
   } catch (error) {
 
