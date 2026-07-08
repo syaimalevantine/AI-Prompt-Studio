@@ -213,11 +213,12 @@ function buildRuntime(config, profile) {
   return {
 
     metadata: {
-      version: config.publisher.version,
-      generatedAt: new Date().toISOString(),
-      sourceVersion: config.source.version,
-      publishProfile: profile.profile
-    },
+    version: config.publisher.version,
+    generatedAt: new Date().toISOString(),
+    sourceVersion: config.source.version,
+    publishProfile: profile.profile,
+    registryVersion: "1.0.0"
+},
 
     registries: {
       intents: [],
