@@ -250,6 +250,25 @@ function buildIntentRegistry(source) {
 }
 
 /**
+ * Build domain registry.
+ */
+function buildDomainRegistry(source) {
+    const domains = [];
+
+    for (const entry of source) {
+        if (!entry.isFile()) {
+            continue;
+        }
+
+        domains.push({
+            file: entry.name
+        });
+    }
+
+    return domains;
+}
+
+/**
  * Write runtime package.
  */
 function writeRuntime(config, runtime) {
@@ -429,6 +448,12 @@ runtime.registries.intents =
 
 console.log(
   `✓ ${runtime.registries.intents.length} intents indexed.`
+);
+
+runtime.registries.domains = buildDomainRegistry(source);
+
+console.log(
+    `✓ ${runtime.registries.domains.length} domains indexed.`
 );
 // --------------------------------------------------------
 // P6
