@@ -244,7 +244,7 @@ function writeRuntime(config, runtime) {
     fs.mkdirSync(outputDirectory, {
       recursive: true
     });
-  }
+  } 
 
   const outputPath = path.join(
     outputDirectory,
@@ -259,6 +259,27 @@ function writeRuntime(config, runtime) {
 
   return outputPath;
 
+}
+
+/**
+ * Build publish report.
+ */
+function buildReport(config, profile, source, runtimePath, runtime) {
+    return {
+        publisher: config.publisher.name,
+        version: config.publisher.version,
+        profile: profile.profile,
+        schema: config.schema.file,
+        knowledgeFiles: source.length,
+        registries: {
+            intents: runtime.registries.intents.length,
+            domains: runtime.registries.domains.length,
+            canonicals: runtime.registries.canonicals.length,
+            relationships: runtime.registries.relationships.length
+        },
+        runtime: runtimePath,
+        status: "SUCCESS"
+    };
 }
 /**
  * Print configuration summary.
@@ -372,6 +393,17 @@ const runtimePath = writeRuntime(
 console.log(
   `✓ Runtime written to ${runtimePath}`
 );
+
+const report = buildReport(
+    config,
+    profile,
+    source,
+    runtimePath,
+    runtime
+);
+
+console.log("✓ Publish report created.");
+console.log(report);
   } catch (error) {
 
     console.error(`✗ ${error.message}`);
