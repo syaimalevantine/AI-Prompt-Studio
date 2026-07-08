@@ -288,6 +288,25 @@ function buildCanonicalRegistry(source) {
 }
 
 /**
+ * Build relationship registry.
+ */
+function buildRelationshipRegistry(source) {
+    const relationships = [];
+
+    for (const entry of source) {
+        if (!entry.isFile()) {
+            continue;
+        }
+
+        relationships.push({
+            file: entry.name
+        });
+    }
+
+    return relationships;
+}
+
+/**
  * Write runtime package.
  */
 function writeRuntime(config, runtime) {
@@ -480,6 +499,13 @@ runtime.registries.canonicals =
 
 console.log(
     `✓ ${runtime.registries.canonicals.length} canonicals indexed.`
+);
+
+runtime.registries.relationships =
+    buildRelationshipRegistry(source);
+
+console.log(
+    `✓ ${runtime.registries.relationships.length} relationships indexed.`
 );
 // --------------------------------------------------------
 // P6
