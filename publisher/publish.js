@@ -269,6 +269,25 @@ function buildDomainRegistry(source) {
 }
 
 /**
+ * Build canonical registry.
+ */
+function buildCanonicalRegistry(source) {
+    const canonicals = [];
+
+    for (const entry of source) {
+        if (!entry.isFile()) {
+            continue;
+        }
+
+        canonicals.push({
+            file: entry.name
+        });
+    }
+
+    return canonicals;
+}
+
+/**
  * Write runtime package.
  */
 function writeRuntime(config, runtime) {
@@ -454,6 +473,13 @@ runtime.registries.domains = buildDomainRegistry(source);
 
 console.log(
     `✓ ${runtime.registries.domains.length} domains indexed.`
+);
+
+runtime.registries.canonicals =
+    buildCanonicalRegistry(source);
+
+console.log(
+    `✓ ${runtime.registries.canonicals.length} canonicals indexed.`
 );
 // --------------------------------------------------------
 // P6
