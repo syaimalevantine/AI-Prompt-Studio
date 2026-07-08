@@ -42,6 +42,17 @@ const PROFILE_DIRECTORY = path.resolve(
   "profiles"
 );
 
+/* ============================================================
+ * P3 - Schema Manager
+ * ============================================================
+ */
+
+const SCHEMA_DIRECTORY = path.resolve(
+  process.cwd(),
+  "publisher",
+  "schema"
+);
+
 /**
  * Load publish configuration.
  */
@@ -114,6 +125,56 @@ function validateProfile(profile) {
 }
 
 /**
+ * Load runtime schema.
+ */
+function loadSchema(config) {
+
+  const schemaPath = path.join(
+    SCHEMA_DIRECTORY,
+    config.schema.file
+  );
+
+  if (!fs.existsSync(schemaPath)) {
+    throw new Error(
+      `Schema not found: ${config.schema.file}`
+    );
+  }
+
+  const raw = fs.readFileSync(
+    schemaPath,
+    "utf8"
+  );
+
+  return JSON.parse(raw);
+
+}
+
+/**
+ * Validate runtime schema.
+ */
+function validateSchema(schema) {
+
+  if (!schema) {
+    throw new Error("Schema is empty.");
+  }
+
+  if (!schema.metadata) {
+    throw new Error(
+      "Schema metadata section is missing."
+    );
+  }
+
+  if (!schema.registries) {
+    throw new Error(
+      "Schema registries section is missing."
+    );
+  }
+
+  return true;
+
+}
+
+/**
  * Print configuration summary.
  */
 function printSummary(config) {
@@ -178,6 +239,16 @@ function main() {
     printProfileSummary(profile);
 
     console.log("✓ Profile loaded successfully.");
+
+// --------------------------------------------------------
+// P3
+// --------------------------------------------------------
+
+const schema = loadSchema(config);
+
+validateSchema(schema);
+
+console.log("✓ Schema loaded successfully.");
 
   } catch (error) {
 
