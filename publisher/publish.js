@@ -228,9 +228,6 @@ function buildRuntime(config, profile) {
     }
 
   };
-
-}
-
 /**
  * Build intent registry.
  */
@@ -354,6 +351,12 @@ function buildReport(config, profile, source, runtimePath, runtime) {
             canonicals: runtime.registries.canonicals.length,
             relationships: runtime.registries.relationships.length
         },
+        
+        registryCount:
+    runtime.registries.intents.length +
+    runtime.registries.domains.length +
+    runtime.registries.canonicals.length +
+    runtime.registries.relationships.length,
         runtime: runtimePath,
         status: "SUCCESS"
     };
