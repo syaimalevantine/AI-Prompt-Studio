@@ -21,10 +21,11 @@ Created with ChatGPT
    Constants
 ========================================== */
 
-const MAX_CHARACTERS = 500;
-
 import { buildPrompt } from "./generator.js";
 import { promptTemplates } from "./templates.js";
+import { loadRuntime } from "./runtime-loader.js";
+
+const MAX_CHARACTERS = 500;
 
 /* ==========================================
    DOM Elements
@@ -247,7 +248,19 @@ function updateCharacterCounter() {
    Initialization
 ========================================== */
 
-function initializeApp() {
+async function initializeApp() {
+    try {
+        await loadRuntime();
+        console.log("Runtime loaded.");
+    }
+    catch (error) {
+        console.error(error);
+    }
+    updateCharacterCounter();
+
+renderEmptyState();
+
+console.log("AI Prompt Studio initialized.");
 
     generateButton.addEventListener(
         "click",
@@ -277,5 +290,4 @@ function initializeApp() {
 }
 
 
-initializeApp();
-updateCharacterCounter();
+initializeApp().catch(console.error);
