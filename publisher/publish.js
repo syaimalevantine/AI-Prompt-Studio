@@ -53,6 +53,16 @@ const SCHEMA_DIRECTORY = path.resolve(
   "schema"
 );
 
+/* ============================================================
+ * P4 - Source Loader
+ * ============================================================
+ */
+
+const SOURCE_DIRECTORY = path.resolve(
+  process.cwd(),
+  "knowledge"
+);
+
 /**
  * Load publish configuration.
  */
@@ -173,7 +183,27 @@ function validateSchema(schema) {
   return true;
 
 }
+/**
+ * Load knowledge source.
+ */
+function loadSource() {
 
+  if (!fs.existsSync(SOURCE_DIRECTORY)) {
+    throw new Error(
+      "Knowledge directory not found."
+    );
+  }
+
+  const entries = fs.readdirSync(
+    SOURCE_DIRECTORY,
+    {
+      withFileTypes: true
+    }
+  );
+
+  return entries;
+
+}
 /**
  * Print configuration summary.
  */
@@ -249,6 +279,16 @@ const schema = loadSchema(config);
 validateSchema(schema);
 
 console.log("✓ Schema loaded successfully.");
+
+// --------------------------------------------------------
+// P4
+// --------------------------------------------------------
+
+const source = loadSource();
+
+console.log(
+  `✓ Knowledge source loaded (${source.length} entries).`
+);
 
   } catch (error) {
 
