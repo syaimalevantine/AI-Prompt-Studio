@@ -281,6 +281,29 @@ function buildReport(config, profile, source, runtimePath, runtime) {
         status: "SUCCESS"
     };
 }
+
+/**
+ * Write publish report.
+ */
+function writeReport(config, report) {
+  const outputDirectory = path.resolve(
+    process.cwd(),
+    config.output.directory
+  );
+
+  const outputPath = path.join(
+    outputDirectory,
+    config.output.reportFile
+  );
+
+  fs.writeFileSync(
+    outputPath,
+    JSON.stringify(report, null, 2),
+    "utf8"
+  );
+
+  return outputPath;
+}
 /**
  * Print configuration summary.
  */
@@ -404,6 +427,14 @@ const report = buildReport(
 
 console.log("✓ Publish report created.");
 console.log(report);
+const reportPath = writeReport(
+  config,
+  report
+);
+
+console.log(
+  `✓ Report written to ${reportPath}.`
+);
   } catch (error) {
 
     console.error(`✗ ${error.message}`);
