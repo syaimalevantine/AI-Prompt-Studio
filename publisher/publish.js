@@ -231,6 +231,25 @@ function buildRuntime(config, profile) {
 }
 
 /**
+ * Build intent registry.
+ */
+function buildIntentRegistry(source) {
+  const intents = [];
+
+  for (const entry of source) {
+    if (!entry.isFile()) {
+      continue;
+    }
+
+    intents.push({
+      file: entry.name
+    });
+  }
+
+  return intents;
+}
+
+/**
  * Write runtime package.
  */
 function writeRuntime(config, runtime) {
@@ -403,6 +422,13 @@ console.log(
 );
 console.log(
   `✓ Runtime registries initialized (${Object.keys(runtime.registries).length} registries).`
+);
+
+runtime.registries.intents =
+  buildIntentRegistry(source);
+
+console.log(
+  `✓ ${runtime.registries.intents.length} intents indexed.`
 );
 // --------------------------------------------------------
 // P6
