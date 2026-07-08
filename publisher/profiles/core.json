@@ -25,6 +25,7 @@
 
   "output": {
     "format": "json",
-    "filename": "knowledge-runtime-core.json"
+    "runtimeFile": "knowledge-runtime.json",
+    "reportFile": "publish-report.json"
   }
 }
