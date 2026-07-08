@@ -305,6 +305,43 @@ function buildRelationshipRegistry(source) {
 }
 
 /**
+ * Validate runtime package.
+ */
+function validateRuntime(runtime) {
+
+  if (!runtime.metadata) {
+    throw new Error(
+      "Runtime metadata is missing."
+    );
+  }
+
+  if (!runtime.registries) {
+    throw new Error(
+      "Runtime registries are missing."
+    );
+  }
+
+  const registryNames = [
+    "intents",
+    "domains",
+    "canonicals",
+    "relationships"
+  ];
+
+  for (const name of registryNames) {
+
+    if (!Array.isArray(runtime.registries[name])) {
+      throw new Error(
+        `Invalid registry: ${name}`
+      );
+    }
+
+  }
+
+  return true;
+
+}
+/**
  * Write runtime package.
  */
 function writeRuntime(config, runtime) {
@@ -515,7 +552,11 @@ console.log(
 // --------------------------------------------------------
 // P6
 // --------------------------------------------------------
+validateRuntime(runtime);
 
+console.log(
+  "✓ Runtime validated successfully."
+);
 const runtimePath = writeRuntime(
   config,
   runtime
