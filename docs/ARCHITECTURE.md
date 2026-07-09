@@ -46,19 +46,79 @@ Generated Prompt
 ## Knowledge Publishing Pipeline
 
 ```
-UKA Official Master Baseline
+```text
+UKA Official Master Baseline (.xlsx)
         │
         ▼
-Publisher
+Knowledge Importer
+(Excel → Internal JSON)
+        │
+        ▼
+Internal Knowledge JSON
+        │
+        ▼
+Knowledge Publisher
+(JSON → Runtime)
         │
         ▼
 Knowledge Runtime Package
+(runtime/knowledge-runtime.json)
         │
         ▼
 AI Prompt Studio
 ```
+```
 
 The Publisher transforms authoring data into optimized runtime packages.
+
+### Importer Responsibilities
+
+The Knowledge Importer is responsible for:
+
+- Reading the UKA Official Master Baseline workbook.
+- Validating workbook structure.
+- Mapping workbook columns into the internal knowledge model.
+- Normalizing authoring data.
+- Generating Internal Knowledge JSON.
+
+### Publisher Responsibilities
+
+The Knowledge Publisher is responsible for:
+
+- Reading Internal Knowledge JSON.
+- Building runtime registries.
+- Validating runtime packages.
+- Optimizing runtime data.
+- Generating versioned runtime packages.
+
+### Update Workflow
+
+```text
+Edit UKA Excel
+        │
+        ▼
+Run Knowledge Importer
+        │
+        ▼
+Internal Knowledge JSON updated
+        │
+        ▼
+Run Knowledge Publisher
+        │
+        ▼
+Knowledge Runtime Package updated
+        │
+        ▼
+Commit & Push
+```
+
+### Locked Principles
+
+- UKA Excel is the only human-edited knowledge source.
+- Internal Knowledge JSON is generated automatically.
+- Runtime packages are generated automatically.
+- AI Prompt Studio never reads Excel directly.
+- Importer and Publisher have separate responsibilities.
 
 AI Prompt Studio never reads the UKA workbook directly.
 
