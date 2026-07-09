@@ -130,6 +130,75 @@ AI Prompt Studio never reads the UKA workbook directly.
 
 UKA Official Master Baseline
 
+### Internal Knowledge Contract (LOCKED)
+
+The AI Prompt Studio Knowledge Engine uses two independent
+contracts.
+
+```
+UKA Official Master Baseline (.xlsx)
+                │
+                ▼
+Knowledge Importer
+                │
+                ▼
+knowledge-internal.json
+                │
+                ▼
+Knowledge Publisher
+                │
+                ▼
+knowledge-runtime.json
+                │
+                ▼
+AI Prompt Studio
+```
+
+The Internal Knowledge Contract is the official interface
+between the Knowledge Importer and the Knowledge Publisher.
+
+### Internal Knowledge Responsibilities
+
+knowledge-internal.json
+
+Responsible for:
+
+- Normalized knowledge data
+- Stable internal contract
+- Importer output
+- Publisher input
+- Never edited manually
+
+### Architecture Principles (LOCKED)
+
+- UKA Excel remains the single Source of Truth.
+- Knowledge Importer never generates runtime packages.
+- Knowledge Publisher never reads Excel workbooks.
+- knowledge-internal.json is generated automatically.
+- knowledge-runtime.json is generated automatically.
+- AI Prompt Studio consumes runtime packages only.
+
+### Future Update Workflow
+
+```
+Edit UKA Excel
+        │
+        ▼
+Run Knowledge Importer
+        │
+        ▼
+knowledge-internal.json
+        │
+        ▼
+Run Knowledge Publisher
+        │
+        ▼
+knowledge-runtime.json
+        │
+        ▼
+Commit & Push
+```
+
 Responsible for:
 
 - Knowledge authoring
