@@ -38,6 +38,37 @@ function finishBuildSession(session) {
 
     return session;
 }
+/*
+========================================================
+* P18.2 – Build Statistics
+========================================================
+*/
+
+function buildStatistics(runtime, source, session) {
+    return {
+        sourceFiles: source.length,
+        intents: runtime.registries.intents.length,
+        domains: runtime.registries.domains.length,
+        canonicals: runtime.registries.canonicals.length,
+        relationships: runtime.registries.relationships.length,
+        durationMs: session.durationMs
+    };
+}
+
+function printStatistics(statistics) {
+    console.log("");
+    console.log("========== BUILD STATISTICS ==========");
+
+    console.log(`Source Files : ${statistics.sourceFiles}`);
+    console.log(`Intents      : ${statistics.intents}`);
+    console.log(`Domains      : ${statistics.domains}`);
+    console.log(`Canonicals   : ${statistics.canonicals}`);
+    console.log(`Relationships: ${statistics.relationships}`);
+    console.log(`Duration     : ${statistics.durationMs} ms`);
+
+    console.log("======================================");
+    console.log("");
+}
 /* ============================================================
  * P1 - Configuration Loader
  * ============================================================
@@ -402,7 +433,14 @@ function writeRuntime(config, runtime) {
 /**
  * Build publish report.
  */
-function buildReport(config, profile, source, runtimePath, runtime) {
+function buildReport(
+    config,
+    profile,
+    source,
+    runtimePath,
+    runtime,
+    session
+) {
     return {
         publisher: config.publisher.name,
         version: config.publisher.version,
@@ -423,6 +461,11 @@ function buildReport(config, profile, source, runtimePath, runtime) {
     runtime.registries.relationships.length,
         runtime: runtimePath,
         generatedAt: new Date().toISOString(),
+        statistics: buildStatistics(
+    runtime,
+    source,
+    session
+),
         status: "SUCCESS"
     };
 }
@@ -601,7 +644,8 @@ const report = buildReport(
     profile,
     source,
     runtimePath,
-    runtime
+    runtime,
+    session
 );
 
 console.log("✓ Publish report created.");
@@ -616,7 +660,13 @@ console.log(
 );
 
 finishBuildSession(session);
+const statistics = buildStatistics(
+    runtime,
+    source,
+    session
+);
 
+printStatistics(statistics);
 console.log("✓ Build session finished.");
 console.log(`Duration : ${session.durationMs} ms`);
   } catch (error) {
