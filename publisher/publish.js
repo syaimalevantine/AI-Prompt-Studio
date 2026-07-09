@@ -11,6 +11,33 @@
 import fs from "fs";
 import path from "path";
 
+/*
+==================================================
+* P0 - Build Session
+==================================================
+*/
+
+const PUBLISHER_VERSION = "1.1.0";
+
+function createBuildSession(profile) {
+    return {
+        id: `build-${Date.now()}`,
+        version: PUBLISHER_VERSION,
+        profile,
+        startedAt: new Date(),
+        finishedAt: null,
+        durationMs: 0
+    };
+}
+
+function finishBuildSession(session) {
+    session.finishedAt = new Date();
+    session.durationMs =
+        session.finishedAt.getTime() -
+        session.startedAt.getTime();
+
+    return session;
+}
 /* ============================================================
  * P1 - Configuration Loader
  * ============================================================
@@ -487,7 +514,10 @@ function main() {
     printProfileSummary(profile);
 
     console.log("✓ Profile loaded successfully.");
+const session = createBuildSession(profile);
 
+console.log("✓ Build session started.");
+console.log(`Session ID : ${session.id}`);
 // --------------------------------------------------------
 // P3
 // --------------------------------------------------------
@@ -584,6 +614,11 @@ const reportPath = writeReport(
 console.log(
   `✓ Report written to ${reportPath}.`
 );
+
+finishBuildSession(session);
+
+console.log("✓ Build session finished.");
+console.log(`Duration : ${session.durationMs} ms`);
   } catch (error) {
 
     console.error(`✗ ${error.message}`);
