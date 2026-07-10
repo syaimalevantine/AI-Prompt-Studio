@@ -6,7 +6,7 @@
  * ============================================================
  */
 
-const XLSX = require("xlsx");
+import XLSX from "xlsx";
 
 function buildCanonicalOutputs(workbook, profile) {
     const sheetName = profile.sheets.canonicalOutputs.name;
@@ -29,6 +29,6 @@ function buildCanonicalOutputs(workbook, profile) {
     }));
 }
 
-module.exports = {
+export {
     buildCanonicalOutputs
 };

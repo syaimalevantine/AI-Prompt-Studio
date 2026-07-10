@@ -6,7 +6,7 @@
  * ============================================================
  */
 
-const XLSX = require("xlsx");
+import XLSX from "xlsx";
 
 function buildDomains(workbook, profile) {
     const sheetName = profile.sheets.masterDomains.name;
@@ -26,6 +26,6 @@ function buildDomains(workbook, profile) {
     }));
 }
 
-module.exports = {
+export {
     buildDomains
 };

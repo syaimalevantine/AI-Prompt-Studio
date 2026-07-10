@@ -6,7 +6,7 @@
  * ============================================================
  */
 
-const XLSX = require("xlsx");
+import XLSX from "xlsx";
 
 function buildClusters(workbook, profile) {
     const sheetName = profile.sheets.knowledgeClusters.name;
@@ -29,6 +29,6 @@ function buildClusters(workbook, profile) {
     }));
 }
 
-module.exports = {
+export {
     buildClusters
 };

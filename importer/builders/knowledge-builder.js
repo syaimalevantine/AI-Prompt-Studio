@@ -6,9 +6,9 @@
  * ============================================================
  */
 
-const { buildDomains } = require("./domain-builder");
-const { buildCanonicalOutputs } = require("./canonical-builder");
-const { buildClusters } = require("./cluster-builder");
+import { buildDomains } from "./domain-builder.js";
+import { buildCanonicalOutputs } from "./canonical-builder.js";
+import { buildClusters } from "./cluster-builder.js";
 
 function buildKnowledge(workbook, profile) {
     return {
@@ -21,6 +21,6 @@ function buildKnowledge(workbook, profile) {
     };
 }
 
-module.exports = {
+export {
     buildKnowledge
 };
