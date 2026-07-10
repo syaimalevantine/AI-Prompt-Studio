@@ -1,0 +1,14 @@
+{
+  "name": "ai-prompt-studio",
+  "version": "1.0.0",
+  "description": "Type Ideas into Perfect Prompts",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "import": "node importer/schema/import.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
