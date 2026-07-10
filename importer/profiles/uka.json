@@ -38,7 +38,7 @@
         "parentDomain": "Parent Domain",
         "canonicalOutput": "Canonical Output",
         "status": "Status",
-        "parentVersion": "Parent Domain Canonical Version",
+        "parentDomainId": "Parent Domain ID",
         "notes": "Notes"
       }
     },
