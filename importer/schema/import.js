@@ -24,7 +24,7 @@
 import fs from "fs";
 import path from "path";
 import XLSX from "xlsx";
-
+import { buildKnowledge } from "./builders/knowledge-builder.js";
 /*
 ==============================================================
 P0 -- Constants
@@ -561,6 +561,43 @@ function buildKnowledgeDocument(context) {
 
     return document;
 }
+/*
+==================================================
+P11.1 -- Write Knowledge Document
+==================================================
+*/
+
+function writeKnowledgeDocument(config, knowledgeDocument) {
+    const outputDirectory = path.resolve(
+        process.cwd(),
+        config.output.directory
+    );
+
+    if (!fs.existsSync(outputDirectory)) {
+        fs.mkdirSync(outputDirectory, {
+            recursive: true
+        });
+    }
+
+    const outputPath = path.join(
+        outputDirectory,
+        config.output.file
+    );
+
+    fs.writeFileSync(
+        outputPath,
+        JSON.stringify(knowledgeDocument, null, 2),
+        "utf8"
+    );
+const fileSize = fs.statSync(outputPath).size;
+
+console.log("");
+console.log("Knowledge document written successfully.");
+console.log(`Output : ${outputPath}`);
+console.log(`Size   : ${fileSize} bytes`);
+console.log("");
+    return outputPath;
+}
 function runImport() {
 
     const context =
@@ -571,7 +608,15 @@ function runImport() {
             context.profile.profile.name
         );
 const knowledgeDocument =
-    buildKnowledgeDocument(context);
+buildKnowledge(
+    context.workbook,
+    context.profile
+);
+    const knowledgePath =
+    writeKnowledgeDocument(
+        context.configuration,
+        knowledgeDocument
+    );
     console.log("");
 
     console.log("========================================");
@@ -595,7 +640,10 @@ const knowledgeDocument =
     console.log(
         "Workbook validated successfully."
     );
-
+console.log("");
+console.log(
+    `Knowledge written to: ${knowledgePath}`
+);
     finishImportSession(session);
 console.log("");
 
