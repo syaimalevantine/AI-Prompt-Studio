@@ -24,7 +24,7 @@
 import fs from "fs";
 import path from "path";
 import XLSX from "xlsx";
-import { buildKnowledge } from "./builders/knowledge-builder.js";
+import { buildKnowledge } from "../builders/knowledge-builder.js";
 /*
 ==============================================================
 P0 -- Constants
