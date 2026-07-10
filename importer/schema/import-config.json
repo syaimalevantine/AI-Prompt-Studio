@@ -1,0 +1,35 @@
+{
+  "importer": {
+    "name": "Knowledge Importer",
+    "version": "1.0.0"
+  },
+
+  "source": {
+    "directory": "uka",
+    "workbook": "UKA Official Master Baseline.xlsx"
+  },
+
+  "profile": {
+    "directory": "importer/profiles",
+    "default": "uka.json"
+  },
+
+  "schema": {
+    "directory": "importer/schema",
+    "file": "knowledge-import.schema.json"
+  },
+
+  "output": {
+    "directory": "knowledge",
+    "file": "knowledge.json"
+  },
+
+  "validation": {
+    "strict": true,
+    "stopOnError": true
+  },
+
+  "logging": {
+    "verbose": true
+  }
+}

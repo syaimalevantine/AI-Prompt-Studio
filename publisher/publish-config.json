@@ -21,7 +21,7 @@
   "runtimeFile": "knowledge-runtime.json",
   "reportFile": "publish-report.json",
   "format": "json"
-}
+},
 
   "validation": {
     "enabled": true,

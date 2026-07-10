@@ -1,0 +1,75 @@
+{
+  "profile": {
+    "id": "uka",
+    "name": "UKA Official Master Baseline",
+    "version": "2.0.0",
+    "description": "Universal Knowledge Architecture profile."
+  },
+
+  "workbook": {
+    "requiredSheets": [
+      "Master Domains",
+      "Canonical Outputs",
+      "Knowledge Infrastructure",
+      "Core Domains"
+    ]
+  },
+
+  "sheets": {
+
+    "masterDomains": {
+      "name": "Master Domains",
+
+      "columns": {
+        "id": "Domain ID",
+        "name": "Domain Name",
+        "status": "Status",
+        "coreDomainId": "Core Domain ID",
+        "clusterId": "Cluster ID",
+        "hubId": "Hub ID"
+      }
+    },
+
+    "canonicalOutputs": {
+      "name": "Canonical Outputs",
+
+      "columns": {
+        "id": "Canonical ID",
+        "parentDomain": "Parent Domain",
+        "canonicalOutput": "Canonical Output",
+        "status": "Status",
+        "parentVersion": "Parent Domain Canonical Version",
+        "notes": "Notes"
+      }
+    },
+
+    "coreDomains": {
+      "name": "Core Domains",
+
+      "columns": {
+        "id": "Core ID",
+        "name": "Core Domain",
+        "definition": "Definition",
+        "status": "Status"
+      }
+    },
+
+    "knowledgeInfrastructure": {
+      "name": "Knowledge Infrastructure",
+
+      "columns": {
+        "component": "Component",
+        "category": "Category",
+        "status": "Status",
+        "notes": "Notes"
+      }
+    }
+
+  },
+
+  "validation": {
+    "requireUniqueIds": true,
+    "trimWhitespace": true,
+    "ignoreEmptyRows": true
+  }
+}

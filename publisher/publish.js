@@ -286,6 +286,7 @@ function buildRuntime(config, profile) {
     }
 
   };
+  }
 /**
  * Build intent registry.
  */
