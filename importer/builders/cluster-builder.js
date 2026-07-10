@@ -8,7 +8,7 @@
 
 import XLSX from "xlsx";
 
-function buildClusters(workbook, profile) {
+function buildCoreDomains(workbook, profile) {
     const sheetName = profile.sheets.knowledgeClusters.name;
 
     const worksheet = workbook.Sheets[sheetName];
@@ -30,5 +30,5 @@ function buildClusters(workbook, profile) {
 }
 
 export {
-    buildClusters
+    buildCoreDomains
 };
