@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Type Ideas into Perfect Prompts",
   "private": true,
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "import": "node importer/schema/import.js"
   },
