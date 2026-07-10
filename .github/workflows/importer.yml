@@ -10,6 +10,7 @@ on:
     paths:
       - "importer/**"
       - ".github/workflows/importer.yml"
+      - "package.json"
 
 jobs:
   importer:
