@@ -12,7 +12,7 @@
   "profile": "core",
 
   "schema": {
-  "file": "publisher/schema/knowledge-runtime.schema.json"
+  "file": "knowledge-runtime.schema.json"
 },
 
 "output": {
