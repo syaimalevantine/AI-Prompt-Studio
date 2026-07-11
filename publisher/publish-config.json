@@ -12,8 +12,8 @@
   "profile": "core",
 
   "schema": {
-    "file": "schema/knowledge-runtime.schema.json"
-  },
+  "file": "publisher/schema/knowledge-runtime.schema.json"
+},
 
 "output": {
   "directory": "../runtime",
