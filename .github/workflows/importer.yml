@@ -36,4 +36,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: knowledge-internal
-          path: importer/output/knowledge-internal.json
+          path: knowledge/knowledge.json
