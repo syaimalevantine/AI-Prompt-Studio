@@ -46,7 +46,7 @@ function finishBuildSession(session) {
 
 function buildStatistics(runtime, source, session) {
     return {
-        sourceFiles: source.length,
+        sourceFiles: 1,
         intents: runtime.registries.intents.length,
         domains: runtime.registries.domains.length,
         canonicals: runtime.registries.canonicals.length,
