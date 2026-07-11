@@ -608,10 +608,7 @@ function runImport() {
     context.profile.profile.name
 );
 const knowledgeDocument =
-buildKnowledge(
-    context.workbook,
-    context.profile
-);
+buildKnowledgeDocument(context);
     const knowledgePath =
     writeKnowledgeDocument(
         context.configuration,
@@ -652,19 +649,19 @@ console.log(
 );
 
 console.log(
-    `Core Domains : ${knowledgeDocument.coreDomains.length}`
+    `Core Domains : ${knowledgeDocument.knowledge.coreDomains.length}`
 );
 
 console.log(
-    `Master Domains : ${knowledgeDocument.masterDomains.length}`
+    `Master Domains : ${knowledgeDocument.knowledge.masterDomains.length}`
 );
 
 console.log(
-    `Canonical Outputs : ${knowledgeDocument.canonicalOutputs.length}`
+    `Canonical Outputs : ${knowledgeDocument.knowledge.canonicalOutputs.length}`
 );
 
 console.log(
-    `Knowledge Infrastructure : ${knowledgeDocument.knowledgeInfrastructure.length}`
+    `Knowledge Infrastructure : ${knowledgeDocument.knowledge.knowledgeInfrastructure.length}`
 );
     console.log("");
 
