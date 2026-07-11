@@ -275,14 +275,14 @@ function loadSource() {
 /**
  * Build empty runtime package.
  */
-function buildRuntime(config, profile) {
+function buildRuntime(config, profile, source) {
 
   return {
 
     metadata: {
     version: config.publisher.version,
     generatedAt: new Date().toISOString(),
-    sourceVersion: config.source.version,
+    sourceVersion: source.metadata?.version,
     publishProfile: profile.profile,
     registryVersion: "1.0.0"
 },
@@ -562,7 +562,8 @@ console.log(
 
 const runtime = buildRuntime(
   config,
-  profile
+  profile,
+  source
 );
 
 console.log(
