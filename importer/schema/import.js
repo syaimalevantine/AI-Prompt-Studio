@@ -652,19 +652,19 @@ console.log(
 );
 
 console.log(
-    `Core Domains : ${knowledgeDocument.knowledge.coreDomains.length}`
+    `Core Domains : ${knowledgeDocument.coreDomains.length}`
 );
 
 console.log(
-    `Master Domains : ${knowledgeDocument.knowledge.masterDomains.length}`
+    `Master Domains : ${knowledgeDocument.masterDomains.length}`
 );
 
 console.log(
-    `Canonical Outputs : ${knowledgeDocument.knowledge.canonicalOutputs.length}`
+    `Canonical Outputs : ${knowledgeDocument.canonicalOutputs.length}`
 );
 
 console.log(
-    `Knowledge Infrastructure : ${knowledgeDocument.knowledge.knowledgeInfrastructure.length}`
+    `Knowledge Infrastructure : ${knowledgeDocument.knowledgeInfrastructure.length}`
 );
     console.log("");
 
