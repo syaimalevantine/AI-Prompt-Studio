@@ -18,7 +18,9 @@ Created with ChatGPT
 "use strict";
 
 import { getRuntime } from "./runtime-loader.js";
-
+import {
+    resolveRuntimeKnowledge
+} from "./runtime-resolver.js";
 /* ==========================================
    Runtime
 ========================================== */
@@ -75,7 +77,27 @@ function buildModel(data) {
 Optimized for ${data.model}.`;
 
 }
+function buildKnowledgeContext(knowledge) {
 
+    if (!knowledge?.canonical) {
+        return null;
+    }
+
+    const lines = [
+        "KNOWLEDGE CONTEXT",
+        "",
+        `Canonical: ${knowledge.canonical.name}`
+    ];
+
+    if (knowledge.domain) {
+        lines.push(
+            `Domain: ${knowledge.domain.name}`
+        );
+    }
+
+    return lines.join("\n");
+
+}
 /* ==========================================
    Prompt Engine
 ========================================== */
@@ -83,6 +105,8 @@ Optimized for ${data.model}.`;
 export function buildPrompt(data) {
 
     const runtime = getActiveRuntime();
+    const knowledge =
+    resolveRuntimeKnowledge(data.idea);
 
     const runtimeProfile =
     runtime?.metadata?.publishProfile ?? "unknown";
@@ -104,19 +128,21 @@ Your task is to complete the user's request with a high-quality response.`;
 
     const sections = [
 
-        intro,
+    intro,
 
-        buildRole(data),
+    buildRole(data),
 
-        buildGoal(data),
+    buildGoal(data),
 
-        buildRequirements(),
+    buildKnowledgeContext(knowledge),
 
-        buildOutputLanguage(data),
+    buildRequirements(),
 
-        buildModel(data)
+    buildOutputLanguage(data),
 
-    ];
+    buildModel(data)
+
+].filter(Boolean);
 
     return sections.join("\n\n");
 
