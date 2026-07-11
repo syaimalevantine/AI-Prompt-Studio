@@ -240,6 +240,39 @@ A creator should never feel forced to migrate.
 Creators simply gain another way to enter their studio.
 
 —
+—
+
+# PD-0012
+
+Title
+
+Publisher Build Pipeline
+
+Status
+
+LOCKED
+
+Decision
+
+The Publisher is implemented as a staged build pipeline.
+
+Each stage has one clearly defined responsibility.
+
+Each stage produces immutable output that becomes the input of
+the next stage.
+
+Validation must always complete before any transformation stage.
+
+Builder components must never modify upstream data.
+
+The Publisher remains the only subsystem authorized to generate
+Knowledge Runtime Packages.
+
+Implementation details are documented in
+PUBLISHER_PIPELINE.md.
+
+This decision complements ADR-0002 and does not change the
+official runtime architecture.
 
 # Document Status
 
