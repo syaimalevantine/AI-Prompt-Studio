@@ -9,7 +9,7 @@
 import XLSX from "xlsx";
 
 function buildCoreDomains(workbook, profile) {
-    const sheetName = profile.sheets.knowledgeClusters.name;
+    const sheetName = profile.sheets.coreDomains.name;
 
     const worksheet = workbook.Sheets[sheetName];
 
