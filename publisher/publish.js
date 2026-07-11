@@ -226,13 +226,13 @@ function validateSchema(schema) {
     throw new Error("Schema is empty.");
   }
 
-  if (!schema.metadata) {
+  if (!schema.properties?.metadata) {
     throw new Error(
       "Schema metadata section is missing."
     );
   }
 
-  if (!schema.registries) {
+  if (!schema.properties?.registries) {
     throw new Error(
       "Schema registries section is missing."
     );
