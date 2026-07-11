@@ -85,7 +85,7 @@ export function buildPrompt(data) {
     const runtime = getActiveRuntime();
 
     const runtimeProfile =
-    runtime?.metadata?.profile ?? "unknown";
+    runtime?.metadata?.publishProfile ?? "unknown";
 
 const runtimeVersion =
     runtime?.metadata?.version ?? "unknown";
