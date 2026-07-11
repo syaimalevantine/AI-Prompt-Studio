@@ -371,7 +371,57 @@ function validateRuntime(runtime) {
     }
 
   }
+const domainIds = new Set();
 
+for (const domain of runtime.registries.domains) {
+  if (!domain.id || !domain.name) {
+    throw new Error(
+      "Invalid domain registry entry: id and name are required."
+    );
+  }
+
+  if (domainIds.has(domain.id)) {
+    throw new Error(
+      `Duplicate domain registry ID: ${domain.id}`
+    );
+  }
+
+  domainIds.add(domain.id);
+}
+  const canonicalIds = new Set();
+
+  for (const canonical of runtime.registries.canonicals) {
+    if (!canonical.id || !canonical.name) {
+      throw new Error(
+        "Invalid canonical registry entry: id and name are required."
+      );
+    }
+
+    if (canonicalIds.has(canonical.id)) {
+      throw new Error(
+        `Duplicate canonical registry ID: ${canonical.id}`
+      );
+    }
+
+    canonicalIds.add(canonical.id);
+  }
+    const relationshipIds = new Set();
+
+  for (const relationship of runtime.registries.relationships) {
+    if (!relationship.id) {
+      throw new Error(
+        "Invalid relationship registry entry: id is required."
+      );
+    }
+
+    if (relationshipIds.has(relationship.id)) {
+      throw new Error(
+        `Duplicate relationship registry ID: ${relationship.id}`
+      );
+    }
+
+    relationshipIds.add(relationship.id);
+  }
   return true;
 
 }
