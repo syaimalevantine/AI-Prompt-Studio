@@ -16,7 +16,7 @@
 },
 
 "output": {
-  "directory": "../runtime",
+  "directory": "runtime",
   "profileDirectory": true,
   "runtimeFile": "knowledge-runtime.json",
   "reportFile": "publish-report.json",
