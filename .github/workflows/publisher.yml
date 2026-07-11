@@ -29,7 +29,12 @@ jobs:
 
       - name: Verify knowledge document
         run: test -s knowledge/knowledge.json
-
+      - name: Upload knowledge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: knowledge-document
+          path: knowledge/knowledge.json
+          if-no-files-found: error
       - name: Run Knowledge Publisher
         run: node publisher/publish.js
 
