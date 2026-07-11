@@ -427,9 +427,9 @@ function buildMetadata(context) {
 
     return {
 
-        profile: context.profile.profile.name,
+        profile: context.profile.name,
 
-        version: context.profile.profile.version,
+        version: context.profile.version,
 
         workbook: context.workbookPath,
 
@@ -520,7 +520,7 @@ P10.8 -- Libraries Builder
 function buildLibraries(context) {
     return {
         workbook: context.workbookPath,
-        profile: context.profile.profile.name
+        profile: context.profile.name
     };
 }
 
@@ -605,7 +605,7 @@ function runImport() {
 
     const session =
         createImportSession(
-    context.profile.profile.name
+    context.profile.name
 );
 const knowledgeDocument =
 buildKnowledge(
@@ -624,11 +624,11 @@ buildKnowledge(
     console.log("========================================");
 
     console.log(
-        `Profile : ${context.profile.profile.name}`
+        `Profile : ${context.profile.name}`
     );
 
     console.log(
-        `Version : ${context.profile.profile.version}`
+        `Version : ${context.profile.version}`
     );
 
     console.log(
