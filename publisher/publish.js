@@ -325,7 +325,9 @@ function buildCanonicalRegistry(source) {
 
     return canonicals.map((canonical) => ({
         id: canonical["Canonical ID"],
-        name: canonical["Canonical Output"]
+        name:
+    canonical["Canonical Output"] ||
+    canonical["Canonical Name"]
     }));
 }
 
