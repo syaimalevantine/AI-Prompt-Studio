@@ -245,22 +245,31 @@ function validateSchema(schema) {
  * Load knowledge source.
  */
 function loadSource() {
-
-  if (!fs.existsSync(SOURCE_DIRECTORY)) {
-    throw new Error(
-      "Knowledge directory not found."
-    );
-  }
-
-  const entries = fs.readdirSync(
-    SOURCE_DIRECTORY,
-    {
-      withFileTypes: true
+    if (!fs.existsSync(SOURCE_DIRECTORY)) {
+        throw new Error(
+            "Knowledge directory not found."
+        );
     }
-  );
 
-  return entries;
+    const knowledgePath = path.join(
+        SOURCE_DIRECTORY,
+        "knowledge.json"
+    );
 
+    if (!fs.existsSync(knowledgePath)) {
+        throw new Error(
+            "Knowledge document not found."
+        );
+    }
+
+    const source = JSON.parse(
+        fs.readFileSync(
+            knowledgePath,
+            "utf8"
+        )
+    );
+
+    return source;
 }
 
 /**
@@ -291,76 +300,28 @@ function buildRuntime(config, profile) {
  * Build intent registry.
  */
 function buildIntentRegistry(source) {
-  const intents = [];
-
-  for (const entry of source) {
-    if (!entry.isFile()) {
-      continue;
-    }
-
-    intents.push({
-      file: entry.name
-    });
-  }
-
-  return intents;
+    return source.knowledge?.intents ?? [];
 }
 
 /**
  * Build domain registry.
  */
 function buildDomainRegistry(source) {
-    const domains = [];
-
-    for (const entry of source) {
-        if (!entry.isFile()) {
-            continue;
-        }
-
-        domains.push({
-            file: entry.name
-        });
-    }
-
-    return domains;
+    return source.knowledge?.masterDomains ?? [];
 }
 
 /**
  * Build canonical registry.
  */
 function buildCanonicalRegistry(source) {
-    const canonicals = [];
-
-    for (const entry of source) {
-        if (!entry.isFile()) {
-            continue;
-        }
-
-        canonicals.push({
-            file: entry.name
-        });
-    }
-
-    return canonicals;
+    return source.knowledge?.canonicalOutputs ?? [];
 }
 
 /**
  * Build relationship registry.
  */
 function buildRelationshipRegistry(source) {
-    const relationships = [];
-
-    for (const entry of source) {
-        if (!entry.isFile()) {
-            continue;
-        }
-
-        relationships.push({
-            file: entry.name
-        });
-    }
-
-    return relationships;
+    return source.knowledge?.relationships ?? [];
 }
 
 /**
@@ -447,7 +408,7 @@ function buildReport(
         version: config.publisher.version,
         profile: profile.profile,
         schema: config.schema.file,
-        knowledgeFiles: source.length,
+        knowledgeFiles: 1,
         registries: {
             intents: runtime.registries.intents.length,
             domains: runtime.registries.domains.length,
@@ -579,7 +540,7 @@ console.log("✓ Schema loaded successfully.");
 const source = loadSource();
 
 console.log(
-  `✓ Knowledge source loaded (${source.length} entries).`
+  "✓ Locked knowledge document loaded."
 );
 // --------------------------------------------------------
 // P5
