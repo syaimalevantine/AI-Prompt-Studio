@@ -307,14 +307,26 @@ function buildIntentRegistry(source) {
  * Build domain registry.
  */
 function buildDomainRegistry(source) {
-    return source.knowledge?.masterDomains ?? [];
+    const domains =
+        source.knowledge?.masterDomains ?? [];
+
+    return domains.map((domain) => ({
+        id: domain["Domain ID"],
+        name: domain["Domain Name"]
+    }));
 }
 
 /**
  * Build canonical registry.
  */
 function buildCanonicalRegistry(source) {
-    return source.knowledge?.canonicalOutputs ?? [];
+    const canonicals =
+        source.knowledge?.canonicalOutputs ?? [];
+
+    return canonicals.map((canonical) => ({
+        id: canonical["Canonical ID"],
+        name: canonical["Canonical Output"]
+    }));
 }
 
 /**
