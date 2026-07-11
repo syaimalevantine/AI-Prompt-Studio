@@ -323,12 +323,18 @@ function buildCanonicalRegistry(source) {
     const canonicals =
         source.knowledge?.canonicalOutputs ?? [];
 
-    return canonicals.map((canonical) => ({
-        id: canonical["Canonical ID"],
-        name:
-    canonical["Canonical Output"] ||
-    canonical["Canonical Name"]
-    }));
+      return canonicals.map((canonical) => ({
+    id:
+      canonical.id ||
+      canonical["Canonical ID"],
+    name:
+      canonical.canonicalOutput ||
+      canonical["Canonical Output"] ||
+      canonical["Canonical Name"],
+    parentDomainId:
+      canonical.parentDomainId ||
+      canonical["Parent Domain ID"]
+  }));
 }
 
 /**
@@ -405,23 +411,44 @@ for (const domain of runtime.registries.domains) {
 
     canonicalIds.add(canonical.id);
   }
-    const relationshipIds = new Set();
-
-  for (const relationship of runtime.registries.relationships) {
-    if (!relationship.id) {
-      throw new Error(
-        "Invalid relationship registry entry: id is required."
-      );
+    for (const canonical of runtime.registries.canonicals) {
+    if (
+        canonical.parentDomainId &&
+        !domainIds.has(canonical.parentDomainId)
+    ) {
+        throw new Error(
+            `Canonical ${canonical.id} references unknown domain: ${canonical.parentDomainId}`
+        );
     }
-
-    if (relationshipIds.has(relationship.id)) {
-      throw new Error(
-        `Duplicate relationship registry ID: ${relationship.id}`
-      );
-    }
-
-    relationshipIds.add(relationship.id);
+}
+    const runtimeEntityIds = new Set([
+  ...runtime.registries.intents.map((intent) => intent.id),
+  ...runtime.registries.domains.map((domain) => domain.id),
+  ...runtime.registries.canonicals.map((canonical) => canonical.id)
+]);
+    for (const relationship of runtime.registries.relationships) {
+  if (
+    !relationship.type ||
+    !relationship.source ||
+    !relationship.target
+  ) {
+    throw new Error(
+      "Invalid relationship registry entry: type, source, and target are required."
+    );
   }
+    if (!runtimeEntityIds.has(relationship.source)) {
+    throw new Error(
+      `Relationship references unknown source: ${relationship.source}`
+    );
+  }
+
+  if (!runtimeEntityIds.has(relationship.target)) {
+    throw new Error(
+      `Relationship references unknown target: ${relationship.target}`
+    );
+  }
+}
+
   return true;
 
 }
