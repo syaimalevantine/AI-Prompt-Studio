@@ -605,8 +605,8 @@ function runImport() {
 
     const session =
         createImportSession(
-            context.profile.profile.name
-        );
+    context.profile.profile.name
+);
 const knowledgeDocument =
 buildKnowledge(
     context.workbook,
