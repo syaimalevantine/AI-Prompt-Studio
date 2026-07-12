@@ -35,7 +35,7 @@ async function loadRuntime() {
     }
 
     const response = await fetch(
-        "runtime/core/runtime.json"
+        "runtime/knowledge-runtime.json"
     );
 
     if (!response.ok) {

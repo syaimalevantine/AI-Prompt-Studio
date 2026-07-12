@@ -1,4 +1,4 @@
-name: Knowledge Publisher
+ name: Knowledge Publisher
 
 on:
   workflow_dispatch:
@@ -8,6 +8,9 @@ on:
       - "importer/**"
       - "knowledge/**"
       - ".github/workflows/publisher.yml"
+
+permissions:
+  contents: write
 
 jobs:
   publish:
@@ -21,6 +24,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       - name: Install dependencies
         run: npm install
 
@@ -29,12 +33,14 @@ jobs:
 
       - name: Verify knowledge document
         run: test -s knowledge/knowledge.json
+
       - name: Upload knowledge artifact
         uses: actions/upload-artifact@v4
         with:
           name: knowledge-document
           path: knowledge/knowledge.json
           if-no-files-found: error
+
       - name: Run Knowledge Publisher
         run: node publisher/publish.js
 
@@ -47,3 +53,17 @@ jobs:
           name: knowledge-runtime
           path: runtime/knowledge-runtime.json
           if-no-files-found: error
+
+      - name: Promote runtime to main
+        run: |
+          git add runtime/knowledge-runtime.json
+
+          if git diff --cached --quiet; then
+            echo "Runtime package is unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(runtime): publish core knowledge runtime"
+          git push
