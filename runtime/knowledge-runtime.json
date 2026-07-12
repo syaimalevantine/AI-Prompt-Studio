@@ -1,0 +1,7001 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "generatedAt": "2026-07-12T09:08:22.515Z",
+    "sourceVersion": "2.0.0",
+    "publishProfile": "core",
+    "registryVersion": "1.0.0"
+  },
+  "registries": {
+    "intents": [],
+    "domains": [
+      {
+        "id": "UKA-CD001",
+        "name": "Authoritative Source Domains"
+      },
+      {
+        "id": "UKA-CD002",
+        "name": "Knowledge Engine Domains"
+      },
+      {
+        "id": "UKA-D0001",
+        "name": "Business Planning"
+      },
+      {
+        "id": "UKA-D0002",
+        "name": "Business Strategy"
+      },
+      {
+        "id": "UKA-D0003",
+        "name": "Product Management"
+      },
+      {
+        "id": "UKA-D0004",
+        "name": "Project Management"
+      },
+      {
+        "id": "UKA-D0005",
+        "name": "Meeting Management"
+      },
+      {
+        "id": "UKA-D0006",
+        "name": "Organizational Governance"
+      },
+      {
+        "id": "UKA-D0007",
+        "name": "Human Resource Management"
+      },
+      {
+        "id": "UKA-D0008",
+        "name": "Business Finance"
+      },
+      {
+        "id": "UKA-D0009",
+        "name": "Performance Management"
+      },
+      {
+        "id": "UKA-D0010",
+        "name": "Customer Knowledge & Support"
+      },
+      {
+        "id": "UKA-D0011",
+        "name": "Business Communication"
+      },
+      {
+        "id": "UKA-D0012",
+        "name": "Risk Management"
+      },
+      {
+        "id": "UKA-D0013",
+        "name": "Social Media Content"
+      },
+      {
+        "id": "UKA-D0014",
+        "name": "Video & Audio Content"
+      },
+      {
+        "id": "UKA-D0015",
+        "name": "Content Publishing"
+      },
+      {
+        "id": "UKA-D0016",
+        "name": "Public Relations"
+      },
+      {
+        "id": "UKA-D0017",
+        "name": "Website Content"
+      },
+      {
+        "id": "UKA-D0018",
+        "name": "E-commerce Content"
+      },
+      {
+        "id": "UKA-D0019",
+        "name": "Copywriting"
+      },
+      {
+        "id": "UKA-D0020",
+        "name": "Email Marketing"
+      },
+      {
+        "id": "UKA-D0021",
+        "name": "Brand Strategy"
+      },
+      {
+        "id": "UKA-D0022",
+        "name": "Brand Identity"
+      },
+      {
+        "id": "UKA-D0023",
+        "name": "Campaign Management"
+      },
+      {
+        "id": "UKA-D0024",
+        "name": "Content Operations"
+      },
+      {
+        "id": "UKA-D0025",
+        "name": "SEO Content"
+      },
+      {
+        "id": "UKA-D0026",
+        "name": "Website Support Content"
+      },
+      {
+        "id": "UKA-D0027",
+        "name": "Customer Advocacy"
+      },
+      {
+        "id": "UKA-D0028",
+        "name": "Curriculum & Course Design"
+      },
+      {
+        "id": "UKA-D0029",
+        "name": "Study & Learning Resources"
+      },
+      {
+        "id": "UKA-D0030",
+        "name": "Assessment & Testing"
+      },
+      {
+        "id": "UKA-D0031",
+        "name": "Academic Assignments"
+      },
+      {
+        "id": "UKA-D0032",
+        "name": "Learning Summarization"
+      },
+      {
+        "id": "UKA-D0033",
+        "name": "Learning Support"
+      },
+      {
+        "id": "UKA-D0034",
+        "name": "Learning Planning"
+      },
+      {
+        "id": "UKA-D0035",
+        "name": "Classroom Activities"
+      },
+      {
+        "id": "UKA-D0036",
+        "name": "Teaching & Instruction"
+      },
+      {
+        "id": "UKA-D0037",
+        "name": "Student Assessment & Feedback"
+      },
+      {
+        "id": "UKA-D0038",
+        "name": "Educational Research Support"
+      },
+      {
+        "id": "UKA-D0039",
+        "name": "Training & Professional Learning"
+      },
+      {
+        "id": "UKA-D0040",
+        "name": "Language Learning"
+      },
+      {
+        "id": "UKA-D0041",
+        "name": "Scholarly Publications"
+      },
+      {
+        "id": "UKA-D0042",
+        "name": "Academic Degrees"
+      },
+      {
+        "id": "UKA-D0043",
+        "name": "Research Planning"
+      },
+      {
+        "id": "UKA-D0044",
+        "name": "Research Methodology"
+      },
+      {
+        "id": "UKA-D0045",
+        "name": "Data Collection"
+      },
+      {
+        "id": "UKA-D0046",
+        "name": "Data Analysis & Statistics"
+      },
+      {
+        "id": "UKA-D0047",
+        "name": "Research Ethics & Governance"
+      },
+      {
+        "id": "UKA-D0048",
+        "name": "Scientific Communication"
+      },
+      {
+        "id": "UKA-D0049",
+        "name": "Academic References"
+      },
+      {
+        "id": "UKA-D0050",
+        "name": "Research Documentation"
+      },
+      {
+        "id": "UKA-D0051",
+        "name": "Evidence Synthesis"
+      },
+      {
+        "id": "UKA-D0052",
+        "name": "Applied & Technical Research"
+      },
+      {
+        "id": "UKA-D0053",
+        "name": "Policy & Knowledge Translation"
+      },
+      {
+        "id": "UKA-D0054",
+        "name": "Research Funding"
+      },
+      {
+        "id": "UKA-D0055",
+        "name": "Software Planning & Architecture"
+      },
+      {
+        "id": "UKA-D0056",
+        "name": "API & Integration Design"
+      },
+      {
+        "id": "UKA-D0057",
+        "name": "Database Design"
+      },
+      {
+        "id": "UKA-D0058",
+        "name": "Software Modeling"
+      },
+      {
+        "id": "UKA-D0059",
+        "name": "Requirements Engineering"
+      },
+      {
+        "id": "UKA-D0060",
+        "name": "Software Development"
+      },
+      {
+        "id": "UKA-D0061",
+        "name": "Software Testing"
+      },
+      {
+        "id": "UKA-D0062",
+        "name": "Defect Management"
+      },
+      {
+        "id": "UKA-D0063",
+        "name": "Technical Documentation"
+      },
+      {
+        "id": "UKA-D0064",
+        "name": "DevOps & Infrastructure"
+      },
+      {
+        "id": "UKA-D0065",
+        "name": "Incident Management"
+      },
+      {
+        "id": "UKA-D0066",
+        "name": "User Experience Design"
+      },
+      {
+        "id": "UKA-D0067",
+        "name": "Data Analysis"
+      },
+      {
+        "id": "UKA-D0068",
+        "name": "Machine Learning"
+      },
+      {
+        "id": "UKA-D0069",
+        "name": "Artificial Intelligence"
+      },
+      {
+        "id": "UKA-D0070",
+        "name": "Business Intelligence"
+      },
+      {
+        "id": "UKA-D0071",
+        "name": "Data Engineering"
+      },
+      {
+        "id": "UKA-D0072",
+        "name": "Clinical Documentation"
+      },
+      {
+        "id": "UKA-D0073",
+        "name": "Patient Assessment"
+      },
+      {
+        "id": "UKA-D0074",
+        "name": "Diagnostic Medicine"
+      },
+      {
+        "id": "UKA-D0075",
+        "name": "Treatment Planning"
+      },
+      {
+        "id": "UKA-D0076",
+        "name": "Pharmaceutical Care"
+      },
+      {
+        "id": "UKA-D0077",
+        "name": "Public Health"
+      },
+      {
+        "id": "UKA-D0078",
+        "name": "Medical Research"
+      },
+      {
+        "id": "UKA-D0079",
+        "name": "Healthcare Administration"
+      },
+      {
+        "id": "UKA-D0080",
+        "name": "Medical Education"
+      },
+      {
+        "id": "UKA-D0081",
+        "name": "Emergency & Critical Care"
+      },
+      {
+        "id": "UKA-D0082",
+        "name": "Contract Management"
+      },
+      {
+        "id": "UKA-D0083",
+        "name": "Corporate Law"
+      },
+      {
+        "id": "UKA-D0084",
+        "name": "Regulatory Compliance"
+      },
+      {
+        "id": "UKA-D0085",
+        "name": "Legal Advisory"
+      },
+      {
+        "id": "UKA-D0086",
+        "name": "Intellectual Property"
+      },
+      {
+        "id": "UKA-D0087",
+        "name": "Litigation & Dispute Resolution"
+      },
+      {
+        "id": "UKA-D0088",
+        "name": "Privacy & Data Protection"
+      },
+      {
+        "id": "UKA-D0089",
+        "name": "Governance & Ethics"
+      },
+      {
+        "id": "UKA-D0090",
+        "name": "Employment Law"
+      },
+      {
+        "id": "UKA-D0091",
+        "name": "Legal Research"
+      },
+      {
+        "id": "UKA-D0092",
+        "name": "Financial Reporting"
+      },
+      {
+        "id": "UKA-D0093",
+        "name": "Management Accounting"
+      },
+      {
+        "id": "UKA-D0094",
+        "name": "Financial Planning & Analysis (FP&A)"
+      },
+      {
+        "id": "UKA-D0095",
+        "name": "Taxation"
+      },
+      {
+        "id": "UKA-D0096",
+        "name": "Auditing & Assurance"
+      },
+      {
+        "id": "UKA-D0097",
+        "name": "Investment & Capital Markets"
+      },
+      {
+        "id": "UKA-D0098",
+        "name": "Banking & Treasury"
+      },
+      {
+        "id": "UKA-D0099",
+        "name": "Corporate Finance"
+      },
+      {
+        "id": "UKA-D0100",
+        "name": "Risk & Compliance (Financial)"
+      },
+      {
+        "id": "UKA-D0101",
+        "name": "Accounting Operations"
+      },
+      {
+        "id": "UKA-D0102",
+        "name": "Talent Acquisition"
+      },
+      {
+        "id": "UKA-D0103",
+        "name": "Recruitment Operations"
+      },
+      {
+        "id": "UKA-D0104",
+        "name": "Employee Onboarding"
+      },
+      {
+        "id": "UKA-D0105",
+        "name": "Learning & Development"
+      },
+      {
+        "id": "UKA-D0106",
+        "name": "Compensation & Benefits"
+      },
+      {
+        "id": "UKA-D0107",
+        "name": "Employee Relations"
+      },
+      {
+        "id": "UKA-D0108",
+        "name": "HR Policies & Governance"
+      },
+      {
+        "id": "UKA-D0109",
+        "name": "Workforce Planning"
+      },
+      {
+        "id": "UKA-D0110",
+        "name": "HR Analytics"
+      },
+      {
+        "id": "UKA-D0111",
+        "name": "Agriculture"
+      },
+      {
+        "id": "UKA-D0112",
+        "name": "Forestry"
+      },
+      {
+        "id": "UKA-D0113",
+        "name": "Fisheries"
+      },
+      {
+        "id": "UKA-D0114",
+        "name": "Livestock"
+      },
+      {
+        "id": "UKA-D0115",
+        "name": "Public Administration"
+      },
+      {
+        "id": "UKA-D0116",
+        "name": "Government Planning"
+      },
+      {
+        "id": "UKA-D0117",
+        "name": "Legislation"
+      },
+      {
+        "id": "UKA-D0118",
+        "name": "Public Communication"
+      },
+      {
+        "id": "UKA-D0119",
+        "name": "Government Evaluation"
+      },
+      {
+        "id": "UKA-D0120",
+        "name": "Healthcare & Medicine"
+      },
+      {
+        "id": "UKA-D0121",
+        "name": "Psychology & Mental Health"
+      },
+      {
+        "id": "UKA-D0122",
+        "name": "Environment, Climate & Sustainability"
+      },
+      {
+        "id": "UKA-D0123",
+        "name": "Manufacturing, Engineering & Industrial Operations"
+      },
+      {
+        "id": "UKA-D0124",
+        "name": "Architecture"
+      },
+      {
+        "id": "UKA-D0125",
+        "name": "Interior Design"
+      },
+      {
+        "id": "UKA-D0126",
+        "name": "Landscape"
+      },
+      {
+        "id": "UKA-D0127",
+        "name": "Urban Planning"
+      },
+      {
+        "id": "UKA-D0128",
+        "name": "Programming & Software Development"
+      },
+      {
+        "id": "UKA-D0129",
+        "name": "Data Science & Artificial Intelligence"
+      },
+      {
+        "id": "UKA-D0130",
+        "name": "Design & Creative"
+      },
+      {
+        "id": "UKA-D0131",
+        "name": "Writing & Publishing"
+      },
+      {
+        "id": "UKA-D0132",
+        "name": "Healthcare"
+      },
+      {
+        "id": "UKA-D0133",
+        "name": "Legal"
+      },
+      {
+        "id": "UKA-D0134",
+        "name": "Finance & Accounting"
+      },
+      {
+        "id": "UKA-D0135",
+        "name": "Human Resources"
+      },
+      {
+        "id": "UKA-D0136",
+        "name": "Manufacturing & Engineering"
+      },
+      {
+        "id": "UKA-D0137",
+        "name": "Environment & Sustainability"
+      },
+      {
+        "id": "UKA-D0138",
+        "name": "Hospitality & Tourism"
+      },
+      {
+        "id": "UKA-D0139",
+        "name": "Logistics & Supply Chain"
+      },
+      {
+        "id": "UKA-D0140",
+        "name": "Media & Journalism"
+      },
+      {
+        "id": "UKA-D0141",
+        "name": "Sales & Customer Success"
+      },
+      {
+        "id": "UKA-D0142",
+        "name": "Real Estate & Property"
+      },
+      {
+        "id": "UKA-D0143",
+        "name": "Construction & Infrastructure"
+      },
+      {
+        "id": "UKA-D0144",
+        "name": "Energy & Utilities"
+      },
+      {
+        "id": "UKA-D0145",
+        "name": "Transportation & Mobility"
+      },
+      {
+        "id": "UKA-D0146",
+        "name": "Retail & E-Commerce"
+      },
+      {
+        "id": "UKA-D0147",
+        "name": "Security, Safety & Emergency Management"
+      },
+      {
+        "id": "UKA-D0148",
+        "name": "Cybersecurity"
+      },
+      {
+        "id": "UKA-D0149",
+        "name": "Telecommunications & Networking"
+      },
+      {
+        "id": "UKA-D0150",
+        "name": "Aerospace & Aviation Engineering"
+      },
+      {
+        "id": "UKA-D0151",
+        "name": "Maritime & Shipping"
+      },
+      {
+        "id": "UKA-D0152",
+        "name": "Biotechnology & Life Sciences"
+      },
+      {
+        "id": "UKA-D0153",
+        "name": "Pharmaceuticals"
+      },
+      {
+        "id": "UKA-D0154",
+        "name": "Chemistry & Materials Science"
+      },
+      {
+        "id": "UKA-D0155",
+        "name": "Physics & Advanced Sciences"
+      },
+      {
+        "id": "UKA-D0156",
+        "name": "Mathematics & Statistics"
+      },
+      {
+        "id": "UKA-D0157",
+        "name": "Social Sciences & Public Research"
+      },
+      {
+        "id": "UKA-D0158",
+        "name": "Fashion & Apparel"
+      },
+      {
+        "id": "UKA-D0159",
+        "name": "Beauty, Cosmetics & Personal Care"
+      },
+      {
+        "id": "UKA-D0160",
+        "name": "Food Science & Culinary Arts"
+      },
+      {
+        "id": "UKA-D0161",
+        "name": "Sports, Fitness & Coaching"
+      },
+      {
+        "id": "UKA-D0162",
+        "name": "Entertainment & Performing Arts"
+      },
+      {
+        "id": "UKA-D0163",
+        "name": "Gaming & Interactive Media"
+      },
+      {
+        "id": "UKA-D0164",
+        "name": "Photography & Visual Production"
+      },
+      {
+        "id": "UKA-D0165",
+        "name": "Music & Audio Production"
+      },
+      {
+        "id": "UKA-D0166",
+        "name": "Religion, Philosophy & Ethics"
+      },
+      {
+        "id": "UKA-D0167",
+        "name": "Nonprofit, NGOs & Humanitarian Aid"
+      },
+      {
+        "id": "UKA-D0168",
+        "name": "Archaeology & Cultural Heritage"
+      },
+      {
+        "id": "UKA-D0169",
+        "name": "History & Historical Research"
+      },
+      {
+        "id": "UKA-D0170",
+        "name": "Library & Information Science"
+      },
+      {
+        "id": "UKA-D0171",
+        "name": "Linguistics & Language Services"
+      },
+      {
+        "id": "UKA-D0172",
+        "name": "Translation & Localization"
+      },
+      {
+        "id": "UKA-D0173",
+        "name": "Education Technology (EdTech)"
+      },
+      {
+        "id": "UKA-D0174",
+        "name": "Quantum Computing & Emerging Technologies"
+      },
+      {
+        "id": "UKA-D0175",
+        "name": "Robotics & Automation"
+      },
+      {
+        "id": "UKA-D0176",
+        "name": "Internet of Things (IoT) & Embedded Systems"
+      },
+      {
+        "id": "UKA-D0177",
+        "name": "Space Exploration & Astronomy"
+      },
+      {
+        "id": "UKA-D0178",
+        "name": "Blockchain, Web3 & Digital Assets"
+      },
+      {
+        "id": "UKA-D0179",
+        "name": "Insurance & Actuarial Science"
+      },
+      {
+        "id": "UKA-D0180",
+        "name": "Mining & Extractive Industries"
+      },
+      {
+        "id": "UKA-D0181",
+        "name": "Agriculture Technology (AgriTech)"
+      },
+      {
+        "id": "UKA-D0182",
+        "name": "Marine Science & Oceanography"
+      },
+      {
+        "id": "UKA-D0183",
+        "name": "Climate Science & Meteorology"
+      },
+      {
+        "id": "UKA-D0184",
+        "name": "Disaster Risk Reduction & Resilience"
+      },
+      {
+        "id": "UKA-D0185",
+        "name": "Smart Cities & Urban Innovation"
+      },
+      {
+        "id": "UKA-D0186",
+        "name": "Digital Governance & E-Government"
+      },
+      {
+        "id": "UKA-D0187",
+        "name": "Ethics, Responsible AI & AI Governance"
+      },
+      {
+        "id": "UKA-D0188",
+        "name": "Circular Economy & Waste Management"
+      },
+      {
+        "id": "UKA-D0189",
+        "name": "Semiconductor & Electronics Engineering"
+      },
+      {
+        "id": "UKA-D0190",
+        "name": "Nanotechnology & Advanced Materials"
+      },
+      {
+        "id": "UKA-D0191",
+        "name": "Biomedical Engineering & Medical Devices"
+      },
+      {
+        "id": "UKA-D0192",
+        "name": "Veterinary Medicine & Animal Health"
+      },
+      {
+        "id": "UKA-D0193",
+        "name": "Forestry & Natural Resource Management"
+      },
+      {
+        "id": "UKA-D0194",
+        "name": "Water Resources & Hydrology"
+      },
+      {
+        "id": "UKA-D0195",
+        "name": "International Development & Global Cooperation"
+      },
+      {
+        "id": "UKA-D0196",
+        "name": "Defense, Intelligence & Strategic Studies"
+      },
+      {
+        "id": "UKA-D0197",
+        "name": "Future Studies, Foresight & Scenario Planning"
+      },
+      {
+        "id": "UKA-D0198",
+        "name": "Digital Humanities"
+      },
+      {
+        "id": "UKA-D0199",
+        "name": "Knowledge Management & Organizational Learning"
+      },
+      {
+        "id": "UKA-D0200",
+        "name": "Systems Thinking & Complexity Science"
+      },
+      {
+        "id": "UKA-D0201",
+        "name": "Behavioral Science & Decision Science"
+      },
+      {
+        "id": "UKA-D0202",
+        "name": "Innovation Management & R&D"
+      },
+      {
+        "id": "UKA-D0203",
+        "name": "Venture Capital, Startups & Entrepreneurship"
+      },
+      {
+        "id": "UKA-D0204",
+        "name": "Platform Economy & Digital Business Models"
+      },
+      {
+        "id": "UKA-D0205",
+        "name": "Digital Identity, Privacy & Trust"
+      },
+      {
+        "id": "UKA-D0206",
+        "name": "Open Science & Research Infrastructure"
+      },
+      {
+        "id": "UKA-D0207",
+        "name": "Cross-Domain Knowledge Integration & Ontology Engineering"
+      },
+      {
+        "id": "UKA-D0208",
+        "name": "Human–AI Collaboration & Augmented Intelligence"
+      },
+      {
+        "id": "UKA-D0209",
+        "name": "Multi-Agent Systems & Agent Orchestration"
+      },
+      {
+        "id": "UKA-D0210",
+        "name": "Prompt Engineering & AI Interaction Design"
+      },
+      {
+        "id": "UKA-D0211",
+        "name": "Synthetic Data & AI Simulation"
+      },
+      {
+        "id": "UKA-D0212",
+        "name": "Digital Twins & Cyber-Physical Systems"
+      },
+      {
+        "id": "UKA-D0213",
+        "name": "Extended Reality (AR, VR, MR) & Spatial Computing"
+      },
+      {
+        "id": "UKA-D0214",
+        "name": "Bioinformatics & Computational Biology"
+      },
+      {
+        "id": "UKA-D0215",
+        "name": "Computational Social Science"
+      },
+      {
+        "id": "UKA-D0216",
+        "name": "Computational Economics & Economic Modeling"
+      },
+      {
+        "id": "UKA-D0217",
+        "name": "Global Knowledge Systems & Universal Ontologies"
+      },
+      {
+        "id": "UKA-D0218",
+        "name": "Digital Public Health & Population Intelligence"
+      },
+      {
+        "id": "UKA-D0219",
+        "name": "Precision Medicine & Genomic Healthcare"
+      },
+      {
+        "id": "UKA-D0220",
+        "name": "Neurotechnology & Brain–Computer Interfaces"
+      },
+      {
+        "id": "UKA-D0221",
+        "name": "Autonomous Systems & Swarm Intelligence"
+      },
+      {
+        "id": "UKA-D0222",
+        "name": "Edge AI & Distributed Intelligence"
+      },
+      {
+        "id": "UKA-D0223",
+        "name": "Explainable AI (XAI) & AI Verification"
+      },
+      {
+        "id": "UKA-D0224",
+        "name": "AI Safety, Alignment & Constitutional AI"
+      },
+      {
+        "id": "UKA-D0225",
+        "name": "Computational Law & Legal Informatics"
+      },
+      {
+        "id": "UKA-D0226",
+        "name": "Digital Democracy & Civic Participation"
+      },
+      {
+        "id": "UKA-D0227",
+        "name": "Planetary Science & Space Resource Engineering"
+      },
+      {
+        "id": "UKA-D0228",
+        "name": "Ocean Engineering & Offshore Systems"
+      },
+      {
+        "id": "UKA-D0229",
+        "name": "Fusion Energy & Advanced Nuclear Systems"
+      },
+      {
+        "id": "UKA-D0230",
+        "name": "Hydrogen Economy & Clean Energy Systems"
+      },
+      {
+        "id": "UKA-D0231",
+        "name": "Carbon Capture, Utilization & Storage (CCUS)"
+      },
+      {
+        "id": "UKA-D0232",
+        "name": "Regenerative Agriculture & Food Security"
+      },
+      {
+        "id": "UKA-D0233",
+        "name": "Biodiversity Informatics & Conservation Technology"
+      },
+      {
+        "id": "UKA-D0234",
+        "name": "Global Supply Network Intelligence"
+      },
+      {
+        "id": "UKA-D0235",
+        "name": "Autonomous Finance & Machine Economy"
+      },
+      {
+        "id": "UKA-D0236",
+        "name": "Universal Digital Infrastructure & Interoperability"
+      },
+      {
+        "id": "UKA-D0237",
+        "name": "Meta-Knowledge Engineering & Self-Evolving Knowledge Systems"
+      },
+      {
+        "id": "UKA-D0238",
+        "name": "Quantum Internet & Quantum Networking"
+      },
+      {
+        "id": "UKA-D0239",
+        "name": "Molecular Engineering & Synthetic Chemistry"
+      },
+      {
+        "id": "UKA-D0240",
+        "name": "Cellular Agriculture & Alternative Proteins"
+      },
+      {
+        "id": "UKA-D0241",
+        "name": "Space Habitat Engineering"
+      },
+      {
+        "id": "UKA-D0242",
+        "name": "Astrobiology & Origins of Life"
+      },
+      {
+        "id": "UKA-D0243",
+        "name": "Cryosphere Science & Polar Systems"
+      },
+      {
+        "id": "UKA-D0244",
+        "name": "Volcanology & Geohazard Systems"
+      },
+      {
+        "id": "UKA-D0245",
+        "name": "Seismology & Earth Observation"
+      },
+      {
+        "id": "UKA-D0246",
+        "name": "Earth System Digital Twins"
+      },
+      {
+        "id": "UKA-D0247",
+        "name": "Planetary Defense & Near-Earth Object Monitoring"
+      },
+      {
+        "id": "UKA-D0248",
+        "name": "Artificial General Intelligence (AGI) Research"
+      },
+      {
+        "id": "UKA-D0249",
+        "name": "AI Cognitive Architectures"
+      },
+      {
+        "id": "UKA-D0250",
+        "name": "Neuromorphic Computing"
+      },
+      {
+        "id": "UKA-D0251",
+        "name": "Self-Improving AI Systems"
+      },
+      {
+        "id": "UKA-D0252",
+        "name": "Autonomous Scientific Discovery"
+      },
+      {
+        "id": "UKA-D0253",
+        "name": "AI for Scientific Research"
+      },
+      {
+        "id": "UKA-D0254",
+        "name": "Machine Creativity & Computational Design"
+      },
+      {
+        "id": "UKA-D0255",
+        "name": "Human Digital Twins"
+      },
+      {
+        "id": "UKA-D0256",
+        "name": "Collective Intelligence Systems"
+      },
+      {
+        "id": "UKA-D0257",
+        "name": "Cognitive Computing & Knowledge Reasoning"
+      },
+      {
+        "id": "UKA-D0258",
+        "name": "Future of Work & Workforce Intelligence"
+      },
+      {
+        "id": "UKA-D0259",
+        "name": "Digital Education Ecosystems"
+      },
+      {
+        "id": "UKA-D0260",
+        "name": "Global Health Intelligence Networks"
+      },
+      {
+        "id": "UKA-D0261",
+        "name": "Computational Public Policy"
+      },
+      {
+        "id": "UKA-D0262",
+        "name": "Sustainable Civilization Engineering"
+      },
+      {
+        "id": "UKA-D0263",
+        "name": "Global Resilience Systems"
+      },
+      {
+        "id": "UKA-D0264",
+        "name": "Circular Bioeconomy"
+      },
+      {
+        "id": "UKA-D0265",
+        "name": "Digital Cultural Preservation"
+      },
+      {
+        "id": "UKA-D0266",
+        "name": "Future Cities & Autonomous Urban Systems"
+      },
+      {
+        "id": "UKA-D0267",
+        "name": "Human Development Intelligence"
+      },
+      {
+        "id": "UKA-D0268",
+        "name": "Universal Semantic Interoperability"
+      },
+      {
+        "id": "UKA-D0269",
+        "name": "Knowledge Evolution Systems"
+      },
+      {
+        "id": "UKA-D0270",
+        "name": "Universal Prompt Architecture"
+      },
+      {
+        "id": "UKA-D0271",
+        "name": "Autonomous Knowledge Agents"
+      },
+      {
+        "id": "UKA-D0272",
+        "name": "Universal AI Memory Systems"
+      },
+      {
+        "id": "UKA-D0273",
+        "name": "Cross-Domain Reasoning Frameworks"
+      },
+      {
+        "id": "UKA-D0274",
+        "name": "Knowledge Provenance & Trust"
+      },
+      {
+        "id": "UKA-D0275",
+        "name": "Adaptive Ontology Evolution"
+      },
+      {
+        "id": "UKA-D0276",
+        "name": "Universal Cognitive Architecture"
+      },
+      {
+        "id": "UKA-D0277",
+        "name": "Universal Knowledge Architecture Core"
+      },
+      {
+        "id": "UKA-D0278",
+        "name": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "UKA-D0279",
+        "name": "Confidential Computing & Trusted Execution"
+      },
+      {
+        "id": "UKA-D0280",
+        "name": "Privacy-Enhancing Technologies"
+      },
+      {
+        "id": "UKA-D0281",
+        "name": "Federated Knowledge Networks"
+      },
+      {
+        "id": "UKA-D0282",
+        "name": "Distributed Autonomous Organizations (DAO) Systems"
+      },
+      {
+        "id": "UKA-D0283",
+        "name": "Web3 Infrastructure & Decentralized Applications"
+      },
+      {
+        "id": "UKA-D0284",
+        "name": "Token Engineering & Digital Asset Systems"
+      },
+      {
+        "id": "UKA-D0285",
+        "name": "Decentralized Identity (DID) & Verifiable Credentials"
+      },
+      {
+        "id": "UKA-D0286",
+        "name": "Autonomous Cyber Defense"
+      },
+      {
+        "id": "UKA-D0287",
+        "name": "AI-Native Operating Systems"
+      },
+      {
+        "id": "UKA-D0288",
+        "name": "Smart Materials Engineering"
+      },
+      {
+        "id": "UKA-D0289",
+        "name": "Programmable Matter"
+      },
+      {
+        "id": "UKA-D0290",
+        "name": "Additive Manufacturing & 4D Printing"
+      },
+      {
+        "id": "UKA-D0291",
+        "name": "Advanced Robotics & Humanoid Systems"
+      },
+      {
+        "id": "UKA-D0292",
+        "name": "Microelectronics Packaging"
+      },
+      {
+        "id": "UKA-D0293",
+        "name": "Photonics & Optical Computing"
+      },
+      {
+        "id": "UKA-D0294",
+        "name": "Advanced Sensor Networks"
+      },
+      {
+        "id": "UKA-D0295",
+        "name": "Autonomous Transportation Systems"
+      },
+      {
+        "id": "UKA-D0296",
+        "name": "Hyperloop & Next-Generation Mobility"
+      },
+      {
+        "id": "UKA-D0297",
+        "name": "Aerospace Systems Integration"
+      },
+      {
+        "id": "UKA-D0298",
+        "name": "Digital Therapeutics"
+      },
+      {
+        "id": "UKA-D0299",
+        "name": "Longevity Science"
+      },
+      {
+        "id": "UKA-D0300",
+        "name": "Geroscience"
+      },
+      {
+        "id": "UKA-D0301",
+        "name": "Precision Nutrition"
+      },
+      {
+        "id": "UKA-D0302",
+        "name": "Microbiome Engineering"
+      },
+      {
+        "id": "UKA-D0303",
+        "name": "Computational Immunology"
+      },
+      {
+        "id": "UKA-D0304",
+        "name": "Pandemic Preparedness Systems"
+      },
+      {
+        "id": "UKA-D0305",
+        "name": "One Health Intelligence"
+      },
+      {
+        "id": "UKA-D0306",
+        "name": "Reproductive Biotechnology"
+      },
+      {
+        "id": "UKA-D0307",
+        "name": "Regenerative Medicine"
+      },
+      {
+        "id": "UKA-D0308",
+        "name": "Climate Adaptation Engineering"
+      },
+      {
+        "id": "UKA-D0309",
+        "name": "Geoengineering"
+      },
+      {
+        "id": "UKA-D0310",
+        "name": "Blue Economy Systems"
+      },
+      {
+        "id": "UKA-D0311",
+        "name": "Sustainable Water Security"
+      },
+      {
+        "id": "UKA-D0312",
+        "name": "Desert Technologies"
+      },
+      {
+        "id": "UKA-D0313",
+        "name": "Arctic Infrastructure Engineering"
+      },
+      {
+        "id": "UKA-D0314",
+        "name": "Ecosystem Restoration Engineering"
+      },
+      {
+        "id": "UKA-D0315",
+        "name": "Planetary Boundaries Assessment"
+      },
+      {
+        "id": "UKA-D0316",
+        "name": "Nature-Based Solutions"
+      },
+      {
+        "id": "UKA-D0317",
+        "name": "Environmental Intelligence Platforms"
+      },
+      {
+        "id": "UKA-D0318",
+        "name": "Computational Macroeconomics"
+      },
+      {
+        "id": "UKA-D0319",
+        "name": "AI Economic Governance"
+      },
+      {
+        "id": "UKA-D0320",
+        "name": "Future Financial Infrastructure"
+      },
+      {
+        "id": "UKA-D0321",
+        "name": "Digital Tax Systems"
+      },
+      {
+        "id": "UKA-D0322",
+        "name": "Global Trade Intelligence Platforms"
+      },
+      {
+        "id": "UKA-D0323",
+        "name": "Computational Diplomacy"
+      },
+      {
+        "id": "UKA-D0324",
+        "name": "Strategic Foresight Intelligence"
+      },
+      {
+        "id": "UKA-D0325",
+        "name": "Crisis Intelligence Systems"
+      },
+      {
+        "id": "UKA-D0326",
+        "name": "Global Risk Intelligence"
+      },
+      {
+        "id": "UKA-D0327",
+        "name": "International Regulatory Intelligence"
+      },
+      {
+        "id": "UKA-D0328",
+        "name": "Civilization Foresight"
+      },
+      {
+        "id": "UKA-D0329",
+        "name": "Human Flourishing Studies"
+      },
+      {
+        "id": "UKA-D0330",
+        "name": "Collective Human Intelligence"
+      },
+      {
+        "id": "UKA-D0331",
+        "name": "Global Ethics Systems"
+      },
+      {
+        "id": "UKA-D0332",
+        "name": "AI Ethics Engineering"
+      },
+      {
+        "id": "UKA-D0333",
+        "name": "Digital Rights & Governance"
+      },
+      {
+        "id": "UKA-D0334",
+        "name": "Future Media Systems"
+      },
+      {
+        "id": "UKA-D0335",
+        "name": "Human-AI Society Design"
+      },
+      {
+        "id": "UKA-D0336",
+        "name": "Cross-Cultural Intelligence"
+      },
+      {
+        "id": "UKA-D0337",
+        "name": "Global Knowledge Civilization"
+      },
+      {
+        "id": "UKA-D0338",
+        "name": "Universal Knowledge APIs"
+      },
+      {
+        "id": "UKA-D0339",
+        "name": "Semantic Agent Protocols"
+      },
+      {
+        "id": "UKA-D0340",
+        "name": "Autonomous Ontology Governance"
+      },
+      {
+        "id": "UKA-D0341",
+        "name": "Knowledge Quality Assurance"
+      },
+      {
+        "id": "UKA-D0342",
+        "name": "Knowledge Versioning Systems"
+      },
+      {
+        "id": "UKA-D0343",
+        "name": "Universal Knowledge Compiler"
+      },
+      {
+        "id": "UKA-D0344",
+        "name": "Knowledge Execution Engine"
+      },
+      {
+        "id": "UKA-D0345",
+        "name": "Semantic Reasoning Infrastructure"
+      },
+      {
+        "id": "UKA-D0346",
+        "name": "Universal Context Engine"
+      },
+      {
+        "id": "UKA-D0347",
+        "name": "UKA Universal Semantic Kernel"
+      },
+      {
+        "id": "UKA-D0348",
+        "name": "Quantum Machine Learning"
+      },
+      {
+        "id": "UKA-D0349",
+        "name": "Quantum Artificial Intelligence"
+      },
+      {
+        "id": "UKA-D0350",
+        "name": "Quantum Software Engineering"
+      },
+      {
+        "id": "UKA-D0351",
+        "name": "Quantum Error Correction Systems"
+      },
+      {
+        "id": "UKA-D0352",
+        "name": "Quantum Cloud Computing"
+      },
+      {
+        "id": "UKA-D0353",
+        "name": "Hybrid Classical–Quantum Computing"
+      },
+      {
+        "id": "UKA-D0354",
+        "name": "Exascale Computing"
+      },
+      {
+        "id": "UKA-D0355",
+        "name": "High-Performance AI Computing"
+      },
+      {
+        "id": "UKA-D0356",
+        "name": "Neurosymbolic AI Systems"
+      },
+      {
+        "id": "UKA-D0357",
+        "name": "Autonomous Computing Platforms"
+      },
+      {
+        "id": "UKA-D0358",
+        "name": "Synthetic Genomics"
+      },
+      {
+        "id": "UKA-D0359",
+        "name": "Genome Editing Technologies"
+      },
+      {
+        "id": "UKA-D0360",
+        "name": "Digital Cell Engineering"
+      },
+      {
+        "id": "UKA-D0361",
+        "name": "Organ-on-Chip Systems"
+      },
+      {
+        "id": "UKA-D0362",
+        "name": "Computational Drug Discovery"
+      },
+      {
+        "id": "UKA-D0363",
+        "name": "AI-Driven Protein Engineering"
+      },
+      {
+        "id": "UKA-D0364",
+        "name": "Biofabrication Systems"
+      },
+      {
+        "id": "UKA-D0365",
+        "name": "Living Materials Engineering"
+      },
+      {
+        "id": "UKA-D0366",
+        "name": "Cellular Intelligence Systems"
+      },
+      {
+        "id": "UKA-D0367",
+        "name": "Biohybrid Robotics"
+      },
+      {
+        "id": "UKA-D0368",
+        "name": "Lunar Civilization Systems"
+      },
+      {
+        "id": "UKA-D0369",
+        "name": "Martian Infrastructure Engineering"
+      },
+      {
+        "id": "UKA-D0370",
+        "name": "Space Governance Systems"
+      },
+      {
+        "id": "UKA-D0371",
+        "name": "Space Economy & Commerce"
+      },
+      {
+        "id": "UKA-D0372",
+        "name": "Interplanetary Logistics"
+      },
+      {
+        "id": "UKA-D0373",
+        "name": "Space Resource Governance"
+      },
+      {
+        "id": "UKA-D0374",
+        "name": "Orbital Infrastructure Networks"
+      },
+      {
+        "id": "UKA-D0375",
+        "name": "Deep Space Communications"
+      },
+      {
+        "id": "UKA-D0376",
+        "name": "Interstellar Mission Planning"
+      },
+      {
+        "id": "UKA-D0377",
+        "name": "Planetary Civilization Modeling"
+      },
+      {
+        "id": "UKA-D0378",
+        "name": "AI-Augmented Government"
+      },
+      {
+        "id": "UKA-D0379",
+        "name": "Autonomous Public Administration"
+      },
+      {
+        "id": "UKA-D0380",
+        "name": "Computational Constitutional Design"
+      },
+      {
+        "id": "UKA-D0381",
+        "name": "Global Digital Citizenship"
+      },
+      {
+        "id": "UKA-D0382",
+        "name": "Algorithmic Justice Systems"
+      },
+      {
+        "id": "UKA-D0383",
+        "name": "Future Labor Economics"
+      },
+      {
+        "id": "UKA-D0384",
+        "name": "Universal Basic Services Systems"
+      },
+      {
+        "id": "UKA-D0385",
+        "name": "Human Capability Economics"
+      },
+      {
+        "id": "UKA-D0386",
+        "name": "Societal Digital Twins"
+      },
+      {
+        "id": "UKA-D0387",
+        "name": "Civilization Risk Governance"
+      },
+      {
+        "id": "UKA-D0388",
+        "name": "Autonomous Knowledge Validation"
+      },
+      {
+        "id": "UKA-D0389",
+        "name": "Self-Healing Knowledge Graphs"
+      },
+      {
+        "id": "UKA-D0390",
+        "name": "Knowledge Compression Systems"
+      },
+      {
+        "id": "UKA-D0391",
+        "name": "Semantic Memory Optimization"
+      },
+      {
+        "id": "UKA-D0392",
+        "name": "Universal Reasoning Engine"
+      },
+      {
+        "id": "UKA-D0393",
+        "name": "Adaptive Knowledge Compilation"
+      },
+      {
+        "id": "UKA-D0394",
+        "name": "Autonomous Canonical Evolution"
+      },
+      {
+        "id": "UKA-D0395",
+        "name": "Knowledge Graph Runtime Systems"
+      },
+      {
+        "id": "UKA-D0396",
+        "name": "Universal Semantic Operating System"
+      },
+      {
+        "id": "UKA-D0397",
+        "name": "UKA Evolution Engine"
+      },
+      {
+        "id": "UKA-D0398",
+        "name": "Quantum Sensing"
+      },
+      {
+        "id": "UKA-D0399",
+        "name": "Quantum Metrology"
+      },
+      {
+        "id": "UKA-D0400",
+        "name": "Computational Archaeology"
+      },
+      {
+        "id": "UKA-D0401",
+        "name": "Archaeometry"
+      },
+      {
+        "id": "UKA-D0402",
+        "name": "Marine Biotechnology"
+      },
+      {
+        "id": "UKA-D0403",
+        "name": "Industrial Biotechnology"
+      },
+      {
+        "id": "UKA-D0404",
+        "name": "Structural Health Monitoring"
+      },
+      {
+        "id": "UKA-D0405",
+        "name": "Wind Engineering"
+      },
+      {
+        "id": "UKA-D0406",
+        "name": "Fire Safety Engineering"
+      },
+      {
+        "id": "UKA-D0407",
+        "name": "Offshore Renewable Energy Systems"
+      },
+      {
+        "id": "UKA-D0408",
+        "name": "Digital Pathology"
+      },
+      {
+        "id": "UKA-D0409",
+        "name": "Clinical Informatics"
+      },
+      {
+        "id": "UKA-D0410",
+        "name": "Medical Imaging Informatics"
+      },
+      {
+        "id": "UKA-D0411",
+        "name": "Reproductive Medicine"
+      },
+      {
+        "id": "UKA-D0412",
+        "name": "Veterinary Informatics"
+      },
+      {
+        "id": "UKA-D0413",
+        "name": "Sports Medicine"
+      },
+      {
+        "id": "UKA-D0414",
+        "name": "Sleep Medicine"
+      },
+      {
+        "id": "UKA-D0415",
+        "name": "Pain Medicine"
+      },
+      {
+        "id": "UKA-D0416",
+        "name": "Palliative Medicine"
+      },
+      {
+        "id": "UKA-D0417",
+        "name": "Lifestyle Medicine"
+      },
+      {
+        "id": "UKA-D0418",
+        "name": "AI Benchmarking"
+      },
+      {
+        "id": "UKA-D0419",
+        "name": "AI Evaluation Science"
+      },
+      {
+        "id": "UKA-D0420",
+        "name": "Retrieval-Augmented Generation (RAG) Systems"
+      },
+      {
+        "id": "UKA-D0421",
+        "name": "Multi-Agent Systems"
+      },
+      {
+        "id": "UKA-D0422",
+        "name": "AI Orchestration"
+      },
+      {
+        "id": "UKA-D0423",
+        "name": "Edge Robotics"
+      },
+      {
+        "id": "UKA-D0424",
+        "name": "Human–Robot Collaboration"
+      },
+      {
+        "id": "UKA-D0425",
+        "name": "MLOps Governance"
+      },
+      {
+        "id": "UKA-D0426",
+        "name": "Data-Centric AI"
+      },
+      {
+        "id": "UKA-D0427",
+        "name": "AI Reliability Engineering"
+      },
+      {
+        "id": "UKA-D0428",
+        "name": "Sports Analytics"
+      },
+      {
+        "id": "UKA-D0429",
+        "name": "Tourism Intelligence"
+      },
+      {
+        "id": "UKA-D0430",
+        "name": "Hospitality Intelligence"
+      },
+      {
+        "id": "UKA-D0431",
+        "name": "Retail Intelligence"
+      },
+      {
+        "id": "UKA-D0432",
+        "name": "Insurance Technology"
+      },
+      {
+        "id": "UKA-D0433",
+        "name": "Supply Market Intelligence"
+      },
+      {
+        "id": "UKA-D0434",
+        "name": "Creative Economy Systems"
+      },
+      {
+        "id": "UKA-D0435",
+        "name": "Computational Linguistics"
+      },
+      {
+        "id": "UKA-D0436",
+        "name": "Language Technology"
+      },
+      {
+        "id": "UKA-D0437",
+        "name": "Space Weather"
+      },
+      {
+        "id": "UKA-D0438",
+        "name": "Space Medicine"
+      },
+      {
+        "id": "UKA-D0439",
+        "name": "In-Space Manufacturing"
+      },
+      {
+        "id": "UKA-D0440",
+        "name": "Orbital Debris Management"
+      },
+      {
+        "id": "UKA-D0441",
+        "name": "Space Traffic Management"
+      },
+      {
+        "id": "UKA-D0442",
+        "name": "Category Theory"
+      },
+      {
+        "id": "UKA-D0443",
+        "name": "Type Theory"
+      },
+      {
+        "id": "UKA-D0444",
+        "name": "Proof Theory"
+      },
+      {
+        "id": "UKA-D0445",
+        "name": "Model Theory"
+      },
+      {
+        "id": "UKA-D0446",
+        "name": "Graph Theory"
+      },
+      {
+        "id": "UKA-D0447",
+        "name": "Information Theory"
+      },
+      {
+        "id": "UKA-D0448",
+        "name": "Coding Theory"
+      },
+      {
+        "id": "UKA-D0449",
+        "name": "Decision Theory"
+      },
+      {
+        "id": "UKA-D0450",
+        "name": "Game Theory"
+      },
+      {
+        "id": "UKA-D0451",
+        "name": "Control Theory"
+      },
+      {
+        "id": "UKA-D0452",
+        "name": "Systems Theory"
+      },
+      {
+        "id": "UKA-D0453",
+        "name": "Complexity Science"
+      },
+      {
+        "id": "UKA-D0454",
+        "name": "Network Science"
+      },
+      {
+        "id": "UKA-D0455",
+        "name": "Remote Sensing"
+      },
+      {
+        "id": "UKA-D0456",
+        "name": "Geographic Information Science (GIScience)"
+      },
+      {
+        "id": "UKA-D0457",
+        "name": "Geospatial Intelligence (GEOINT)"
+      },
+      {
+        "id": "UKA-D0458",
+        "name": "Digital Earth Systems"
+      },
+      {
+        "id": "UKA-D0459",
+        "name": "Geodesy"
+      },
+      {
+        "id": "UKA-D0460",
+        "name": "Hydroinformatics"
+      },
+      {
+        "id": "UKA-D0461",
+        "name": "Coastal Engineering"
+      },
+      {
+        "id": "UKA-D0462",
+        "name": "Industrial Artificial Intelligence"
+      },
+      {
+        "id": "UKA-D0463",
+        "name": "Smart Factory Systems"
+      },
+      {
+        "id": "UKA-D0464",
+        "name": "Digital Manufacturing"
+      },
+      {
+        "id": "UKA-D0465",
+        "name": "Manufacturing Execution Systems"
+      },
+      {
+        "id": "UKA-D0466",
+        "name": "Industrial Automation"
+      },
+      {
+        "id": "UKA-D0467",
+        "name": "Process Systems Engineering"
+      },
+      {
+        "id": "UKA-D0468",
+        "name": "Defense Systems Engineering"
+      },
+      {
+        "id": "UKA-D0469",
+        "name": "Military Logistics"
+      },
+      {
+        "id": "UKA-D0470",
+        "name": "Intelligence Analysis"
+      },
+      {
+        "id": "UKA-D0471",
+        "name": "Strategic Defense Modeling"
+      },
+      {
+        "id": "UKA-D0472",
+        "name": "Cyber Warfare Studies"
+      },
+      {
+        "id": "UKA-D0473",
+        "name": "Film Technology"
+      },
+      {
+        "id": "UKA-D0474",
+        "name": "Music Technology"
+      },
+      {
+        "id": "UKA-D0475",
+        "name": "Game Development Engineering"
+      },
+      {
+        "id": "UKA-D0476",
+        "name": "Interactive Media Systems"
+      },
+      {
+        "id": "UKA-D0477",
+        "name": "Extended Reality (XR) Engineering"
+      },
+      {
+        "id": "UKA-D0478",
+        "name": "Virtual Production Systems"
+      },
+      {
+        "id": "UKA-D0479",
+        "name": "Terminology Science"
+      },
+      {
+        "id": "UKA-D0480",
+        "name": "Lexicography"
+      },
+      {
+        "id": "UKA-D0481",
+        "name": "Corpus Linguistics"
+      },
+      {
+        "id": "UKA-D0482",
+        "name": "Knowledge Organization"
+      },
+      {
+        "id": "UKA-D0483",
+        "name": "Digital Knowledge Curation"
+      },
+      {
+        "id": "UKA-D0484",
+        "name": "Canonical Governance"
+      },
+      {
+        "id": "UKA-D0485",
+        "name": "Ontology Governance"
+      },
+      {
+        "id": "UKA-D0486",
+        "name": "Semantic Versioning Systems"
+      },
+      {
+        "id": "UKA-D0487",
+        "name": "Knowledge Provenance Engineering"
+      },
+      {
+        "id": "UKA-D0488",
+        "name": "Knowledge Trust Scoring"
+      },
+      {
+        "id": "UKA-D0489",
+        "name": "Canonical Lifecycle Management"
+      },
+      {
+        "id": "UKA-D0490",
+        "name": "Knowledge Quality Metrics"
+      },
+      {
+        "id": "UKA-D0491",
+        "name": "Semantic Conflict Resolution"
+      },
+      {
+        "id": "UKA-D0492",
+        "name": "Knowledge Merge Strategy"
+      },
+      {
+        "id": "UKA-D0493",
+        "name": "Canonical Approval Workflow"
+      },
+      {
+        "id": "UKA-D0494",
+        "name": "Ontology Change Management"
+      },
+      {
+        "id": "UKA-D0495",
+        "name": "Semantic Compliance Framework"
+      },
+      {
+        "id": "UKA-D0496",
+        "name": "Knowledge Audit Systems"
+      },
+      {
+        "id": "UKA-D0497",
+        "name": "Knowledge Lineage Management"
+      },
+      {
+        "id": "UKA-D0498",
+        "name": "Knowledge Certification Systems"
+      },
+      {
+        "id": "UKA-D0499",
+        "name": "Canonical Registry Services"
+      },
+      {
+        "id": "UKA-D0500",
+        "name": "Ontology Federation"
+      },
+      {
+        "id": "UKA-D0501",
+        "name": "Semantic Interchange Standards"
+      },
+      {
+        "id": "UKA-D0502",
+        "name": "Knowledge Integrity Engineering"
+      },
+      {
+        "id": "UKA-D0503",
+        "name": "Universal Knowledge Governance"
+      },
+      {
+        "id": "UKA-D0504",
+        "name": "Islamic Civilization & Intellectual Heritage"
+      },
+      {
+        "id": "UKA-D0505",
+        "name": "Muslim States, Governance & Public Institutions"
+      },
+      {
+        "id": "UKA-D0506",
+        "name": "Muslim Communities, Society & Institutions"
+      },
+      {
+        "id": "UKA-D0507",
+        "name": "Quranic Studies & Quranic Sciences"
+      },
+      {
+        "id": "UKA-D0508",
+        "name": "Hadith Studies & Hadith Sciences"
+      },
+      {
+        "id": "UKA-D0509",
+        "name": "Arabic Language, Linguistics & Arabic Studies"
+      },
+      {
+        "id": "UKA-D0510",
+        "name": "Arabic Literature & Literary Studies"
+      },
+      {
+        "id": "UKA-D0511",
+        "name": "Islamicjerusalem Studies"
+      },
+      {
+        "id": "UKA-D0512",
+        "name": "Levantine Studies"
+      },
+      {
+        "id": "UKA-D0513",
+        "name": "Andalusian Studies"
+      },
+      {
+        "id": "UKA-D0514",
+        "name": "Ottoman Studies"
+      },
+      {
+        "id": "UKA-D0515",
+        "name": "Mediterranean Studies"
+      },
+      {
+        "id": "UKA-D0516",
+        "name": "Islamization of Knowledge, Islamic Epistemology & Integration of Knowledge"
+      },
+      {
+        "id": "UKA-D0517",
+        "name": "Madani Civilization, Civil Society & Human Flourishing"
+      },
+      {
+        "id": "UKA-D0518",
+        "name": "Adab, Character & Ethical Civilization"
+      },
+      {
+        "id": "UKA-D0519",
+        "name": "Muslim Hub, Islamic Living & Integrated Muslim Knowledge"
+      },
+      {
+        "id": "UKA-D0520",
+        "name": "Decision Science"
+      },
+      {
+        "id": "UKA-D0521",
+        "name": "Decision Intelligence"
+      },
+      {
+        "id": "UKA-D0522",
+        "name": "Decision Analytics"
+      },
+      {
+        "id": "UKA-D0523",
+        "name": "Behavioral Decision Science"
+      },
+      {
+        "id": "UKA-D0524",
+        "name": "Strategic Decision-Making"
+      },
+      {
+        "id": "UKA-D0525",
+        "name": "AI Decision Systems"
+      },
+      {
+        "id": "UKA-D0526",
+        "name": "Risk-Based Decision Making"
+      },
+      {
+        "id": "UKA-D0527",
+        "name": "Executive Decision Support"
+      },
+      {
+        "id": "UKA-D0528",
+        "name": "Disease Ecology"
+      },
+      {
+        "id": "UKA-D0529",
+        "name": "Fish Science"
+      }
+    ],
+    "canonicals": [
+      {
+        "id": "CO-0051",
+        "name": "Business Plan",
+        "parentDomainId": "UKA-D0001"
+      },
+      {
+        "id": "CO-0059",
+        "name": "Grant Proposal",
+        "parentDomainId": "UKA-D0011"
+      },
+      {
+        "id": "CO-0060",
+        "name": "Partnership Proposal",
+        "parentDomainId": "UKA-D0011"
+      },
+      {
+        "id": "CO-0061",
+        "name": "Pitch Deck",
+        "parentDomainId": "UKA-D0011"
+      },
+      {
+        "id": "CO-0062",
+        "name": "Executive Summary",
+        "parentDomainId": "UKA-D0011"
+      },
+      {
+        "id": "CO-0063",
+        "name": "Company Profile",
+        "parentDomainId": "UKA-D0011"
+      },
+      {
+        "id": "CO-0064",
+        "name": "Product Brief",
+        "parentDomainId": "UKA-D0003"
+      },
+      {
+        "id": "CO-0067",
+        "name": "Project Brief",
+        "parentDomainId": "UKA-D0004"
+      },
+      {
+        "id": "CO-0068",
+        "name": "Business Case",
+        "parentDomainId": "UKA-D0001"
+      },
+      {
+        "id": "CO-0069",
+        "name": "Feasibility Study",
+        "parentDomainId": "UKA-D0001"
+      },
+      {
+        "id": "CO-0070",
+        "name": "SWOT Analysis",
+        "parentDomainId": "UKA-D0002"
+      },
+      {
+        "id": "CO-0071",
+        "name": "Market Analysis",
+        "parentDomainId": "UKA-D0002"
+      },
+      {
+        "id": "CO-0072",
+        "name": "Competitor Analysis",
+        "parentDomainId": "UKA-D0002"
+      },
+      {
+        "id": "CO-0073",
+        "name": "Risk Assessment",
+        "parentDomainId": "UKA-D0012"
+      },
+      {
+        "id": "CO-0074",
+        "name": "Cost–Benefit Analysis",
+        "parentDomainId": "UKA-D0008"
+      },
+      {
+        "id": "CO-0075",
+        "name": "Budget Plan",
+        "parentDomainId": "UKA-D0008"
+      },
+      {
+        "id": "CO-0076",
+        "name": "Financial Forecast",
+        "parentDomainId": "UKA-D0008"
+      },
+      {
+        "id": "CO-0077",
+        "name": "Pricing Strategy",
+        "parentDomainId": "UKA-D0002"
+      },
+      {
+        "id": "CO-0078",
+        "name": "Go-to-Market Plan",
+        "parentDomainId": "UKA-D0002"
+      },
+      {
+        "id": "CO-0079",
+        "name": "Product Roadmap",
+        "parentDomainId": "UKA-D0003"
+      },
+      {
+        "id": "CO-0080",
+        "name": "OKR Plan",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0081",
+        "name": "KPI Dashboard Specification",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0082",
+        "name": "Meeting Agenda",
+        "parentDomainId": "UKA-D0005"
+      },
+      {
+        "id": "CO-0083",
+        "name": "Meeting Notes",
+        "parentDomainId": "UKA-D0005"
+      },
+      {
+        "id": "CO-0084",
+        "name": "Action Items",
+        "parentDomainId": "UKA-D0004"
+      },
+      {
+        "id": "CO-0085",
+        "name": "Status Report",
+        "parentDomainId": "UKA-D0004"
+      },
+      {
+        "id": "CO-0086",
+        "name": "Progress Report",
+        "parentDomainId": "UKA-D0004"
+      },
+      {
+        "id": "CO-0088",
+        "name": "SOP",
+        "parentDomainId": "UKA-D0006"
+      },
+      {
+        "id": "CO-0089",
+        "name": "Workflow Document",
+        "parentDomainId": "UKA-D0006"
+      },
+      {
+        "id": "CO-0090",
+        "name": "Process Documentation",
+        "parentDomainId": "UKA-D0006"
+      },
+      {
+        "id": "CO-0091",
+        "name": "Policy Document",
+        "parentDomainId": "UKA-D0006"
+      },
+      {
+        "id": "CO-0092",
+        "name": "Employee Handbook",
+        "parentDomainId": "UKA-D0007"
+      },
+      {
+        "id": "CO-0093",
+        "name": "Onboarding Guide",
+        "parentDomainId": "UKA-D0007"
+      },
+      {
+        "id": "CO-0094",
+        "name": "Training Manual",
+        "parentDomainId": "UKA-D0007"
+      },
+      {
+        "id": "CO-0095",
+        "name": "User Manual",
+        "parentDomainId": "UKA-D0010"
+      },
+      {
+        "id": "CO-0096",
+        "name": "FAQ",
+        "parentDomainId": "UKA-D0010"
+      },
+      {
+        "id": "CO-0097",
+        "name": "Knowledge Base Article",
+        "parentDomainId": "UKA-D0010"
+      },
+      {
+        "id": "CO-0098",
+        "name": "Checklist",
+        "parentDomainId": "UKA-D0010"
+      },
+      {
+        "id": "CO-0099",
+        "name": "Decision Matrix",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0100",
+        "name": "Implementation Plan",
+        "parentDomainId": "UKA-D0004"
+      },
+      {
+        "id": "CO-0101",
+        "name": "Instagram Caption",
+        "parentDomainId": "UKA-D0013"
+      },
+      {
+        "id": "CO-0102",
+        "name": "Facebook Post",
+        "parentDomainId": "UKA-D0013"
+      },
+      {
+        "id": "CO-0103",
+        "name": "LinkedIn Post",
+        "parentDomainId": "UKA-D0013"
+      },
+      {
+        "id": "CO-0104",
+        "name": "X Post",
+        "parentDomainId": "UKA-D0013"
+      },
+      {
+        "id": "CO-0105",
+        "name": "TikTok Caption",
+        "parentDomainId": "UKA-D0013"
+      },
+      {
+        "id": "CO-0106",
+        "name": "YouTube Description",
+        "parentDomainId": "UKA-D0014"
+      },
+      {
+        "id": "CO-0107",
+        "name": "YouTube Script",
+        "parentDomainId": "UKA-D0014"
+      },
+      {
+        "id": "CO-0108",
+        "name": "Podcast Script",
+        "parentDomainId": "UKA-D0014"
+      },
+      {
+        "id": "CO-0109",
+        "name": "Blog Article",
+        "parentDomainId": "UKA-D0015"
+      },
+      {
+        "id": "CO-0110",
+        "name": "Newsletter",
+        "parentDomainId": "UKA-D0015"
+      },
+      {
+        "id": "CO-0111",
+        "name": "Press Release",
+        "parentDomainId": "UKA-D0016"
+      },
+      {
+        "id": "CO-0112",
+        "name": "Media Kit",
+        "parentDomainId": "UKA-D0016"
+      },
+      {
+        "id": "CO-0113",
+        "name": "Landing Page Copy",
+        "parentDomainId": "UKA-D0017"
+      },
+      {
+        "id": "CO-0114",
+        "name": "Website Copy",
+        "parentDomainId": "UKA-D0017"
+      },
+      {
+        "id": "CO-0115",
+        "name": "Homepage Copy",
+        "parentDomainId": "UKA-D0017"
+      },
+      {
+        "id": "CO-0116",
+        "name": "About Page",
+        "parentDomainId": "UKA-D0017"
+      },
+      {
+        "id": "CO-0117",
+        "name": "Product Description",
+        "parentDomainId": "UKA-D0018"
+      },
+      {
+        "id": "CO-0118",
+        "name": "Product Comparison",
+        "parentDomainId": "UKA-D0018"
+      },
+      {
+        "id": "CO-0119",
+        "name": "Product Review",
+        "parentDomainId": "UKA-D0018"
+      },
+      {
+        "id": "CO-0120",
+        "name": "Buying Guide",
+        "parentDomainId": "UKA-D0018"
+      },
+      {
+        "id": "CO-0121",
+        "name": "Marketing Copy",
+        "parentDomainId": "UKA-D0019"
+      },
+      {
+        "id": "CO-0122",
+        "name": "Sales Copy",
+        "parentDomainId": "UKA-D0019"
+      },
+      {
+        "id": "CO-0123",
+        "name": "Ad Copy",
+        "parentDomainId": "UKA-D0019"
+      },
+      {
+        "id": "CO-0124",
+        "name": "Google Ads Copy",
+        "parentDomainId": "UKA-D0019"
+      },
+      {
+        "id": "CO-0125",
+        "name": "Meta Ads Copy",
+        "parentDomainId": "UKA-D0019"
+      },
+      {
+        "id": "CO-0126",
+        "name": "Email Campaign",
+        "parentDomainId": "UKA-D0020"
+      },
+      {
+        "id": "CO-0127",
+        "name": "Welcome Email",
+        "parentDomainId": "UKA-D0020"
+      },
+      {
+        "id": "CO-0128",
+        "name": "Follow-up Email",
+        "parentDomainId": "UKA-D0020"
+      },
+      {
+        "id": "CO-0129",
+        "name": "Promotional Email",
+        "parentDomainId": "UKA-D0020"
+      },
+      {
+        "id": "CO-0130",
+        "name": "Call-to-Action (CTA)",
+        "parentDomainId": "UKA-D0019"
+      },
+      {
+        "id": "CO-0131",
+        "name": "Brand Story",
+        "parentDomainId": "UKA-D0021"
+      },
+      {
+        "id": "CO-0132",
+        "name": "Brand Voice Guide",
+        "parentDomainId": "UKA-D0021"
+      },
+      {
+        "id": "CO-0133",
+        "name": "Brand Messaging",
+        "parentDomainId": "UKA-D0021"
+      },
+      {
+        "id": "CO-0134",
+        "name": "Tagline",
+        "parentDomainId": "UKA-D0021"
+      },
+      {
+        "id": "CO-0135",
+        "name": "Slogan",
+        "parentDomainId": "UKA-D0021"
+      },
+      {
+        "id": "CO-0136",
+        "name": "Product Name",
+        "parentDomainId": "UKA-D0022"
+      },
+      {
+        "id": "CO-0137",
+        "name": "Company Name",
+        "parentDomainId": "UKA-D0022"
+      },
+      {
+        "id": "CO-0138",
+        "name": "Campaign Brief",
+        "parentDomainId": "UKA-D0023"
+      },
+      {
+        "id": "CO-0139",
+        "name": "Campaign Plan",
+        "parentDomainId": "UKA-D0023"
+      },
+      {
+        "id": "CO-0140",
+        "name": "Campaign Calendar",
+        "parentDomainId": "UKA-D0023"
+      },
+      {
+        "id": "CO-0141",
+        "name": "Content Calendar",
+        "parentDomainId": "UKA-D0024"
+      },
+      {
+        "id": "CO-0142",
+        "name": "Editorial Calendar",
+        "parentDomainId": "UKA-D0024"
+      },
+      {
+        "id": "CO-0143",
+        "name": "Content Brief",
+        "parentDomainId": "UKA-D0024"
+      },
+      {
+        "id": "CO-0144",
+        "name": "SEO Article",
+        "parentDomainId": "UKA-D0025"
+      },
+      {
+        "id": "CO-0145",
+        "name": "SEO Meta Title",
+        "parentDomainId": "UKA-D0025"
+      },
+      {
+        "id": "CO-0146",
+        "name": "SEO Meta Description",
+        "parentDomainId": "UKA-D0025"
+      },
+      {
+        "id": "CO-0148",
+        "name": "Testimonial Request",
+        "parentDomainId": "UKA-D0027"
+      },
+      {
+        "id": "CO-0149",
+        "name": "Customer Success Story",
+        "parentDomainId": "UKA-D0027"
+      },
+      {
+        "id": "CO-0150",
+        "name": "Case Study",
+        "parentDomainId": "UKA-D0027"
+      },
+      {
+        "id": "CO-0151",
+        "name": "Lesson Plan",
+        "parentDomainId": "UKA-D0028"
+      },
+      {
+        "id": "CO-0152",
+        "name": "Course Outline",
+        "parentDomainId": "UKA-D0028"
+      },
+      {
+        "id": "CO-0153",
+        "name": "Curriculum",
+        "parentDomainId": "UKA-D0028"
+      },
+      {
+        "id": "CO-0154",
+        "name": "Study Guide",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0155",
+        "name": "Learning Roadmap",
+        "parentDomainId": "UKA-D0028"
+      },
+      {
+        "id": "CO-0156",
+        "name": "Lecture Notes",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0157",
+        "name": "Class Presentation",
+        "parentDomainId": "UKA-D0036"
+      },
+      {
+        "id": "CO-0158",
+        "name": "Quiz",
+        "parentDomainId": "UKA-D0030"
+      },
+      {
+        "id": "CO-0159",
+        "name": "Multiple Choice Questions",
+        "parentDomainId": "UKA-D0030"
+      },
+      {
+        "id": "CO-0160",
+        "name": "Exam Paper",
+        "parentDomainId": "UKA-D0030"
+      },
+      {
+        "id": "CO-0161",
+        "name": "Answer Key",
+        "parentDomainId": "UKA-D0030"
+      },
+      {
+        "id": "CO-0162",
+        "name": "Assignment",
+        "parentDomainId": "UKA-D0031"
+      },
+      {
+        "id": "CO-0163",
+        "name": "Homework",
+        "parentDomainId": "UKA-D0031"
+      },
+      {
+        "id": "CO-0164",
+        "name": "Worksheet",
+        "parentDomainId": "UKA-D0031"
+      },
+      {
+        "id": "CO-0165",
+        "name": "Flashcards",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0166",
+        "name": "Cheat Sheet",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0167",
+        "name": "Learning Summary",
+        "parentDomainId": "UKA-D0032"
+      },
+      {
+        "id": "CO-0168",
+        "name": "Book Summary",
+        "parentDomainId": "UKA-D0032"
+      },
+      {
+        "id": "CO-0169",
+        "name": "Chapter Summary",
+        "parentDomainId": "UKA-D0032"
+      },
+      {
+        "id": "CO-0170",
+        "name": "Concept Explanation",
+        "parentDomainId": "UKA-D0033"
+      },
+      {
+        "id": "CO-0171",
+        "name": "Step-by-Step Tutorial",
+        "parentDomainId": "UKA-D0033"
+      },
+      {
+        "id": "CO-0172",
+        "name": "How-to Guide",
+        "parentDomainId": "UKA-D0033"
+      },
+      {
+        "id": "CO-0173",
+        "name": "Study Schedule",
+        "parentDomainId": "UKA-D0034"
+      },
+      {
+        "id": "CO-0174",
+        "name": "Revision Plan",
+        "parentDomainId": "UKA-D0034"
+      },
+      {
+        "id": "CO-0175",
+        "name": "Practice Exercises",
+        "parentDomainId": "UKA-D0030"
+      },
+      {
+        "id": "CO-0176",
+        "name": "Discussion Questions",
+        "parentDomainId": "UKA-D0035"
+      },
+      {
+        "id": "CO-0177",
+        "name": "Debate Topics",
+        "parentDomainId": "UKA-D0035"
+      },
+      {
+        "id": "CO-0178",
+        "name": "Classroom Activities",
+        "parentDomainId": "UKA-D0035"
+      },
+      {
+        "id": "CO-0179",
+        "name": "Icebreaker Activity",
+        "parentDomainId": "UKA-D0035"
+      },
+      {
+        "id": "CO-0180",
+        "name": "Educational Game",
+        "parentDomainId": "UKA-D0035"
+      },
+      {
+        "id": "CO-0181",
+        "name": "Learning Objectives",
+        "parentDomainId": "UKA-D0036"
+      },
+      {
+        "id": "CO-0182",
+        "name": "Rubric",
+        "parentDomainId": "UKA-D0030"
+      },
+      {
+        "id": "CO-0183",
+        "name": "Feedback Report",
+        "parentDomainId": "UKA-D0037"
+      },
+      {
+        "id": "CO-0184",
+        "name": "Student Progress Report",
+        "parentDomainId": "UKA-D0037"
+      },
+      {
+        "id": "CO-0185",
+        "name": "Reading List",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0186",
+        "name": "Recommended Resources",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0187",
+        "name": "Research Questions",
+        "parentDomainId": "UKA-D0038"
+      },
+      {
+        "id": "CO-0188",
+        "name": "Reflection Journal",
+        "parentDomainId": "UKA-D0037"
+      },
+      {
+        "id": "CO-0189",
+        "name": "Case Study Questions",
+        "parentDomainId": "UKA-D0038"
+      },
+      {
+        "id": "CO-0190",
+        "name": "Presentation Slides",
+        "parentDomainId": "UKA-D0036"
+      },
+      {
+        "id": "CO-0191",
+        "name": "Workshop Plan",
+        "parentDomainId": "UKA-D0039"
+      },
+      {
+        "id": "CO-0192",
+        "name": "Training Materials",
+        "parentDomainId": "UKA-D0039"
+      },
+      {
+        "id": "CO-0193",
+        "name": "Certification Exam",
+        "parentDomainId": "UKA-D0039"
+      },
+      {
+        "id": "CO-0194",
+        "name": "Learning Checklist",
+        "parentDomainId": "UKA-D0029"
+      },
+      {
+        "id": "CO-0195",
+        "name": "Vocabulary List",
+        "parentDomainId": "UKA-D0040"
+      },
+      {
+        "id": "CO-0196",
+        "name": "Pronunciation Practice",
+        "parentDomainId": "UKA-D0040"
+      },
+      {
+        "id": "CO-0197",
+        "name": "Writing Exercise",
+        "parentDomainId": "UKA-D0040"
+      },
+      {
+        "id": "CO-0198",
+        "name": "Speaking Exercise",
+        "parentDomainId": "UKA-D0040"
+      },
+      {
+        "id": "CO-0199",
+        "name": "Reading Comprehension",
+        "parentDomainId": "UKA-D0040"
+      },
+      {
+        "id": "CO-0200",
+        "name": "Listening Exercise",
+        "parentDomainId": "UKA-D0040"
+      },
+      {
+        "id": "CO-0201",
+        "name": "Research Paper",
+        "parentDomainId": "UKA-D0041"
+      },
+      {
+        "id": "CO-0202",
+        "name": "Literature Review",
+        "parentDomainId": "UKA-D0043"
+      },
+      {
+        "id": "CO-0203",
+        "name": "Research Proposal",
+        "parentDomainId": "UKA-D0043"
+      },
+      {
+        "id": "CO-0204",
+        "name": "Research Report",
+        "parentDomainId": "UKA-D0050"
+      },
+      {
+        "id": "CO-0205",
+        "name": "Abstract",
+        "parentDomainId": "UKA-D0048"
+      },
+      {
+        "id": "CO-0206",
+        "name": "Thesis",
+        "parentDomainId": "UKA-D0042"
+      },
+      {
+        "id": "CO-0207",
+        "name": "Dissertation",
+        "parentDomainId": "UKA-D0042"
+      },
+      {
+        "id": "CO-0208",
+        "name": "Journal Article",
+        "parentDomainId": "UKA-D0041"
+      },
+      {
+        "id": "CO-0209",
+        "name": "Conference Paper",
+        "parentDomainId": "UKA-D0041"
+      },
+      {
+        "id": "CO-0211",
+        "name": "Research Summary",
+        "parentDomainId": "UKA-D0048"
+      },
+      {
+        "id": "CO-0213",
+        "name": "Annotated Bibliography",
+        "parentDomainId": "UKA-D0049"
+      },
+      {
+        "id": "CO-0214",
+        "name": "Citation List",
+        "parentDomainId": "UKA-D0049"
+      },
+      {
+        "id": "CO-0215",
+        "name": "Reference List",
+        "parentDomainId": "UKA-D0049"
+      },
+      {
+        "id": "CO-0217",
+        "name": "Hypothesis",
+        "parentDomainId": "UKA-D0043"
+      },
+      {
+        "id": "CO-0218",
+        "name": "Problem Statement",
+        "parentDomainId": "UKA-D0043"
+      },
+      {
+        "id": "CO-0219",
+        "name": "Methodology",
+        "parentDomainId": "UKA-D0044"
+      },
+      {
+        "id": "CO-0220",
+        "name": "Data Analysis Report",
+        "parentDomainId": "UKA-D0046"
+      },
+      {
+        "id": "CO-0221",
+        "name": "Survey Questionnaire",
+        "parentDomainId": "UKA-D0045"
+      },
+      {
+        "id": "CO-0222",
+        "name": "Interview Questions",
+        "parentDomainId": "UKA-D0045"
+      },
+      {
+        "id": "CO-0223",
+        "name": "Observation Checklist",
+        "parentDomainId": "UKA-D0045"
+      },
+      {
+        "id": "CO-0224",
+        "name": "Research Framework",
+        "parentDomainId": "UKA-D0044"
+      },
+      {
+        "id": "CO-0225",
+        "name": "Conceptual Framework",
+        "parentDomainId": "UKA-D0044"
+      },
+      {
+        "id": "CO-0226",
+        "name": "Theoretical Framework",
+        "parentDomainId": "UKA-D0044"
+      },
+      {
+        "id": "CO-0227",
+        "name": "Data Collection Plan",
+        "parentDomainId": "UKA-D0045"
+      },
+      {
+        "id": "CO-0228",
+        "name": "Sampling Plan",
+        "parentDomainId": "UKA-D0045"
+      },
+      {
+        "id": "CO-0229",
+        "name": "Statistical Analysis Plan",
+        "parentDomainId": "UKA-D0046"
+      },
+      {
+        "id": "CO-0230",
+        "name": "Research Timeline",
+        "parentDomainId": "UKA-D0043"
+      },
+      {
+        "id": "CO-0231",
+        "name": "Ethics Statement",
+        "parentDomainId": "UKA-D0047"
+      },
+      {
+        "id": "CO-0232",
+        "name": "Consent Form",
+        "parentDomainId": "UKA-D0045"
+      },
+      {
+        "id": "CO-0233",
+        "name": "Peer Review",
+        "parentDomainId": "UKA-D0047"
+      },
+      {
+        "id": "CO-0234",
+        "name": "Research Presentation",
+        "parentDomainId": "UKA-D0048"
+      },
+      {
+        "id": "CO-0235",
+        "name": "Poster Presentation",
+        "parentDomainId": "UKA-D0048"
+      },
+      {
+        "id": "CO-0236",
+        "name": "Grant Application",
+        "parentDomainId": "UKA-D0054"
+      },
+      {
+        "id": "CO-0237",
+        "name": "Funding Proposal",
+        "parentDomainId": "UKA-D0054"
+      },
+      {
+        "id": "CO-0238",
+        "name": "White Paper",
+        "parentDomainId": "UKA-D0053"
+      },
+      {
+        "id": "CO-0239",
+        "name": "Policy Brief",
+        "parentDomainId": "UKA-D0053"
+      },
+      {
+        "id": "CO-0240",
+        "name": "Technical Report",
+        "parentDomainId": "UKA-D0052"
+      },
+      {
+        "id": "CO-0241",
+        "name": "Evidence Summary",
+        "parentDomainId": "UKA-D0051"
+      },
+      {
+        "id": "CO-0242",
+        "name": "Systematic Review",
+        "parentDomainId": "UKA-D0051"
+      },
+      {
+        "id": "CO-0243",
+        "name": "Scoping Review",
+        "parentDomainId": "UKA-D0051"
+      },
+      {
+        "id": "CO-0244",
+        "name": "Meta-analysis",
+        "parentDomainId": "UKA-D0051"
+      },
+      {
+        "id": "CO-0245",
+        "name": "Research Protocol",
+        "parentDomainId": "UKA-D0050"
+      },
+      {
+        "id": "CO-0246",
+        "name": "Lab Report",
+        "parentDomainId": "UKA-D0052"
+      },
+      {
+        "id": "CO-0247",
+        "name": "Experiment Report",
+        "parentDomainId": "UKA-D0052"
+      },
+      {
+        "id": "CO-0248",
+        "name": "Field Report",
+        "parentDomainId": ""
+      },
+      {
+        "id": "CO-0249",
+        "name": "Research Log",
+        "parentDomainId": "UKA-D0050"
+      },
+      {
+        "id": "CO-0250",
+        "name": "Research Notebook",
+        "parentDomainId": "UKA-D0050"
+      },
+      {
+        "id": "CO-0251",
+        "name": "Software Requirements Specification (SRS)",
+        "parentDomainId": "UKA-D0055"
+      },
+      {
+        "id": "CO-0252",
+        "name": "Functional Specification",
+        "parentDomainId": "UKA-D0055"
+      },
+      {
+        "id": "CO-0253",
+        "name": "Technical Specification",
+        "parentDomainId": "UKA-D0055"
+      },
+      {
+        "id": "CO-0254",
+        "name": "System Architecture",
+        "parentDomainId": "UKA-D0055"
+      },
+      {
+        "id": "CO-0255",
+        "name": "Software Design Document",
+        "parentDomainId": "UKA-D0055"
+      },
+      {
+        "id": "CO-0256",
+        "name": "API Specification",
+        "parentDomainId": "UKA-D0056"
+      },
+      {
+        "id": "CO-0257",
+        "name": "Database Schema",
+        "parentDomainId": "UKA-D0057"
+      },
+      {
+        "id": "CO-0258",
+        "name": "Entity Relationship Diagram (ERD)",
+        "parentDomainId": "UKA-D0057"
+      },
+      {
+        "id": "CO-0259",
+        "name": "UML Diagram",
+        "parentDomainId": "UKA-D0058"
+      },
+      {
+        "id": "CO-0260",
+        "name": "Sequence Diagram",
+        "parentDomainId": "UKA-D0058"
+      },
+      {
+        "id": "CO-0261",
+        "name": "User Flow",
+        "parentDomainId": "UKA-D0066"
+      },
+      {
+        "id": "CO-0262",
+        "name": "Wireframe",
+        "parentDomainId": "UKA-D0066"
+      },
+      {
+        "id": "CO-0263",
+        "name": "User Story",
+        "parentDomainId": "UKA-D0059"
+      },
+      {
+        "id": "CO-0264",
+        "name": "Use Case",
+        "parentDomainId": "UKA-D0059"
+      },
+      {
+        "id": "CO-0265",
+        "name": "Acceptance Criteria",
+        "parentDomainId": "UKA-D0059"
+      },
+      {
+        "id": "CO-0266",
+        "name": "Product Backlog",
+        "parentDomainId": "UKA-D0003"
+      },
+      {
+        "id": "CO-0267",
+        "name": "Sprint Plan",
+        "parentDomainId": "UKA-D0003"
+      },
+      {
+        "id": "CO-0268",
+        "name": "Feature Specification",
+        "parentDomainId": "UKA-D0059"
+      },
+      {
+        "id": "CO-0269",
+        "name": "Source Code",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0270",
+        "name": "Function",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0271",
+        "name": "Class",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0272",
+        "name": "API Endpoint",
+        "parentDomainId": "UKA-D0056"
+      },
+      {
+        "id": "CO-0273",
+        "name": "SQL Query",
+        "parentDomainId": "UKA-D0057"
+      },
+      {
+        "id": "CO-0274",
+        "name": "Regular Expression",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0275",
+        "name": "Algorithm",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0276",
+        "name": "Data Structure",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0277",
+        "name": "Configuration File",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0278",
+        "name": "Dockerfile",
+        "parentDomainId": "UKA-D0060"
+      },
+      {
+        "id": "CO-0279",
+        "name": "Test Plan",
+        "parentDomainId": "UKA-D0061"
+      },
+      {
+        "id": "CO-0280",
+        "name": "Test Cases",
+        "parentDomainId": "UKA-D0061"
+      },
+      {
+        "id": "CO-0281",
+        "name": "Unit Test",
+        "parentDomainId": "UKA-D0061"
+      },
+      {
+        "id": "CO-0282",
+        "name": "Integration Test",
+        "parentDomainId": "UKA-D0061"
+      },
+      {
+        "id": "CO-0283",
+        "name": "End-to-End Test",
+        "parentDomainId": "UKA-D0061"
+      },
+      {
+        "id": "CO-0284",
+        "name": "Bug Report",
+        "parentDomainId": "UKA-D0062"
+      },
+      {
+        "id": "CO-0285",
+        "name": "Bug Fix",
+        "parentDomainId": "UKA-D0062"
+      },
+      {
+        "id": "CO-0286",
+        "name": "Test Report",
+        "parentDomainId": "UKA-D0061"
+      },
+      {
+        "id": "CO-0287",
+        "name": "README",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0288",
+        "name": "API Documentation",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0289",
+        "name": "Code Documentation",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0290",
+        "name": "Installation Guide",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0291",
+        "name": "Deployment Guide",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0292",
+        "name": "Migration Guide",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0293",
+        "name": "Troubleshooting Guide",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0294",
+        "name": "Changelog",
+        "parentDomainId": "UKA-D0063"
+      },
+      {
+        "id": "CO-0295",
+        "name": "CI/CD Pipeline",
+        "parentDomainId": "UKA-D0064"
+      },
+      {
+        "id": "CO-0296",
+        "name": "Deployment Script",
+        "parentDomainId": "UKA-D0064"
+      },
+      {
+        "id": "CO-0297",
+        "name": "Infrastructure as Code",
+        "parentDomainId": "UKA-D0064"
+      },
+      {
+        "id": "CO-0298",
+        "name": "Monitoring Dashboard",
+        "parentDomainId": "UKA-D0064"
+      },
+      {
+        "id": "CO-0299",
+        "name": "Incident Report",
+        "parentDomainId": "UKA-D0065"
+      },
+      {
+        "id": "CO-0300",
+        "name": "Postmortem Report",
+        "parentDomainId": "UKA-D0065"
+      },
+      {
+        "id": "CO-0302",
+        "name": "Exploratory Data Analysis (EDA)",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0303",
+        "name": "Statistical Analysis",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0304",
+        "name": "Data Summary",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0305",
+        "name": "Data Visualization",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0306",
+        "name": "Dashboard Specification",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0307",
+        "name": "KPI Dashboard",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0308",
+        "name": "Metrics Report",
+        "parentDomainId": "UKA-D0067"
+      },
+      {
+        "id": "CO-0309",
+        "name": "Machine Learning Model Specification",
+        "parentDomainId": "UKA-D0068"
+      },
+      {
+        "id": "CO-0310",
+        "name": "Feature Engineering Plan",
+        "parentDomainId": "UKA-D0068"
+      },
+      {
+        "id": "CO-0311",
+        "name": "Feature Selection Report",
+        "parentDomainId": "UKA-D0068"
+      },
+      {
+        "id": "CO-0312",
+        "name": "Model Evaluation Report",
+        "parentDomainId": "UKA-D0068"
+      },
+      {
+        "id": "CO-0313",
+        "name": "Hyperparameter Tuning Plan",
+        "parentDomainId": "UKA-D0068"
+      },
+      {
+        "id": "CO-0314",
+        "name": "Model Comparison Report",
+        "parentDomainId": "UKA-D0068"
+      },
+      {
+        "id": "CO-0315",
+        "name": "AI Workflow",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0316",
+        "name": "AI System Design",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0317",
+        "name": "Prompt Template",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0318",
+        "name": "Prompt Library",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0319",
+        "name": "AI Agent Specification",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0320",
+        "name": "AI Evaluation Framework",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0321",
+        "name": "Model Benchmark Report",
+        "parentDomainId": "UKA-D0069"
+      },
+      {
+        "id": "CO-0322",
+        "name": "Executive Dashboard",
+        "parentDomainId": "UKA-D0070"
+      },
+      {
+        "id": "CO-0323",
+        "name": "Business Intelligence Report",
+        "parentDomainId": "UKA-D0070"
+      },
+      {
+        "id": "CO-0324",
+        "name": "Trend Analysis",
+        "parentDomainId": "UKA-D0070"
+      },
+      {
+        "id": "CO-0325",
+        "name": "Forecast Report",
+        "parentDomainId": "UKA-D0070"
+      },
+      {
+        "id": "CO-0326",
+        "name": "Decision Support Report",
+        "parentDomainId": "UKA-D0070"
+      },
+      {
+        "id": "CO-0327",
+        "name": "Data Pipeline Design",
+        "parentDomainId": "UKA-D0071"
+      },
+      {
+        "id": "CO-0328",
+        "name": "ETL Specification",
+        "parentDomainId": "UKA-D0071"
+      },
+      {
+        "id": "CO-0329",
+        "name": "Data Dictionary",
+        "parentDomainId": "UKA-D0071"
+      },
+      {
+        "id": "CO-0330",
+        "name": "Data Validation Report",
+        "parentDomainId": "UKA-D0071"
+      },
+      {
+        "id": "CO-0331",
+        "name": "Data Governance Plan",
+        "parentDomainId": "UKA-D0071"
+      },
+      {
+        "id": "CO-0375",
+        "name": "Medical Report",
+        "parentDomainId": "UKA-D0072"
+      },
+      {
+        "id": "CO-0376",
+        "name": "Clinical Note",
+        "parentDomainId": "UKA-D0072"
+      },
+      {
+        "id": "CO-0377",
+        "name": "Progress Note",
+        "parentDomainId": "UKA-D0072"
+      },
+      {
+        "id": "CO-0378",
+        "name": "Discharge Summary",
+        "parentDomainId": "UKA-D0072"
+      },
+      {
+        "id": "CO-0379",
+        "name": "Medical History",
+        "parentDomainId": "UKA-D0073"
+      },
+      {
+        "id": "CO-0380",
+        "name": "Physical Examination",
+        "parentDomainId": "UKA-D0073"
+      },
+      {
+        "id": "CO-0381",
+        "name": "Patient Assessment",
+        "parentDomainId": "UKA-D0073"
+      },
+      {
+        "id": "CO-0382",
+        "name": "Triage Report",
+        "parentDomainId": "UKA-D0073"
+      },
+      {
+        "id": "CO-0383",
+        "name": "Differential Diagnosis",
+        "parentDomainId": "UKA-D0074"
+      },
+      {
+        "id": "CO-0384",
+        "name": "Diagnostic Report",
+        "parentDomainId": "UKA-D0074"
+      },
+      {
+        "id": "CO-0385",
+        "name": "Laboratory Interpretation",
+        "parentDomainId": "UKA-D0074"
+      },
+      {
+        "id": "CO-0386",
+        "name": "Imaging Report",
+        "parentDomainId": "UKA-D0074"
+      },
+      {
+        "id": "CO-0387",
+        "name": "Treatment Plan",
+        "parentDomainId": "UKA-D0075"
+      },
+      {
+        "id": "CO-0388",
+        "name": "Care Plan",
+        "parentDomainId": "UKA-D0075"
+      },
+      {
+        "id": "CO-0389",
+        "name": "Medication Plan",
+        "parentDomainId": "UKA-D0075"
+      },
+      {
+        "id": "CO-0390",
+        "name": "Rehabilitation Plan",
+        "parentDomainId": "UKA-D0075"
+      },
+      {
+        "id": "CO-0391",
+        "name": "Prescription",
+        "parentDomainId": "UKA-D0076"
+      },
+      {
+        "id": "CO-0392",
+        "name": "Medication Review",
+        "parentDomainId": "UKA-D0076"
+      },
+      {
+        "id": "CO-0393",
+        "name": "Drug Information Summary",
+        "parentDomainId": "UKA-D0076"
+      },
+      {
+        "id": "CO-0394",
+        "name": "Medication Counseling",
+        "parentDomainId": "UKA-D0076"
+      },
+      {
+        "id": "CO-0395",
+        "name": "Health Promotion Plan",
+        "parentDomainId": "UKA-D0077"
+      },
+      {
+        "id": "CO-0396",
+        "name": "Disease Prevention Strategy",
+        "parentDomainId": "UKA-D0077"
+      },
+      {
+        "id": "CO-0397",
+        "name": "Community Health Assessment",
+        "parentDomainId": "UKA-D0077"
+      },
+      {
+        "id": "CO-0398",
+        "name": "Vaccination Plan",
+        "parentDomainId": "UKA-D0077"
+      },
+      {
+        "id": "CO-0399",
+        "name": "Clinical Research Protocol",
+        "parentDomainId": "UKA-D0078"
+      },
+      {
+        "id": "CO-0400",
+        "name": "Clinical Trial Summary",
+        "parentDomainId": "UKA-D0078"
+      },
+      {
+        "id": "CO-0401",
+        "name": "Evidence-Based Medicine Review",
+        "parentDomainId": "UKA-D0078"
+      },
+      {
+        "id": "CO-0402",
+        "name": "Medical Literature Review",
+        "parentDomainId": "UKA-D0078"
+      },
+      {
+        "id": "CO-0403",
+        "name": "Hospital Policy",
+        "parentDomainId": "UKA-D0079"
+      },
+      {
+        "id": "CO-0404",
+        "name": "Clinical SOP",
+        "parentDomainId": "UKA-D0079"
+      },
+      {
+        "id": "CO-0405",
+        "name": "Healthcare Quality Report",
+        "parentDomainId": "UKA-D0079"
+      },
+      {
+        "id": "CO-0406",
+        "name": "Accreditation Documentation",
+        "parentDomainId": "UKA-D0079"
+      },
+      {
+        "id": "CO-0407",
+        "name": "Clinical Case Study",
+        "parentDomainId": "UKA-D0080"
+      },
+      {
+        "id": "CO-0408",
+        "name": "Medical Learning Module",
+        "parentDomainId": "UKA-D0080"
+      },
+      {
+        "id": "CO-0409",
+        "name": "OSCE Scenario",
+        "parentDomainId": "UKA-D0080"
+      },
+      {
+        "id": "CO-0410",
+        "name": "Patient Education Material",
+        "parentDomainId": "UKA-D0080"
+      },
+      {
+        "id": "CO-0411",
+        "name": "Emergency Response Plan",
+        "parentDomainId": "UKA-D0081"
+      },
+      {
+        "id": "CO-0412",
+        "name": "Emergency Case Report",
+        "parentDomainId": "UKA-D0081"
+      },
+      {
+        "id": "CO-0413",
+        "name": "Critical Care Summary",
+        "parentDomainId": "UKA-D0081"
+      },
+      {
+        "id": "CO-0414",
+        "name": "Trauma Assessment",
+        "parentDomainId": "UKA-D0081"
+      },
+      {
+        "id": "CO-0415",
+        "name": "Service Agreement",
+        "parentDomainId": "UKA-D0082"
+      },
+      {
+        "id": "CO-0416",
+        "name": "Employment Contract",
+        "parentDomainId": "UKA-D0082"
+      },
+      {
+        "id": "CO-0417",
+        "name": "Non-Disclosure Agreement (NDA)",
+        "parentDomainId": "UKA-D0082"
+      },
+      {
+        "id": "CO-0418",
+        "name": "Partnership Agreement",
+        "parentDomainId": "UKA-D0082"
+      },
+      {
+        "id": "CO-0419",
+        "name": "Licensing Agreement",
+        "parentDomainId": "UKA-D0082"
+      },
+      {
+        "id": "CO-0420",
+        "name": "Articles of Incorporation",
+        "parentDomainId": "UKA-D0083"
+      },
+      {
+        "id": "CO-0421",
+        "name": "Shareholder Agreement",
+        "parentDomainId": "UKA-D0083"
+      },
+      {
+        "id": "CO-0422",
+        "name": "Board Resolution",
+        "parentDomainId": "UKA-D0083"
+      },
+      {
+        "id": "CO-0423",
+        "name": "Corporate Bylaws",
+        "parentDomainId": "UKA-D0083"
+      },
+      {
+        "id": "CO-0424",
+        "name": "Compliance Checklist",
+        "parentDomainId": "UKA-D0084"
+      },
+      {
+        "id": "CO-0425",
+        "name": "Regulatory Report",
+        "parentDomainId": "UKA-D0084"
+      },
+      {
+        "id": "CO-0426",
+        "name": "Compliance Audit Report",
+        "parentDomainId": "UKA-D0084"
+      },
+      {
+        "id": "CO-0427",
+        "name": "Policy Compliance Review",
+        "parentDomainId": "UKA-D0084"
+      },
+      {
+        "id": "CO-0428",
+        "name": "Legal Opinion",
+        "parentDomainId": "UKA-D0085"
+      },
+      {
+        "id": "CO-0429",
+        "name": "Legal Memorandum",
+        "parentDomainId": "UKA-D0085"
+      },
+      {
+        "id": "CO-0430",
+        "name": "Legal Risk Assessment",
+        "parentDomainId": "UKA-D0085"
+      },
+      {
+        "id": "CO-0431",
+        "name": "Due Diligence Report",
+        "parentDomainId": "UKA-D0085"
+      },
+      {
+        "id": "CO-0432",
+        "name": "Trademark Application",
+        "parentDomainId": "UKA-D0086"
+      },
+      {
+        "id": "CO-0433",
+        "name": "Patent Summary",
+        "parentDomainId": "UKA-D0086"
+      },
+      {
+        "id": "CO-0434",
+        "name": "Copyright Notice",
+        "parentDomainId": "UKA-D0086"
+      },
+      {
+        "id": "CO-0435",
+        "name": "IP Portfolio Review",
+        "parentDomainId": "UKA-D0086"
+      },
+      {
+        "id": "CO-0436",
+        "name": "Legal Complaint",
+        "parentDomainId": "UKA-D0087"
+      },
+      {
+        "id": "CO-0437",
+        "name": "Statement of Claim",
+        "parentDomainId": "UKA-D0087"
+      },
+      {
+        "id": "CO-0438",
+        "name": "Legal Defense",
+        "parentDomainId": "UKA-D0087"
+      },
+      {
+        "id": "CO-0439",
+        "name": "Settlement Agreement",
+        "parentDomainId": "UKA-D0087"
+      },
+      {
+        "id": "CO-0440",
+        "name": "Privacy Policy",
+        "parentDomainId": "UKA-D0088"
+      },
+      {
+        "id": "CO-0441",
+        "name": "Data Processing Agreement (DPA)",
+        "parentDomainId": "UKA-D0088"
+      },
+      {
+        "id": "CO-0442",
+        "name": "Cookie Policy",
+        "parentDomainId": "UKA-D0088"
+      },
+      {
+        "id": "CO-0443",
+        "name": "Data Protection Impact Assessment (DPIA)",
+        "parentDomainId": "UKA-D0088"
+      },
+      {
+        "id": "CO-0444",
+        "name": "Code of Conduct",
+        "parentDomainId": "UKA-D0089"
+      },
+      {
+        "id": "CO-0445",
+        "name": "Ethics Policy",
+        "parentDomainId": "UKA-D0089"
+      },
+      {
+        "id": "CO-0446",
+        "name": "Anti-Corruption Policy",
+        "parentDomainId": "UKA-D0089"
+      },
+      {
+        "id": "CO-0447",
+        "name": "Whistleblowing Policy",
+        "parentDomainId": "UKA-D0089"
+      },
+      {
+        "id": "CO-0448",
+        "name": "Employment Handbook",
+        "parentDomainId": "UKA-D0090"
+      },
+      {
+        "id": "CO-0449",
+        "name": "Workplace Policy",
+        "parentDomainId": "UKA-D0090"
+      },
+      {
+        "id": "CO-0450",
+        "name": "Disciplinary Notice",
+        "parentDomainId": "UKA-D0090"
+      },
+      {
+        "id": "CO-0451",
+        "name": "Termination Letter",
+        "parentDomainId": "UKA-D0090"
+      },
+      {
+        "id": "CO-0452",
+        "name": "Case Law Analysis",
+        "parentDomainId": "UKA-D0091"
+      },
+      {
+        "id": "CO-0453",
+        "name": "Statutory Analysis",
+        "parentDomainId": "UKA-D0091"
+      },
+      {
+        "id": "CO-0454",
+        "name": "Legal Research Report",
+        "parentDomainId": "UKA-D0091"
+      },
+      {
+        "id": "CO-0455",
+        "name": "Regulatory Brief",
+        "parentDomainId": "UKA-D0091"
+      },
+      {
+        "id": "CO-0456",
+        "name": "Balance Sheet",
+        "parentDomainId": "UKA-D0092"
+      },
+      {
+        "id": "CO-0457",
+        "name": "Income Statement",
+        "parentDomainId": "UKA-D0092"
+      },
+      {
+        "id": "CO-0458",
+        "name": "Cash Flow Statement",
+        "parentDomainId": "UKA-D0092"
+      },
+      {
+        "id": "CO-0459",
+        "name": "Statement of Changes in Equity",
+        "parentDomainId": "UKA-D0092"
+      },
+      {
+        "id": "CO-0460",
+        "name": "Budget Report",
+        "parentDomainId": "UKA-D0093"
+      },
+      {
+        "id": "CO-0461",
+        "name": "Cost Analysis",
+        "parentDomainId": "UKA-D0093"
+      },
+      {
+        "id": "CO-0462",
+        "name": "Break-even Analysis",
+        "parentDomainId": "UKA-D0093"
+      },
+      {
+        "id": "CO-0463",
+        "name": "Variance Analysis",
+        "parentDomainId": "UKA-D0093"
+      },
+      {
+        "id": "CO-0464",
+        "name": "Profitability Report",
+        "parentDomainId": "UKA-D0093"
+      },
+      {
+        "id": "CO-0466",
+        "name": "Financial Model",
+        "parentDomainId": "UKA-D0094"
+      },
+      {
+        "id": "CO-0467",
+        "name": "Scenario Analysis",
+        "parentDomainId": "UKA-D0094"
+      },
+      {
+        "id": "CO-0468",
+        "name": "Business Valuation",
+        "parentDomainId": "UKA-D0094"
+      },
+      {
+        "id": "CO-0469",
+        "name": "Tax Calculation",
+        "parentDomainId": "UKA-D0095"
+      },
+      {
+        "id": "CO-0470",
+        "name": "Tax Return",
+        "parentDomainId": "UKA-D0095"
+      },
+      {
+        "id": "CO-0471",
+        "name": "Tax Planning",
+        "parentDomainId": "UKA-D0095"
+      },
+      {
+        "id": "CO-0472",
+        "name": "Tax Compliance Report",
+        "parentDomainId": "UKA-D0095"
+      },
+      {
+        "id": "CO-0473",
+        "name": "Internal Audit Report",
+        "parentDomainId": "UKA-D0096"
+      },
+      {
+        "id": "CO-0474",
+        "name": "External Audit Report",
+        "parentDomainId": "UKA-D0096"
+      },
+      {
+        "id": "CO-0475",
+        "name": "Audit Checklist",
+        "parentDomainId": "UKA-D0096"
+      },
+      {
+        "id": "CO-0476",
+        "name": "Audit Findings",
+        "parentDomainId": "UKA-D0096"
+      },
+      {
+        "id": "CO-0477",
+        "name": "Investment Analysis",
+        "parentDomainId": "UKA-D0097"
+      },
+      {
+        "id": "CO-0478",
+        "name": "Portfolio Report",
+        "parentDomainId": "UKA-D0097"
+      },
+      {
+        "id": "CO-0479",
+        "name": "Equity Research Report",
+        "parentDomainId": "UKA-D0097"
+      },
+      {
+        "id": "CO-0480",
+        "name": "Risk–Return Analysis",
+        "parentDomainId": "UKA-D0097"
+      },
+      {
+        "id": "CO-0481",
+        "name": "Cash Management Report",
+        "parentDomainId": "UKA-D0098"
+      },
+      {
+        "id": "CO-0482",
+        "name": "Treasury Report",
+        "parentDomainId": "UKA-D0098"
+      },
+      {
+        "id": "CO-0483",
+        "name": "Liquidity Analysis",
+        "parentDomainId": "UKA-D0098"
+      },
+      {
+        "id": "CO-0484",
+        "name": "Bank Reconciliation",
+        "parentDomainId": "UKA-D0098"
+      },
+      {
+        "id": "CO-0485",
+        "name": "Capital Budgeting",
+        "parentDomainId": "UKA-D0099"
+      },
+      {
+        "id": "CO-0486",
+        "name": "Funding Analysis",
+        "parentDomainId": "UKA-D0099"
+      },
+      {
+        "id": "CO-0487",
+        "name": "Capital Structure Report",
+        "parentDomainId": "UKA-D0099"
+      },
+      {
+        "id": "CO-0488",
+        "name": "Mergers & Acquisitions (M&A) Summary",
+        "parentDomainId": "UKA-D0099"
+      },
+      {
+        "id": "CO-0489",
+        "name": "Financial Risk Assessment",
+        "parentDomainId": "UKA-D0100"
+      },
+      {
+        "id": "CO-0490",
+        "name": "Credit Risk Report",
+        "parentDomainId": "UKA-D0100"
+      },
+      {
+        "id": "CO-0491",
+        "name": "Fraud Risk Assessment",
+        "parentDomainId": "UKA-D0100"
+      },
+      {
+        "id": "CO-0492",
+        "name": "AML/KYC Report",
+        "parentDomainId": "UKA-D0100"
+      },
+      {
+        "id": "CO-0493",
+        "name": "Journal Entry",
+        "parentDomainId": "UKA-D0101"
+      },
+      {
+        "id": "CO-0494",
+        "name": "General Ledger Summary",
+        "parentDomainId": "UKA-D0101"
+      },
+      {
+        "id": "CO-0495",
+        "name": "Trial Balance",
+        "parentDomainId": "UKA-D0101"
+      },
+      {
+        "id": "CO-0496",
+        "name": "Account Reconciliation",
+        "parentDomainId": "UKA-D0101"
+      },
+      {
+        "id": "CO-0497",
+        "name": "Job Description",
+        "parentDomainId": "UKA-D0102"
+      },
+      {
+        "id": "CO-0498",
+        "name": "Job Advertisement",
+        "parentDomainId": "UKA-D0102"
+      },
+      {
+        "id": "CO-0499",
+        "name": "Candidate Profile",
+        "parentDomainId": "UKA-D0102"
+      },
+      {
+        "id": "CO-0500",
+        "name": "Interview Guide",
+        "parentDomainId": "UKA-D0102"
+      },
+      {
+        "id": "CO-0502",
+        "name": "Candidate Evaluation Form",
+        "parentDomainId": "UKA-D0103"
+      },
+      {
+        "id": "CO-0503",
+        "name": "Recruitment Scorecard",
+        "parentDomainId": "UKA-D0103"
+      },
+      {
+        "id": "CO-0504",
+        "name": "Offer Letter",
+        "parentDomainId": "UKA-D0103"
+      },
+      {
+        "id": "CO-0505",
+        "name": "Recruitment Report",
+        "parentDomainId": "UKA-D0103"
+      },
+      {
+        "id": "CO-0506",
+        "name": "Onboarding Checklist",
+        "parentDomainId": "UKA-D0104"
+      },
+      {
+        "id": "CO-0507",
+        "name": "Orientation Schedule",
+        "parentDomainId": "UKA-D0104"
+      },
+      {
+        "id": "CO-0508",
+        "name": "New Hire Guide",
+        "parentDomainId": "UKA-D0104"
+      },
+      {
+        "id": "CO-0509",
+        "name": "Probation Plan",
+        "parentDomainId": "UKA-D0104"
+      },
+      {
+        "id": "CO-0510",
+        "name": "Performance Review",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0511",
+        "name": "Performance Improvement Plan (PIP)",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0512",
+        "name": "Goal Setting",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0513",
+        "name": "Competency Assessment",
+        "parentDomainId": "UKA-D0009"
+      },
+      {
+        "id": "CO-0514",
+        "name": "Training Plan",
+        "parentDomainId": "UKA-D0105"
+      },
+      {
+        "id": "CO-0515",
+        "name": "Learning Path",
+        "parentDomainId": "UKA-D0105"
+      },
+      {
+        "id": "CO-0516",
+        "name": "Skills Matrix",
+        "parentDomainId": "UKA-D0105"
+      },
+      {
+        "id": "CO-0517",
+        "name": "Development Plan",
+        "parentDomainId": "UKA-D0105"
+      },
+      {
+        "id": "CO-0518",
+        "name": "Salary Benchmark Report",
+        "parentDomainId": "UKA-D0106"
+      },
+      {
+        "id": "CO-0519",
+        "name": "Compensation Plan",
+        "parentDomainId": "UKA-D0106"
+      },
+      {
+        "id": "CO-0520",
+        "name": "Benefits Summary",
+        "parentDomainId": "UKA-D0106"
+      },
+      {
+        "id": "CO-0521",
+        "name": "Payroll Guideline",
+        "parentDomainId": "UKA-D0106"
+      },
+      {
+        "id": "CO-0522",
+        "name": "Employee Feedback Report",
+        "parentDomainId": "UKA-D0107"
+      },
+      {
+        "id": "CO-0523",
+        "name": "Employee Engagement Survey",
+        "parentDomainId": "UKA-D0107"
+      },
+      {
+        "id": "CO-0524",
+        "name": "Grievance Report",
+        "parentDomainId": "UKA-D0107"
+      },
+      {
+        "id": "CO-0525",
+        "name": "Exit Interview Summary",
+        "parentDomainId": "UKA-D0107"
+      },
+      {
+        "id": "CO-0526",
+        "name": "HR Policy",
+        "parentDomainId": "UKA-D0108"
+      },
+      {
+        "id": "CO-0527",
+        "name": "Employee Handbook Update",
+        "parentDomainId": "UKA-D0108"
+      },
+      {
+        "id": "CO-0528",
+        "name": "Leave Policy",
+        "parentDomainId": "UKA-D0108"
+      },
+      {
+        "id": "CO-0529",
+        "name": "Attendance Policy",
+        "parentDomainId": "UKA-D0108"
+      },
+      {
+        "id": "CO-0530",
+        "name": "Workforce Analysis",
+        "parentDomainId": "UKA-D0109"
+      },
+      {
+        "id": "CO-0531",
+        "name": "Succession Plan",
+        "parentDomainId": "UKA-D0109"
+      },
+      {
+        "id": "CO-0532",
+        "name": "Organization Chart",
+        "parentDomainId": "UKA-D0109"
+      },
+      {
+        "id": "CO-0533",
+        "name": "Headcount Plan",
+        "parentDomainId": "UKA-D0109"
+      },
+      {
+        "id": "CO-0534",
+        "name": "HR Dashboard",
+        "parentDomainId": "UKA-D0110"
+      },
+      {
+        "id": "CO-0535",
+        "name": "Turnover Analysis",
+        "parentDomainId": "UKA-D0110"
+      },
+      {
+        "id": "CO-0536",
+        "name": "Recruitment Metrics Report",
+        "parentDomainId": "UKA-D0110"
+      },
+      {
+        "id": "CO-0537",
+        "name": "Workforce KPI Report",
+        "parentDomainId": "UKA-D0110"
+      },
+      {
+        "id": "CO-0538",
+        "name": "Planting Schedule",
+        "parentDomainId": "UKA-D0111"
+      },
+      {
+        "id": "CO-0539",
+        "name": "Fertilizer Plan",
+        "parentDomainId": "UKA-D0111"
+      },
+      {
+        "id": "CO-0540",
+        "name": "Pest Management Plan",
+        "parentDomainId": "UKA-D0111"
+      },
+      {
+        "id": "CO-0541",
+        "name": "Harvest Plan",
+        "parentDomainId": "UKA-D0111"
+      },
+      {
+        "id": "CO-0542",
+        "name": "Soil Analysis Report",
+        "parentDomainId": "UKA-D0111"
+      },
+      {
+        "id": "CO-0543",
+        "name": "Crop Yield Report",
+        "parentDomainId": "UKA-D0111"
+      },
+      {
+        "id": "CO-0544",
+        "name": "Forest Inventory Report",
+        "parentDomainId": "UKA-D0112"
+      },
+      {
+        "id": "CO-0545",
+        "name": "Timber Assessment",
+        "parentDomainId": "UKA-D0112"
+      },
+      {
+        "id": "CO-0546",
+        "name": "Reforestation Plan",
+        "parentDomainId": "UKA-D0112"
+      },
+      {
+        "id": "CO-0547",
+        "name": "Fire Management Plan",
+        "parentDomainId": "UKA-D0112"
+      },
+      {
+        "id": "CO-0548",
+        "name": "Aquaculture Plan",
+        "parentDomainId": "UKA-D0113"
+      },
+      {
+        "id": "CO-0549",
+        "name": "Water Quality Monitoring Report",
+        "parentDomainId": "UKA-D0113"
+      },
+      {
+        "id": "CO-0550",
+        "name": "Stock Assessment",
+        "parentDomainId": "UKA-D0113"
+      },
+      {
+        "id": "CO-0551",
+        "name": "Hatchery Plan",
+        "parentDomainId": "UKA-D0113"
+      },
+      {
+        "id": "CO-0552",
+        "name": "Feeding Plan",
+        "parentDomainId": "UKA-D0114"
+      },
+      {
+        "id": "CO-0553",
+        "name": "Breeding Plan",
+        "parentDomainId": "UKA-D0114"
+      },
+      {
+        "id": "CO-0554",
+        "name": "Veterinary Care Plan",
+        "parentDomainId": "UKA-D0114"
+      },
+      {
+        "id": "CO-0556",
+        "name": "Policy Analysis",
+        "parentDomainId": "UKA-D0115"
+      },
+      {
+        "id": "CO-0557",
+        "name": "Public Consultation Report",
+        "parentDomainId": "UKA-D0115"
+      },
+      {
+        "id": "CO-0558",
+        "name": "Government Report",
+        "parentDomainId": "UKA-D0115"
+      },
+      {
+        "id": "CO-0559",
+        "name": "Regulatory Impact Assessment",
+        "parentDomainId": "UKA-D0115"
+      },
+      {
+        "id": "CO-0560",
+        "name": "Draft Regulation",
+        "parentDomainId": "UKA-D0117"
+      },
+      {
+        "id": "CO-0561",
+        "name": "Draft Law",
+        "parentDomainId": "UKA-D0117"
+      },
+      {
+        "id": "CO-0562",
+        "name": "Regulatory Guideline",
+        "parentDomainId": "UKA-D0117"
+      },
+      {
+        "id": "CO-0563",
+        "name": "Consultation Paper",
+        "parentDomainId": "UKA-D0117"
+      },
+      {
+        "id": "CO-0564",
+        "name": "Public Announcement",
+        "parentDomainId": "UKA-D0118"
+      },
+      {
+        "id": "CO-0565",
+        "name": "Public Information Notice",
+        "parentDomainId": "UKA-D0118"
+      },
+      {
+        "id": "CO-0566",
+        "name": "Citizen Guide",
+        "parentDomainId": "UKA-D0118"
+      },
+      {
+        "id": "CO-0567",
+        "name": "Architectural Concept",
+        "parentDomainId": "UKA-D0124"
+      },
+      {
+        "id": "CO-0568",
+        "name": "Architectural Program",
+        "parentDomainId": "UKA-D0124"
+      },
+      {
+        "id": "CO-0569",
+        "name": "Floor Plan",
+        "parentDomainId": "UKA-D0124"
+      },
+      {
+        "id": "CO-0570",
+        "name": "Elevation Drawing",
+        "parentDomainId": "UKA-D0124"
+      },
+      {
+        "id": "CO-0571",
+        "name": "Section Drawing",
+        "parentDomainId": "UKA-D0124"
+      },
+      {
+        "id": "CO-0572",
+        "name": "Mood Board",
+        "parentDomainId": "UKA-D0125"
+      },
+      {
+        "id": "CO-0573",
+        "name": "Furniture Layout",
+        "parentDomainId": "UKA-D0125"
+      },
+      {
+        "id": "CO-0574",
+        "name": "Material Board",
+        "parentDomainId": "UKA-D0125"
+      },
+      {
+        "id": "CO-0575",
+        "name": "Lighting Plan",
+        "parentDomainId": "UKA-D0125"
+      },
+      {
+        "id": "CO-0576",
+        "name": "Zoning Plan",
+        "parentDomainId": "UKA-D0127"
+      },
+      {
+        "id": "CO-0577",
+        "name": "Urban Design Proposal",
+        "parentDomainId": "UKA-D0127"
+      },
+      {
+        "id": "CO-0578",
+        "name": "Mobility Plan",
+        "parentDomainId": "UKA-D0127"
+      },
+      {
+        "id": "CO-0579",
+        "name": "Public Space Strategy",
+        "parentDomainId": "UKA-D0127"
+      },
+      {
+        "id": "CO-0581",
+        "name": "Software Architecture Document",
+        "parentDomainId": "UKA-D0128"
+      },
+      {
+        "id": "CO-0583",
+        "name": "Dataset Documentation",
+        "parentDomainId": "UKA-D0129"
+      },
+      {
+        "id": "CO-0584",
+        "name": "Model Card",
+        "parentDomainId": "UKA-D0129"
+      },
+      {
+        "id": "CO-0585",
+        "name": "Design System",
+        "parentDomainId": "UKA-D0130"
+      },
+      {
+        "id": "CO-0587",
+        "name": "Patient Education",
+        "parentDomainId": "UKA-D0132"
+      },
+      {
+        "id": "CO-0588",
+        "name": "Contract Draft",
+        "parentDomainId": "UKA-D0133"
+      },
+      {
+        "id": "CO-0591",
+        "name": "Engineering Drawing",
+        "parentDomainId": "UKA-D0136"
+      },
+      {
+        "id": "CO-0592",
+        "name": "Carbon Footprint Report",
+        "parentDomainId": "UKA-D0137"
+      },
+      {
+        "id": "CO-0593",
+        "name": "Itinerary",
+        "parentDomainId": "UKA-D0138"
+      },
+      {
+        "id": "CO-0594",
+        "name": "Destination Guide",
+        "parentDomainId": "UKA-D0138"
+      },
+      {
+        "id": "CO-0595",
+        "name": "Guest Experience Report",
+        "parentDomainId": "UKA-D0138"
+      },
+      {
+        "id": "CO-0596",
+        "name": "Event Run Sheet",
+        "parentDomainId": "UKA-D0138"
+      },
+      {
+        "id": "CO-0597",
+        "name": "Procurement Plan",
+        "parentDomainId": "UKA-D0139"
+      },
+      {
+        "id": "CO-0598",
+        "name": "Inventory Report",
+        "parentDomainId": "UKA-D0139"
+      },
+      {
+        "id": "CO-0599",
+        "name": "Shipping Manifest",
+        "parentDomainId": "UKA-D0139"
+      },
+      {
+        "id": "CO-0600",
+        "name": "Supply Chain Dashboard",
+        "parentDomainId": "UKA-D0139"
+      },
+      {
+        "id": "CO-0601",
+        "name": "News Article",
+        "parentDomainId": "UKA-D0140"
+      },
+      {
+        "id": "CO-0602",
+        "name": "Fact Check Report",
+        "parentDomainId": "UKA-D0140"
+      },
+      {
+        "id": "CO-0603",
+        "name": "Sales Proposal",
+        "parentDomainId": "UKA-D0141"
+      },
+      {
+        "id": "CO-0604",
+        "name": "Sales Playbook",
+        "parentDomainId": "UKA-D0141"
+      },
+      {
+        "id": "CO-0605",
+        "name": "Customer Journey Map",
+        "parentDomainId": "UKA-D0141"
+      },
+      {
+        "id": "CO-0606",
+        "name": "Property Valuation Report",
+        "parentDomainId": "UKA-D0142"
+      },
+      {
+        "id": "CO-0607",
+        "name": "Property Listing",
+        "parentDomainId": "UKA-D0142"
+      },
+      {
+        "id": "CO-0608",
+        "name": "Construction Schedule",
+        "parentDomainId": "UKA-D0143"
+      },
+      {
+        "id": "CO-0609",
+        "name": "Bill of Quantities (BOQ)",
+        "parentDomainId": "UKA-D0143"
+      },
+      {
+        "id": "CO-0610",
+        "name": "Energy Audit Report",
+        "parentDomainId": "UKA-D0144"
+      },
+      {
+        "id": "CO-0611",
+        "name": "Route Plan",
+        "parentDomainId": "UKA-D0145"
+      },
+      {
+        "id": "CO-0612",
+        "name": "Product Catalog",
+        "parentDomainId": "UKA-D0146"
+      },
+      {
+        "id": "CO-0613",
+        "name": "Merchandising Plan",
+        "parentDomainId": "UKA-D0146"
+      },
+      {
+        "id": "CO-0615",
+        "name": "Business Continuity Plan",
+        "parentDomainId": "UKA-D0147"
+      },
+      {
+        "id": "CO-0616",
+        "name": "Disaster Recovery Plan",
+        "parentDomainId": "UKA-D0147"
+      },
+      {
+        "id": "CO-0617",
+        "name": "Security Incident Report",
+        "parentDomainId": "UKA-D0148"
+      },
+      {
+        "id": "CO-0618",
+        "name": "Penetration Test Report",
+        "parentDomainId": "UKA-D0148"
+      },
+      {
+        "id": "CO-0619",
+        "name": "Threat Intelligence Report",
+        "parentDomainId": "UKA-D0148"
+      },
+      {
+        "id": "CO-0620",
+        "name": "Network Topology Diagram",
+        "parentDomainId": "UKA-D0149"
+      },
+      {
+        "id": "CO-0621",
+        "name": "Network Configuration Document",
+        "parentDomainId": "UKA-D0149"
+      },
+      {
+        "id": "CO-0622",
+        "name": "Flight Test Report",
+        "parentDomainId": "UKA-D0150"
+      },
+      {
+        "id": "CO-0623",
+        "name": "Flight Operations Manual",
+        "parentDomainId": "UKA-D0150"
+      },
+      {
+        "id": "CO-0624",
+        "name": "Voyage Plan",
+        "parentDomainId": "UKA-D0151"
+      },
+      {
+        "id": "CO-0625",
+        "name": "Navigation Log",
+        "parentDomainId": "UKA-D0151"
+      },
+      {
+        "id": "CO-0626",
+        "name": "Gene Analysis Report",
+        "parentDomainId": "UKA-D0152"
+      },
+      {
+        "id": "CO-0627",
+        "name": "Laboratory Protocol",
+        "parentDomainId": "UKA-D0152"
+      },
+      {
+        "id": "CO-0628",
+        "name": "Clinical Trial Protocol",
+        "parentDomainId": "UKA-D0153"
+      },
+      {
+        "id": "CO-0629",
+        "name": "Pharmacovigilance Report",
+        "parentDomainId": "UKA-D0153"
+      },
+      {
+        "id": "CO-0630",
+        "name": "Chemical Analysis Report",
+        "parentDomainId": "UKA-D0154"
+      },
+      {
+        "id": "CO-0631",
+        "name": "Material Specification",
+        "parentDomainId": "UKA-D0154"
+      },
+      {
+        "id": "CO-0632",
+        "name": "Simulation Report",
+        "parentDomainId": "UKA-D0155"
+      },
+      {
+        "id": "CO-0633",
+        "name": "Mathematical Model",
+        "parentDomainId": "UKA-D0155"
+      },
+      {
+        "id": "CO-0634",
+        "name": "Statistical Model",
+        "parentDomainId": "UKA-D0156"
+      },
+      {
+        "id": "CO-0635",
+        "name": "Mathematical Proof",
+        "parentDomainId": "UKA-D0156"
+      },
+      {
+        "id": "CO-0636",
+        "name": "Survey Report",
+        "parentDomainId": "UKA-D0157"
+      },
+      {
+        "id": "CO-0637",
+        "name": "Social Impact Assessment",
+        "parentDomainId": "UKA-D0157"
+      },
+      {
+        "id": "CO-0638",
+        "name": "Fashion Collection",
+        "parentDomainId": "UKA-D0158"
+      },
+      {
+        "id": "CO-0639",
+        "name": "Garment Specification",
+        "parentDomainId": "UKA-D0158"
+      },
+      {
+        "id": "CO-0640",
+        "name": "Lookbook",
+        "parentDomainId": "UKA-D0158"
+      },
+      {
+        "id": "CO-0641",
+        "name": "Skincare Formulation",
+        "parentDomainId": "UKA-D0159"
+      },
+      {
+        "id": "CO-0642",
+        "name": "Cosmetic Formula",
+        "parentDomainId": "UKA-D0159"
+      },
+      {
+        "id": "CO-0643",
+        "name": "Recipe Specification",
+        "parentDomainId": "UKA-D0160"
+      },
+      {
+        "id": "CO-0644",
+        "name": "HACCP Plan",
+        "parentDomainId": "UKA-D0160"
+      },
+      {
+        "id": "CO-0645",
+        "name": "Training Program",
+        "parentDomainId": "UKA-D0161"
+      },
+      {
+        "id": "CO-0646",
+        "name": "Workout Plan",
+        "parentDomainId": "UKA-D0161"
+      },
+      {
+        "id": "CO-0647",
+        "name": "Screenplay",
+        "parentDomainId": "UKA-D0162"
+      },
+      {
+        "id": "CO-0648",
+        "name": "Story Treatment",
+        "parentDomainId": "UKA-D0162"
+      },
+      {
+        "id": "CO-0649",
+        "name": "Game Design Document (GDD)",
+        "parentDomainId": "UKA-D0163"
+      },
+      {
+        "id": "CO-0650",
+        "name": "Level Design Document",
+        "parentDomainId": "UKA-D0163"
+      },
+      {
+        "id": "CO-0651",
+        "name": "Shot List",
+        "parentDomainId": "UKA-D0164"
+      },
+      {
+        "id": "CO-0652",
+        "name": "Lighting Diagram",
+        "parentDomainId": "UKA-D0164"
+      },
+      {
+        "id": "CO-0653",
+        "name": "Music Score",
+        "parentDomainId": "UKA-D0165"
+      },
+      {
+        "id": "CO-0654",
+        "name": "Sound Design Document",
+        "parentDomainId": "UKA-D0165"
+      },
+      {
+        "id": "CO-0655",
+        "name": "Ethical Analysis",
+        "parentDomainId": "UKA-D0166"
+      },
+      {
+        "id": "CO-0656",
+        "name": "Sermon Outline",
+        "parentDomainId": "UKA-D0166"
+      },
+      {
+        "id": "CO-0658",
+        "name": "Needs Assessment Report",
+        "parentDomainId": "UKA-D0167"
+      },
+      {
+        "id": "CO-0659",
+        "name": "Excavation Report",
+        "parentDomainId": "UKA-D0168"
+      },
+      {
+        "id": "CO-0660",
+        "name": "Artifact Catalog",
+        "parentDomainId": "UKA-D0168"
+      },
+      {
+        "id": "CO-0661",
+        "name": "Historical Timeline",
+        "parentDomainId": "UKA-D0169"
+      },
+      {
+        "id": "CO-0662",
+        "name": "Oral History Transcript",
+        "parentDomainId": "UKA-D0169"
+      },
+      {
+        "id": "CO-0663",
+        "name": "Catalog Record",
+        "parentDomainId": "UKA-D0170"
+      },
+      {
+        "id": "CO-0664",
+        "name": "Metadata Schema",
+        "parentDomainId": "UKA-D0170"
+      },
+      {
+        "id": "CO-0665",
+        "name": "Corpus Analysis Report",
+        "parentDomainId": "UKA-D0171"
+      },
+      {
+        "id": "CO-0666",
+        "name": "Lexicon",
+        "parentDomainId": "UKA-D0171"
+      },
+      {
+        "id": "CO-0667",
+        "name": "Translation Memory",
+        "parentDomainId": "UKA-D0172"
+      },
+      {
+        "id": "CO-0668",
+        "name": "Localization Kit",
+        "parentDomainId": "UKA-D0172"
+      },
+      {
+        "id": "CO-0669",
+        "name": "Digital Learning Module",
+        "parentDomainId": "UKA-D0173"
+      },
+      {
+        "id": "CO-0670",
+        "name": "Learning Analytics Dashboard",
+        "parentDomainId": "UKA-D0173"
+      },
+      {
+        "id": "CO-0671",
+        "name": "Quantum Circuit Design",
+        "parentDomainId": "UKA-D0174"
+      },
+      {
+        "id": "CO-0672",
+        "name": "Quantum Algorithm Specification",
+        "parentDomainId": "UKA-D0174"
+      },
+      {
+        "id": "CO-0673",
+        "name": "Robot Programming Script",
+        "parentDomainId": "UKA-D0175"
+      },
+      {
+        "id": "CO-0674",
+        "name": "Automation Workflow",
+        "parentDomainId": "UKA-D0175"
+      },
+      {
+        "id": "CO-0675",
+        "name": "Firmware Specification",
+        "parentDomainId": "UKA-D0176"
+      },
+      {
+        "id": "CO-0676",
+        "name": "IoT Deployment Guide",
+        "parentDomainId": "UKA-D0176"
+      },
+      {
+        "id": "CO-0677",
+        "name": "Mission Profile",
+        "parentDomainId": "UKA-D0177"
+      },
+      {
+        "id": "CO-0678",
+        "name": "Astronomical Data Catalog",
+        "parentDomainId": "UKA-D0177"
+      },
+      {
+        "id": "CO-0679",
+        "name": "Smart Contract Specification",
+        "parentDomainId": "UKA-D0178"
+      },
+      {
+        "id": "CO-0680",
+        "name": "Tokenomics Model",
+        "parentDomainId": "UKA-D0178"
+      },
+      {
+        "id": "CO-0681",
+        "name": "Underwriting Report",
+        "parentDomainId": "UKA-D0179"
+      },
+      {
+        "id": "CO-0682",
+        "name": "Actuarial Model",
+        "parentDomainId": "UKA-D0179"
+      },
+      {
+        "id": "CO-0683",
+        "name": "Geological Survey Report",
+        "parentDomainId": "UKA-D0180"
+      },
+      {
+        "id": "CO-0684",
+        "name": "Resource Estimation Report",
+        "parentDomainId": "UKA-D0180"
+      },
+      {
+        "id": "CO-0685",
+        "name": "Precision Agriculture Map",
+        "parentDomainId": "UKA-D0181"
+      },
+      {
+        "id": "CO-0686",
+        "name": "Crop Monitoring Dashboard",
+        "parentDomainId": "UKA-D0181"
+      },
+      {
+        "id": "CO-0687",
+        "name": "Ocean Observation Report",
+        "parentDomainId": "UKA-D0182"
+      },
+      {
+        "id": "CO-0688",
+        "name": "Marine Biodiversity Survey",
+        "parentDomainId": "UKA-D0182"
+      },
+      {
+        "id": "CO-0689",
+        "name": "Weather Forecast Bulletin",
+        "parentDomainId": "UKA-D0183"
+      },
+      {
+        "id": "CO-0690",
+        "name": "Climate Projection Report",
+        "parentDomainId": "UKA-D0183"
+      },
+      {
+        "id": "CO-0691",
+        "name": "Hazard Map",
+        "parentDomainId": "UKA-D0184"
+      },
+      {
+        "id": "CO-0692",
+        "name": "Disaster Response Plan",
+        "parentDomainId": "UKA-D0184"
+      },
+      {
+        "id": "CO-0693",
+        "name": "Digital Twin Model",
+        "parentDomainId": "UKA-D0185"
+      },
+      {
+        "id": "CO-0694",
+        "name": "Smart City Blueprint",
+        "parentDomainId": "UKA-D0185"
+      },
+      {
+        "id": "CO-0695",
+        "name": "Digital Service Blueprint",
+        "parentDomainId": "UKA-D0186"
+      },
+      {
+        "id": "CO-0696",
+        "name": "Government API Specification",
+        "parentDomainId": "UKA-D0186"
+      },
+      {
+        "id": "CO-0697",
+        "name": "AI Governance Framework",
+        "parentDomainId": "UKA-D0187"
+      },
+      {
+        "id": "CO-0698",
+        "name": "AI Risk Register",
+        "parentDomainId": "UKA-D0187"
+      },
+      {
+        "id": "CO-0699",
+        "name": "Circular Economy Strategy",
+        "parentDomainId": "UKA-D0188"
+      },
+      {
+        "id": "CO-0700",
+        "name": "Waste Audit Report",
+        "parentDomainId": "UKA-D0188"
+      },
+      {
+        "id": "CO-0701",
+        "name": "IC Design Specification",
+        "parentDomainId": "UKA-D0189"
+      },
+      {
+        "id": "CO-0702",
+        "name": "PCB Layout",
+        "parentDomainId": "UKA-D0189"
+      },
+      {
+        "id": "CO-0703",
+        "name": "Nanomaterial Characterization Report",
+        "parentDomainId": "UKA-D0190"
+      },
+      {
+        "id": "CO-0704",
+        "name": "Materials Simulation Model",
+        "parentDomainId": "UKA-D0190"
+      },
+      {
+        "id": "CO-0705",
+        "name": "Medical Device Specification",
+        "parentDomainId": "UKA-D0191"
+      },
+      {
+        "id": "CO-0706",
+        "name": "Device Validation Report",
+        "parentDomainId": "UKA-D0191"
+      },
+      {
+        "id": "CO-0707",
+        "name": "Veterinary Case Report",
+        "parentDomainId": "UKA-D0192"
+      },
+      {
+        "id": "CO-0708",
+        "name": "Animal Health Record",
+        "parentDomainId": "UKA-D0192"
+      },
+      {
+        "id": "CO-0709",
+        "name": "Forest Inventory",
+        "parentDomainId": "UKA-D0193"
+      },
+      {
+        "id": "CO-0710",
+        "name": "Ecosystem Assessment",
+        "parentDomainId": "UKA-D0193"
+      },
+      {
+        "id": "CO-0711",
+        "name": "Hydrological Model",
+        "parentDomainId": "UKA-D0194"
+      },
+      {
+        "id": "CO-0712",
+        "name": "Flood Hazard Map",
+        "parentDomainId": "UKA-D0194"
+      },
+      {
+        "id": "CO-0713",
+        "name": "Development Cooperation Strategy",
+        "parentDomainId": "UKA-D0195"
+      },
+      {
+        "id": "CO-0714",
+        "name": "SDG Progress Report",
+        "parentDomainId": "UKA-D0195"
+      },
+      {
+        "id": "CO-0715",
+        "name": "Intelligence Brief",
+        "parentDomainId": "UKA-D0196"
+      },
+      {
+        "id": "CO-0716",
+        "name": "Strategic Threat Assessment",
+        "parentDomainId": "UKA-D0196"
+      },
+      {
+        "id": "CO-0717",
+        "name": "Horizon Scanning Report",
+        "parentDomainId": "UKA-D0197"
+      },
+      {
+        "id": "CO-0718",
+        "name": "Scenario Matrix",
+        "parentDomainId": "UKA-D0197"
+      },
+      {
+        "id": "CO-0719",
+        "name": "Digital Archive",
+        "parentDomainId": "UKA-D0198"
+      },
+      {
+        "id": "CO-0720",
+        "name": "Digital Edition",
+        "parentDomainId": "UKA-D0198"
+      },
+      {
+        "id": "CO-0721",
+        "name": "Knowledge Base",
+        "parentDomainId": "UKA-D0199"
+      },
+      {
+        "id": "CO-0722",
+        "name": "Knowledge Map",
+        "parentDomainId": "UKA-D0199"
+      },
+      {
+        "id": "CO-0723",
+        "name": "Causal Loop Diagram",
+        "parentDomainId": "UKA-D0200"
+      },
+      {
+        "id": "CO-0724",
+        "name": "System Dynamics Model",
+        "parentDomainId": "UKA-D0200"
+      },
+      {
+        "id": "CO-0725",
+        "name": "Behavioral Experiment Protocol",
+        "parentDomainId": "UKA-D0201"
+      },
+      {
+        "id": "CO-0726",
+        "name": "Decision Model",
+        "parentDomainId": "UKA-D0201"
+      },
+      {
+        "id": "CO-0727",
+        "name": "Innovation Roadmap",
+        "parentDomainId": "UKA-D0202"
+      },
+      {
+        "id": "CO-0728",
+        "name": "Technology Roadmap",
+        "parentDomainId": "UKA-D0202"
+      },
+      {
+        "id": "CO-0730",
+        "name": "Investment Memo",
+        "parentDomainId": "UKA-D0203"
+      },
+      {
+        "id": "CO-0731",
+        "name": "Platform Business Model",
+        "parentDomainId": "UKA-D0204"
+      },
+      {
+        "id": "CO-0732",
+        "name": "Marketplace Governance Framework",
+        "parentDomainId": "UKA-D0204"
+      },
+      {
+        "id": "CO-0733",
+        "name": "Digital Identity Framework",
+        "parentDomainId": "UKA-D0205"
+      },
+      {
+        "id": "CO-0734",
+        "name": "Privacy Impact Assessment",
+        "parentDomainId": "UKA-D0205"
+      },
+      {
+        "id": "CO-0735",
+        "name": "Data Management Plan",
+        "parentDomainId": "UKA-D0206"
+      },
+      {
+        "id": "CO-0736",
+        "name": "Open Data Catalog",
+        "parentDomainId": "UKA-D0206"
+      },
+      {
+        "id": "CO-0737",
+        "name": "Ontology Specification",
+        "parentDomainId": "UKA-D0207"
+      },
+      {
+        "id": "CO-0738",
+        "name": "Knowledge Graph Schema",
+        "parentDomainId": "UKA-D0207"
+      },
+      {
+        "id": "CO-0739",
+        "name": "Human-AI Collaboration Protocol",
+        "parentDomainId": "UKA-D0208"
+      },
+      {
+        "id": "CO-0740",
+        "name": "AI Copilot Configuration",
+        "parentDomainId": "UKA-D0208"
+      },
+      {
+        "id": "CO-0741",
+        "name": "Agent Architecture Specification",
+        "parentDomainId": "UKA-D0209"
+      },
+      {
+        "id": "CO-0742",
+        "name": "Agent Orchestration Workflow",
+        "parentDomainId": "UKA-D0209"
+      },
+      {
+        "id": "CO-0744",
+        "name": "System Prompt Specification",
+        "parentDomainId": "UKA-D0210"
+      },
+      {
+        "id": "CO-0745",
+        "name": "Synthetic Dataset Specification",
+        "parentDomainId": "UKA-D0211"
+      },
+      {
+        "id": "CO-0746",
+        "name": "Simulation Scenario",
+        "parentDomainId": "UKA-D0211"
+      },
+      {
+        "id": "CO-0747",
+        "name": "Digital Twin Architecture",
+        "parentDomainId": "UKA-D0212"
+      },
+      {
+        "id": "CO-0748",
+        "name": "Twin Synchronization Protocol",
+        "parentDomainId": "UKA-D0212"
+      },
+      {
+        "id": "CO-0749",
+        "name": "Spatial Experience Design",
+        "parentDomainId": "UKA-D0213"
+      },
+      {
+        "id": "CO-0750",
+        "name": "XR Interaction Blueprint",
+        "parentDomainId": "UKA-D0213"
+      },
+      {
+        "id": "CO-0751",
+        "name": "Genome Annotation Report",
+        "parentDomainId": "UKA-D0214"
+      },
+      {
+        "id": "CO-0752",
+        "name": "Bioinformatics Workflow",
+        "parentDomainId": "UKA-D0214"
+      },
+      {
+        "id": "CO-0753",
+        "name": "Social Network Model",
+        "parentDomainId": "UKA-D0215"
+      },
+      {
+        "id": "CO-0754",
+        "name": "Opinion Dynamics Simulation",
+        "parentDomainId": "UKA-D0215"
+      },
+      {
+        "id": "CO-0755",
+        "name": "Economic Simulation Model",
+        "parentDomainId": "UKA-D0216"
+      },
+      {
+        "id": "CO-0756",
+        "name": "Market Dynamics Report",
+        "parentDomainId": "UKA-D0216"
+      },
+      {
+        "id": "CO-0757",
+        "name": "Universal Ontology Framework",
+        "parentDomainId": "UKA-D0217"
+      },
+      {
+        "id": "CO-0758",
+        "name": "Global Knowledge Graph",
+        "parentDomainId": "UKA-D0217"
+      },
+      {
+        "id": "CO-0759",
+        "name": "Population Health Dashboard",
+        "parentDomainId": "UKA-D0218"
+      },
+      {
+        "id": "CO-0760",
+        "name": "Epidemiological Intelligence Report",
+        "parentDomainId": "UKA-D0218"
+      },
+      {
+        "id": "CO-0761",
+        "name": "Genomic Profile",
+        "parentDomainId": "UKA-D0219"
+      },
+      {
+        "id": "CO-0762",
+        "name": "Precision Treatment Plan",
+        "parentDomainId": "UKA-D0219"
+      },
+      {
+        "id": "CO-0763",
+        "name": "Brain Signal Report",
+        "parentDomainId": "UKA-D0220"
+      },
+      {
+        "id": "CO-0764",
+        "name": "Neural Interface Specification",
+        "parentDomainId": "UKA-D0220"
+      },
+      {
+        "id": "CO-0765",
+        "name": "Swarm Coordination Protocol",
+        "parentDomainId": "UKA-D0221"
+      },
+      {
+        "id": "CO-0766",
+        "name": "Autonomous Mission Plan",
+        "parentDomainId": "UKA-D0221"
+      },
+      {
+        "id": "CO-0767",
+        "name": "Edge AI Deployment Blueprint",
+        "parentDomainId": "UKA-D0222"
+      },
+      {
+        "id": "CO-0768",
+        "name": "Federated Learning Configuration",
+        "parentDomainId": "UKA-D0222"
+      },
+      {
+        "id": "CO-0769",
+        "name": "Explainability Report",
+        "parentDomainId": "UKA-D0223"
+      },
+      {
+        "id": "CO-0770",
+        "name": "AI Verification Protocol",
+        "parentDomainId": "UKA-D0223"
+      },
+      {
+        "id": "CO-0771",
+        "name": "AI Safety Evaluation",
+        "parentDomainId": "UKA-D0224"
+      },
+      {
+        "id": "CO-0772",
+        "name": "Alignment Test Suite",
+        "parentDomainId": "UKA-D0224"
+      },
+      {
+        "id": "CO-0773",
+        "name": "Legal Knowledge Graph",
+        "parentDomainId": "UKA-D0225"
+      },
+      {
+        "id": "CO-0774",
+        "name": "Computational Contract Model",
+        "parentDomainId": "UKA-D0225"
+      },
+      {
+        "id": "CO-0775",
+        "name": "Civic Participation Dashboard",
+        "parentDomainId": "UKA-D0226"
+      },
+      {
+        "id": "CO-0776",
+        "name": "Planetary Resource Survey",
+        "parentDomainId": "UKA-D0227"
+      },
+      {
+        "id": "CO-0777",
+        "name": "Offshore Platform Design",
+        "parentDomainId": "UKA-D0228"
+      },
+      {
+        "id": "CO-0778",
+        "name": "Fusion Reactor Design",
+        "parentDomainId": "UKA-D0229"
+      },
+      {
+        "id": "CO-0779",
+        "name": "Hydrogen Production Model",
+        "parentDomainId": "UKA-D0230"
+      },
+      {
+        "id": "CO-0780",
+        "name": "Carbon Capture Design",
+        "parentDomainId": "UKA-D0231"
+      },
+      {
+        "id": "CO-0781",
+        "name": "Soil Regeneration Plan",
+        "parentDomainId": "UKA-D0232"
+      },
+      {
+        "id": "CO-0782",
+        "name": "Biodiversity Knowledge Base",
+        "parentDomainId": "UKA-D0233"
+      },
+      {
+        "id": "CO-0783",
+        "name": "Supply Network Graph",
+        "parentDomainId": "UKA-D0234"
+      },
+      {
+        "id": "CO-0784",
+        "name": "Autonomous Payment Protocol",
+        "parentDomainId": "UKA-D0235"
+      },
+      {
+        "id": "CO-0785",
+        "name": "Universal API Specification",
+        "parentDomainId": "UKA-D0236"
+      },
+      {
+        "id": "CO-0786",
+        "name": "Meta-Knowledge Graph",
+        "parentDomainId": "UKA-D0237"
+      },
+      {
+        "id": "CO-0787",
+        "name": "Quantum Network Topology",
+        "parentDomainId": "UKA-D0238"
+      },
+      {
+        "id": "CO-0788",
+        "name": "Quantum Communication Protocol",
+        "parentDomainId": "UKA-D0238"
+      },
+      {
+        "id": "CO-0789",
+        "name": "Molecular Design Specification",
+        "parentDomainId": "UKA-D0239"
+      },
+      {
+        "id": "CO-0790",
+        "name": "Cell Culture Protocol",
+        "parentDomainId": "UKA-D0240"
+      },
+      {
+        "id": "CO-0791",
+        "name": "Space Habitat Blueprint",
+        "parentDomainId": "UKA-D0241"
+      },
+      {
+        "id": "CO-0792",
+        "name": "Biosignature Assessment",
+        "parentDomainId": "UKA-D0242"
+      },
+      {
+        "id": "CO-0793",
+        "name": "Glacier Monitoring Report",
+        "parentDomainId": "UKA-D0243"
+      },
+      {
+        "id": "CO-0794",
+        "name": "Volcanic Hazard Map",
+        "parentDomainId": "UKA-D0244"
+      },
+      {
+        "id": "CO-0795",
+        "name": "Seismic Activity Report",
+        "parentDomainId": "UKA-D0245"
+      },
+      {
+        "id": "CO-0796",
+        "name": "Earth Digital Twin Model",
+        "parentDomainId": "UKA-D0246"
+      },
+      {
+        "id": "CO-0797",
+        "name": "Near-Earth Object Registry",
+        "parentDomainId": "UKA-D0247"
+      },
+      {
+        "id": "CO-0798",
+        "name": "AGI Evaluation Framework",
+        "parentDomainId": "UKA-D0248"
+      },
+      {
+        "id": "CO-0799",
+        "name": "Cognitive Architecture Specification",
+        "parentDomainId": "UKA-D0249"
+      },
+      {
+        "id": "CO-0800",
+        "name": "Neuromorphic Chip Architecture",
+        "parentDomainId": "UKA-D0250"
+      },
+      {
+        "id": "CO-0801",
+        "name": "Recursive Improvement Protocol",
+        "parentDomainId": "UKA-D0251"
+      },
+      {
+        "id": "CO-0802",
+        "name": "AI Discovery Workflow",
+        "parentDomainId": "UKA-D0252"
+      },
+      {
+        "id": "CO-0803",
+        "name": "Research Copilot Configuration",
+        "parentDomainId": "UKA-D0253"
+      },
+      {
+        "id": "CO-0804",
+        "name": "Computational Creativity Model",
+        "parentDomainId": "UKA-D0254"
+      },
+      {
+        "id": "CO-0805",
+        "name": "Human Digital Twin Model",
+        "parentDomainId": "UKA-D0255"
+      },
+      {
+        "id": "CO-0806",
+        "name": "Collective Intelligence Framework",
+        "parentDomainId": "UKA-D0256"
+      },
+      {
+        "id": "CO-0807",
+        "name": "Knowledge Reasoning Graph",
+        "parentDomainId": "UKA-D0257"
+      },
+      {
+        "id": "CO-0808",
+        "name": "Workforce Intelligence Dashboard",
+        "parentDomainId": "UKA-D0258"
+      },
+      {
+        "id": "CO-0809",
+        "name": "Adaptive Learning Architecture",
+        "parentDomainId": "UKA-D0259"
+      },
+      {
+        "id": "CO-0810",
+        "name": "Global Health Intelligence Graph",
+        "parentDomainId": "UKA-D0260"
+      },
+      {
+        "id": "CO-0811",
+        "name": "Policy Simulation Model",
+        "parentDomainId": "UKA-D0261"
+      },
+      {
+        "id": "CO-0812",
+        "name": "Civilization Sustainability Model",
+        "parentDomainId": "UKA-D0262"
+      },
+      {
+        "id": "CO-0813",
+        "name": "Global Resilience Dashboard",
+        "parentDomainId": "UKA-D0263"
+      },
+      {
+        "id": "CO-0814",
+        "name": "Bioeconomy Value Chain Model",
+        "parentDomainId": "UKA-D0264"
+      },
+      {
+        "id": "CO-0815",
+        "name": "Cultural Heritage Knowledge Base",
+        "parentDomainId": "UKA-D0265"
+      },
+      {
+        "id": "CO-0816",
+        "name": "Autonomous Urban Model",
+        "parentDomainId": "UKA-D0266"
+      },
+      {
+        "id": "CO-0817",
+        "name": "Human Development Intelligence Index",
+        "parentDomainId": "UKA-D0267"
+      },
+      {
+        "id": "CO-0818",
+        "name": "Universal Semantic Protocol",
+        "parentDomainId": "UKA-D0268"
+      },
+      {
+        "id": "CO-0819",
+        "name": "Knowledge Evolution Engine",
+        "parentDomainId": "UKA-D0269"
+      },
+      {
+        "id": "CO-0820",
+        "name": "Universal Prompt Schema",
+        "parentDomainId": "UKA-D0270"
+      },
+      {
+        "id": "CO-0821",
+        "name": "Knowledge Agent Architecture",
+        "parentDomainId": "UKA-D0271"
+      },
+      {
+        "id": "CO-0822",
+        "name": "AI Memory Architecture",
+        "parentDomainId": "UKA-D0272"
+      },
+      {
+        "id": "CO-0823",
+        "name": "Cross-Domain Reasoning Graph",
+        "parentDomainId": "UKA-D0273"
+      },
+      {
+        "id": "CO-0824",
+        "name": "Provenance Ledger",
+        "parentDomainId": "UKA-D0274"
+      },
+      {
+        "id": "CO-0825",
+        "name": "Ontology Evolution Engine",
+        "parentDomainId": "UKA-D0275"
+      },
+      {
+        "id": "CO-0826",
+        "name": "Universal Cognitive Model",
+        "parentDomainId": "UKA-D0276"
+      },
+      {
+        "id": "CO-0827",
+        "name": "UKA Core Architecture",
+        "parentDomainId": "UKA-D0277"
+      },
+      {
+        "id": "CO-0829",
+        "name": "Post-Quantum Cryptography Specification",
+        "parentDomainId": "UKA-D0278"
+      },
+      {
+        "id": "CO-0830",
+        "name": "Trusted Execution Architecture",
+        "parentDomainId": "UKA-D0279"
+      },
+      {
+        "id": "CO-0831",
+        "name": "Privacy-Preserving Computation Workflow",
+        "parentDomainId": "UKA-D0280"
+      },
+      {
+        "id": "CO-0832",
+        "name": "Federated Knowledge Graph",
+        "parentDomainId": "UKA-D0281"
+      },
+      {
+        "id": "CO-0833",
+        "name": "DAO Governance Model",
+        "parentDomainId": "UKA-D0282"
+      },
+      {
+        "id": "CO-0834",
+        "name": "Web3 Infrastructure Blueprint",
+        "parentDomainId": "UKA-D0283"
+      },
+      {
+        "id": "CO-0835",
+        "name": "Token Economics Model",
+        "parentDomainId": "UKA-D0284"
+      },
+      {
+        "id": "CO-0836",
+        "name": "Digital Identity Credential",
+        "parentDomainId": "UKA-D0285"
+      },
+      {
+        "id": "CO-0837",
+        "name": "Autonomous Threat Response Workflow",
+        "parentDomainId": "UKA-D0286"
+      },
+      {
+        "id": "CO-0838",
+        "name": "AI Operating System Architecture",
+        "parentDomainId": "UKA-D0287"
+      },
+      {
+        "id": "CO-0839",
+        "name": "Smart Material Specification",
+        "parentDomainId": "UKA-D0288"
+      },
+      {
+        "id": "CO-0840",
+        "name": "Programmable Matter Architecture",
+        "parentDomainId": "UKA-D0289"
+      },
+      {
+        "id": "CO-0841",
+        "name": "4D Printing Workflow",
+        "parentDomainId": "UKA-D0290"
+      },
+      {
+        "id": "CO-0842",
+        "name": "Humanoid Robot Architecture",
+        "parentDomainId": "UKA-D0291"
+      },
+      {
+        "id": "CO-0843",
+        "name": "Packaging Architecture",
+        "parentDomainId": "UKA-D0292"
+      },
+      {
+        "id": "CO-0844",
+        "name": "Optical Computing Model",
+        "parentDomainId": "UKA-D0293"
+      },
+      {
+        "id": "CO-0845",
+        "name": "Sensor Network Topology",
+        "parentDomainId": "UKA-D0294"
+      },
+      {
+        "id": "CO-0846",
+        "name": "Autonomous Mobility Architecture",
+        "parentDomainId": "UKA-D0295"
+      },
+      {
+        "id": "CO-0847",
+        "name": "Hyperloop Infrastructure Blueprint",
+        "parentDomainId": "UKA-D0296"
+      },
+      {
+        "id": "CO-0848",
+        "name": "Aerospace Systems Architecture",
+        "parentDomainId": "UKA-D0297"
+      },
+      {
+        "id": "CO-0849",
+        "name": "Digital Therapeutic Protocol",
+        "parentDomainId": "UKA-D0298"
+      },
+      {
+        "id": "CO-0850",
+        "name": "Longevity Biomarker Model",
+        "parentDomainId": "UKA-D0299"
+      },
+      {
+        "id": "CO-0851",
+        "name": "Aging Mechanism Model",
+        "parentDomainId": "UKA-D0300"
+      },
+      {
+        "id": "CO-0852",
+        "name": "Precision Nutrition Plan",
+        "parentDomainId": "UKA-D0301"
+      },
+      {
+        "id": "CO-0853",
+        "name": "Microbiome Profile",
+        "parentDomainId": "UKA-D0302"
+      },
+      {
+        "id": "CO-0854",
+        "name": "Immune Response Simulation",
+        "parentDomainId": "UKA-D0303"
+      },
+      {
+        "id": "CO-0855",
+        "name": "Pandemic Readiness Framework",
+        "parentDomainId": "UKA-D0304"
+      },
+      {
+        "id": "CO-0856",
+        "name": "One Health Knowledge Graph",
+        "parentDomainId": "UKA-D0305"
+      },
+      {
+        "id": "CO-0857",
+        "name": "Reproductive Biotechnology Workflow",
+        "parentDomainId": "UKA-D0306"
+      },
+      {
+        "id": "CO-0858",
+        "name": "Tissue Regeneration Model",
+        "parentDomainId": "UKA-D0307"
+      },
+      {
+        "id": "CO-0859",
+        "name": "Climate Adaptation Blueprint",
+        "parentDomainId": "UKA-D0308"
+      },
+      {
+        "id": "CO-0860",
+        "name": "Geoengineering Assessment",
+        "parentDomainId": "UKA-D0309"
+      },
+      {
+        "id": "CO-0861",
+        "name": "Blue Economy Value Chain",
+        "parentDomainId": "UKA-D0310"
+      },
+      {
+        "id": "CO-0862",
+        "name": "Water Security Framework",
+        "parentDomainId": "UKA-D0311"
+      },
+      {
+        "id": "CO-0863",
+        "name": "Desert Infrastructure Blueprint",
+        "parentDomainId": "UKA-D0312"
+      },
+      {
+        "id": "CO-0864",
+        "name": "Arctic Engineering Blueprint",
+        "parentDomainId": "UKA-D0313"
+      },
+      {
+        "id": "CO-0865",
+        "name": "Ecosystem Restoration Workflow",
+        "parentDomainId": "UKA-D0314"
+      },
+      {
+        "id": "CO-0866",
+        "name": "Planetary Boundaries Assessment",
+        "parentDomainId": "UKA-D0315"
+      },
+      {
+        "id": "CO-0867",
+        "name": "Nature-Based Solution Blueprint",
+        "parentDomainId": "UKA-D0316"
+      },
+      {
+        "id": "CO-0868",
+        "name": "Environmental Intelligence Platform",
+        "parentDomainId": "UKA-D0317"
+      },
+      {
+        "id": "CO-0869",
+        "name": "Macroeconomic Simulation Framework",
+        "parentDomainId": "UKA-D0318"
+      },
+      {
+        "id": "CO-0870",
+        "name": "AI Economic Governance Framework",
+        "parentDomainId": "UKA-D0319"
+      },
+      {
+        "id": "CO-0871",
+        "name": "Digital Financial Infrastructure Blueprint",
+        "parentDomainId": "UKA-D0320"
+      },
+      {
+        "id": "CO-0872",
+        "name": "Digital Tax Architecture",
+        "parentDomainId": "UKA-D0321"
+      },
+      {
+        "id": "CO-0873",
+        "name": "Global Trade Intelligence Graph",
+        "parentDomainId": "UKA-D0322"
+      },
+      {
+        "id": "CO-0874",
+        "name": "Diplomatic Decision Support Model",
+        "parentDomainId": "UKA-D0323"
+      },
+      {
+        "id": "CO-0875",
+        "name": "Strategic Intelligence Dashboard",
+        "parentDomainId": "UKA-D0324"
+      },
+      {
+        "id": "CO-0876",
+        "name": "Crisis Intelligence Platform",
+        "parentDomainId": "UKA-D0325"
+      },
+      {
+        "id": "CO-0877",
+        "name": "Global Risk Knowledge Graph",
+        "parentDomainId": "UKA-D0326"
+      },
+      {
+        "id": "CO-0878",
+        "name": "Regulatory Intelligence Registry",
+        "parentDomainId": "UKA-D0327"
+      },
+      {
+        "id": "CO-0879",
+        "name": "Civilization Scenario Model",
+        "parentDomainId": "UKA-D0328"
+      },
+      {
+        "id": "CO-0880",
+        "name": "Human Flourishing Index",
+        "parentDomainId": "UKA-D0329"
+      },
+      {
+        "id": "CO-0881",
+        "name": "Collective Intelligence Graph",
+        "parentDomainId": "UKA-D0330"
+      },
+      {
+        "id": "CO-0882",
+        "name": "Global Ethics Framework",
+        "parentDomainId": "UKA-D0331"
+      },
+      {
+        "id": "CO-0883",
+        "name": "AI Ethics Assessment Protocol",
+        "parentDomainId": "UKA-D0332"
+      },
+      {
+        "id": "CO-0884",
+        "name": "Digital Rights Framework",
+        "parentDomainId": "UKA-D0333"
+      },
+      {
+        "id": "CO-0885",
+        "name": "Future Media Architecture",
+        "parentDomainId": "UKA-D0334"
+      },
+      {
+        "id": "CO-0886",
+        "name": "Human-AI Society Blueprint",
+        "parentDomainId": "UKA-D0335"
+      },
+      {
+        "id": "CO-0887",
+        "name": "Cross-Cultural Knowledge Framework",
+        "parentDomainId": "UKA-D0336"
+      },
+      {
+        "id": "CO-0888",
+        "name": "Civilization Knowledge Graph",
+        "parentDomainId": "UKA-D0337"
+      },
+      {
+        "id": "CO-0889",
+        "name": "Universal Knowledge API Specification",
+        "parentDomainId": "UKA-D0338"
+      },
+      {
+        "id": "CO-0890",
+        "name": "Semantic Agent Protocol",
+        "parentDomainId": "UKA-D0339"
+      },
+      {
+        "id": "CO-0891",
+        "name": "Ontology Governance Framework",
+        "parentDomainId": "UKA-D0340"
+      },
+      {
+        "id": "CO-0892",
+        "name": "Knowledge Quality Standard",
+        "parentDomainId": "UKA-D0341"
+      },
+      {
+        "id": "CO-0893",
+        "name": "Knowledge Version Registry",
+        "parentDomainId": "UKA-D0342"
+      },
+      {
+        "id": "CO-0894",
+        "name": "Knowledge Compilation Pipeline",
+        "parentDomainId": "UKA-D0343"
+      },
+      {
+        "id": "CO-0895",
+        "name": "Knowledge Execution Engine",
+        "parentDomainId": "UKA-D0344"
+      },
+      {
+        "id": "CO-0896",
+        "name": "Semantic Reasoning Infrastructure",
+        "parentDomainId": "UKA-D0345"
+      },
+      {
+        "id": "CO-0897",
+        "name": "Context Resolution Engine",
+        "parentDomainId": "UKA-D0346"
+      },
+      {
+        "id": "CO-0898",
+        "name": "Universal Semantic Kernel",
+        "parentDomainId": "UKA-D0347"
+      },
+      {
+        "id": "CO-0901",
+        "name": "Quantum Machine Learning Model",
+        "parentDomainId": "UKA-D0348"
+      },
+      {
+        "id": "CO-0902",
+        "name": "Quantum AI Architecture",
+        "parentDomainId": "UKA-D0349"
+      },
+      {
+        "id": "CO-0903",
+        "name": "Quantum Software Specification",
+        "parentDomainId": "UKA-D0350"
+      },
+      {
+        "id": "CO-0904",
+        "name": "Quantum Error Correction Protocol",
+        "parentDomainId": "UKA-D0351"
+      },
+      {
+        "id": "CO-0905",
+        "name": "Quantum Cloud Platform Architecture",
+        "parentDomainId": "UKA-D0352"
+      },
+      {
+        "id": "CO-0906",
+        "name": "Hybrid Computing Architecture",
+        "parentDomainId": "UKA-D0353"
+      },
+      {
+        "id": "CO-0907",
+        "name": "Exascale Computing Architecture",
+        "parentDomainId": "UKA-D0354"
+      },
+      {
+        "id": "CO-0908",
+        "name": "AI Compute Infrastructure Blueprint",
+        "parentDomainId": "UKA-D0355"
+      },
+      {
+        "id": "CO-0909",
+        "name": "Neurosymbolic Reasoning Model",
+        "parentDomainId": "UKA-D0356"
+      },
+      {
+        "id": "CO-0910",
+        "name": "Autonomous Computing Architecture",
+        "parentDomainId": "UKA-D0357"
+      },
+      {
+        "id": "CO-0911",
+        "name": "Synthetic Genome Design",
+        "parentDomainId": "UKA-D0358"
+      },
+      {
+        "id": "CO-0912",
+        "name": "Genome Editing Protocol",
+        "parentDomainId": "UKA-D0359"
+      },
+      {
+        "id": "CO-0913",
+        "name": "Digital Cell Model",
+        "parentDomainId": "UKA-D0360"
+      },
+      {
+        "id": "CO-0914",
+        "name": "Organ-on-Chip Architecture",
+        "parentDomainId": "UKA-D0361"
+      },
+      {
+        "id": "CO-0915",
+        "name": "Drug Discovery Pipeline",
+        "parentDomainId": "UKA-D0362"
+      },
+      {
+        "id": "CO-0916",
+        "name": "Protein Engineering Model",
+        "parentDomainId": "UKA-D0363"
+      },
+      {
+        "id": "CO-0917",
+        "name": "Biofabrication Workflow",
+        "parentDomainId": "UKA-D0364"
+      },
+      {
+        "id": "CO-0918",
+        "name": "Living Material Specification",
+        "parentDomainId": "UKA-D0365"
+      },
+      {
+        "id": "CO-0919",
+        "name": "Cellular Intelligence Model",
+        "parentDomainId": "UKA-D0366"
+      },
+      {
+        "id": "CO-0920",
+        "name": "Biohybrid Robot Architecture",
+        "parentDomainId": "UKA-D0367"
+      },
+      {
+        "id": "CO-0921",
+        "name": "Lunar Civilization Blueprint",
+        "parentDomainId": "UKA-D0368"
+      },
+      {
+        "id": "CO-0922",
+        "name": "Martian Infrastructure Architecture",
+        "parentDomainId": "UKA-D0369"
+      },
+      {
+        "id": "CO-0923",
+        "name": "Space Governance Framework",
+        "parentDomainId": "UKA-D0370"
+      },
+      {
+        "id": "CO-0924",
+        "name": "Space Economy Model",
+        "parentDomainId": "UKA-D0371"
+      },
+      {
+        "id": "CO-0925",
+        "name": "Interplanetary Logistics Network",
+        "parentDomainId": "UKA-D0372"
+      },
+      {
+        "id": "CO-0926",
+        "name": "Space Resource Governance Framework",
+        "parentDomainId": "UKA-D0373"
+      },
+      {
+        "id": "CO-0927",
+        "name": "Orbital Infrastructure Network Model",
+        "parentDomainId": "UKA-D0374"
+      },
+      {
+        "id": "CO-0928",
+        "name": "Deep Space Communication Protocol",
+        "parentDomainId": "UKA-D0375"
+      },
+      {
+        "id": "CO-0929",
+        "name": "Interstellar Mission Roadmap",
+        "parentDomainId": "UKA-D0376"
+      },
+      {
+        "id": "CO-0930",
+        "name": "Planetary Civilization Simulation",
+        "parentDomainId": "UKA-D0377"
+      },
+      {
+        "id": "CO-0931",
+        "name": "AI Government Framework",
+        "parentDomainId": "UKA-D0378"
+      },
+      {
+        "id": "CO-0932",
+        "name": "Autonomous Administration Workflow",
+        "parentDomainId": "UKA-D0379"
+      },
+      {
+        "id": "CO-0933",
+        "name": "Constitutional Simulation Model",
+        "parentDomainId": "UKA-D0380"
+      },
+      {
+        "id": "CO-0934",
+        "name": "Digital Citizenship Framework",
+        "parentDomainId": "UKA-D0381"
+      },
+      {
+        "id": "CO-0935",
+        "name": "Algorithmic Justice Assessment",
+        "parentDomainId": "UKA-D0382"
+      },
+      {
+        "id": "CO-0936",
+        "name": "Future Workforce Economics Model",
+        "parentDomainId": "UKA-D0383"
+      },
+      {
+        "id": "CO-0937",
+        "name": "Universal Basic Services Framework",
+        "parentDomainId": "UKA-D0384"
+      },
+      {
+        "id": "CO-0938",
+        "name": "Human Capability Index",
+        "parentDomainId": "UKA-D0385"
+      },
+      {
+        "id": "CO-0939",
+        "name": "Societal Digital Twin Model",
+        "parentDomainId": "UKA-D0386"
+      },
+      {
+        "id": "CO-0940",
+        "name": "Civilization Risk Framework",
+        "parentDomainId": "UKA-D0387"
+      },
+      {
+        "id": "CO-0941",
+        "name": "Knowledge Validation Engine",
+        "parentDomainId": "UKA-D0388"
+      },
+      {
+        "id": "CO-0942",
+        "name": "Self-Healing Knowledge Graph",
+        "parentDomainId": "UKA-D0389"
+      },
+      {
+        "id": "CO-0943",
+        "name": "Knowledge Compression Algorithm",
+        "parentDomainId": "UKA-D0390"
+      },
+      {
+        "id": "CO-0944",
+        "name": "Semantic Memory Model",
+        "parentDomainId": "UKA-D0391"
+      },
+      {
+        "id": "CO-0945",
+        "name": "Universal Reasoning Engine",
+        "parentDomainId": "UKA-D0392"
+      },
+      {
+        "id": "CO-0946",
+        "name": "Adaptive Knowledge Compiler",
+        "parentDomainId": "UKA-D0393"
+      },
+      {
+        "id": "CO-0947",
+        "name": "Canonical Evolution Engine",
+        "parentDomainId": "UKA-D0394"
+      },
+      {
+        "id": "CO-0948",
+        "name": "Knowledge Graph Runtime",
+        "parentDomainId": "UKA-D0395"
+      },
+      {
+        "id": "CO-0949",
+        "name": "Semantic Operating System Architecture",
+        "parentDomainId": "UKA-D0396"
+      },
+      {
+        "id": "CO-0950",
+        "name": "UKA Evolution Engine",
+        "parentDomainId": "UKA-D0397"
+      },
+      {
+        "id": "CO-0951",
+        "name": "Quantum Sensor Architecture",
+        "parentDomainId": "UKA-D0398"
+      },
+      {
+        "id": "CO-0952",
+        "name": "Quantum Metrology Framework",
+        "parentDomainId": "UKA-D0399"
+      },
+      {
+        "id": "CO-0953",
+        "name": "Archaeological Simulation Model",
+        "parentDomainId": "UKA-D0400"
+      },
+      {
+        "id": "CO-0954",
+        "name": "Archaeometric Analysis Protocol",
+        "parentDomainId": "UKA-D0401"
+      },
+      {
+        "id": "CO-0955",
+        "name": "Marine Bioprocess Workflow",
+        "parentDomainId": "UKA-D0402"
+      },
+      {
+        "id": "CO-0956",
+        "name": "Industrial Bioprocess Architecture",
+        "parentDomainId": "UKA-D0403"
+      },
+      {
+        "id": "CO-0957",
+        "name": "Structural Health Monitoring Framework",
+        "parentDomainId": "UKA-D0404"
+      },
+      {
+        "id": "CO-0958",
+        "name": "Wind Load Simulation Model",
+        "parentDomainId": "UKA-D0405"
+      },
+      {
+        "id": "CO-0959",
+        "name": "Fire Risk Engineering Framework",
+        "parentDomainId": "UKA-D0406"
+      },
+      {
+        "id": "CO-0960",
+        "name": "Offshore Renewable Infrastructure Blueprint",
+        "parentDomainId": "UKA-D0407"
+      },
+      {
+        "id": "CO-0961",
+        "name": "Digital Pathology Workflow",
+        "parentDomainId": "UKA-D0408"
+      },
+      {
+        "id": "CO-0962",
+        "name": "Clinical Informatics Framework",
+        "parentDomainId": "UKA-D0409"
+      },
+      {
+        "id": "CO-0963",
+        "name": "Medical Imaging Knowledge Base",
+        "parentDomainId": "UKA-D0410"
+      },
+      {
+        "id": "CO-0964",
+        "name": "Reproductive Care Protocol",
+        "parentDomainId": "UKA-D0411"
+      },
+      {
+        "id": "CO-0965",
+        "name": "Veterinary Information System",
+        "parentDomainId": "UKA-D0412"
+      },
+      {
+        "id": "CO-0966",
+        "name": "Sports Injury Assessment",
+        "parentDomainId": "UKA-D0413"
+      },
+      {
+        "id": "CO-0967",
+        "name": "Sleep Disorder Assessment",
+        "parentDomainId": "UKA-D0414"
+      },
+      {
+        "id": "CO-0968",
+        "name": "Pain Assessment Framework",
+        "parentDomainId": "UKA-D0415"
+      },
+      {
+        "id": "CO-0969",
+        "name": "Palliative Care Framework",
+        "parentDomainId": "UKA-D0416"
+      },
+      {
+        "id": "CO-0970",
+        "name": "Lifestyle Intervention Framework",
+        "parentDomainId": "UKA-D0417"
+      },
+      {
+        "id": "CO-0971",
+        "name": "AI Benchmark Suite",
+        "parentDomainId": "UKA-D0418"
+      },
+      {
+        "id": "CO-0972",
+        "name": "RAG Architecture",
+        "parentDomainId": "UKA-D0420"
+      },
+      {
+        "id": "CO-0973",
+        "name": "Multi-Agent Coordination Framework",
+        "parentDomainId": "UKA-D0421"
+      },
+      {
+        "id": "CO-0974",
+        "name": "AI Orchestration Engine",
+        "parentDomainId": "UKA-D0422"
+      },
+      {
+        "id": "CO-0975",
+        "name": "Edge Robotics Architecture",
+        "parentDomainId": "UKA-D0423"
+      },
+      {
+        "id": "CO-0976",
+        "name": "Human–Robot Collaboration Framework",
+        "parentDomainId": "UKA-D0424"
+      },
+      {
+        "id": "CO-0977",
+        "name": "MLOps Governance Framework",
+        "parentDomainId": "UKA-D0425"
+      },
+      {
+        "id": "CO-0978",
+        "name": "Data-Centric AI Framework",
+        "parentDomainId": "UKA-D0426"
+      },
+      {
+        "id": "CO-0979",
+        "name": "AI Reliability Framework",
+        "parentDomainId": "UKA-D0427"
+      },
+      {
+        "id": "CO-0980",
+        "name": "Sports Analytics Dashboard",
+        "parentDomainId": "UKA-D0428"
+      },
+      {
+        "id": "CO-0981",
+        "name": "Tourism Intelligence Platform",
+        "parentDomainId": "UKA-D0429"
+      },
+      {
+        "id": "CO-0982",
+        "name": "Hospitality Operations Dashboard",
+        "parentDomainId": "UKA-D0430"
+      },
+      {
+        "id": "CO-0983",
+        "name": "Retail Intelligence Platform",
+        "parentDomainId": "UKA-D0431"
+      },
+      {
+        "id": "CO-0984",
+        "name": "Insurance Technology Framework",
+        "parentDomainId": "UKA-D0432"
+      },
+      {
+        "id": "CO-0985",
+        "name": "Supply Market Intelligence Platform",
+        "parentDomainId": "UKA-D0433"
+      },
+      {
+        "id": "CO-0986",
+        "name": "Creative Economy Framework",
+        "parentDomainId": "UKA-D0434"
+      },
+      {
+        "id": "CO-0987",
+        "name": "Digital Humanities Knowledge Base",
+        "parentDomainId": "UKA-D0198"
+      },
+      {
+        "id": "CO-0988",
+        "name": "Computational Linguistics Framework",
+        "parentDomainId": "UKA-D0435"
+      },
+      {
+        "id": "CO-0989",
+        "name": "Language Technology Platform",
+        "parentDomainId": "UKA-D0436"
+      },
+      {
+        "id": "CO-0990",
+        "name": "Space Weather Monitoring Framework",
+        "parentDomainId": "UKA-D0437"
+      },
+      {
+        "id": "CO-0991",
+        "name": "Space Medicine Protocol",
+        "parentDomainId": "UKA-D0438"
+      },
+      {
+        "id": "CO-0992",
+        "name": "Space Manufacturing Workflow",
+        "parentDomainId": "UKA-D0439"
+      },
+      {
+        "id": "CO-0993",
+        "name": "Orbital Debris Monitoring Framework",
+        "parentDomainId": "UKA-D0440"
+      },
+      {
+        "id": "CO-0994",
+        "name": "Space Traffic Coordination Framework",
+        "parentDomainId": "UKA-D0441"
+      },
+      {
+        "id": "CO-1001",
+        "name": "Category Model",
+        "parentDomainId": "UKA-D0442"
+      },
+      {
+        "id": "CO-1002",
+        "name": "Type System Specification",
+        "parentDomainId": "UKA-D0443"
+      },
+      {
+        "id": "CO-1003",
+        "name": "Formal Proof Model",
+        "parentDomainId": "UKA-D0444"
+      },
+      {
+        "id": "CO-1004",
+        "name": "Logical Structure Model",
+        "parentDomainId": "UKA-D0445"
+      },
+      {
+        "id": "CO-1005",
+        "name": "Graph Structure Model",
+        "parentDomainId": "UKA-D0446"
+      },
+      {
+        "id": "CO-1006",
+        "name": "Information Entropy Model",
+        "parentDomainId": "UKA-D0447"
+      },
+      {
+        "id": "CO-1007",
+        "name": "Error Correction Code Model",
+        "parentDomainId": "UKA-D0448"
+      },
+      {
+        "id": "CO-1008",
+        "name": "Decision Analysis Framework",
+        "parentDomainId": "UKA-D0449"
+      },
+      {
+        "id": "CO-1009",
+        "name": "Strategic Interaction Model",
+        "parentDomainId": "UKA-D0450"
+      },
+      {
+        "id": "CO-1010",
+        "name": "Control System Model",
+        "parentDomainId": "UKA-D0451"
+      },
+      {
+        "id": "CO-1011",
+        "name": "Systems Interaction Model",
+        "parentDomainId": "UKA-D0452"
+      },
+      {
+        "id": "CO-1012",
+        "name": "Complexity Analysis Framework",
+        "parentDomainId": "UKA-D0453"
+      },
+      {
+        "id": "CO-1013",
+        "name": "Network Dynamics Model",
+        "parentDomainId": "UKA-D0454"
+      },
+      {
+        "id": "CO-1014",
+        "name": "Remote Sensing Processing Pipeline",
+        "parentDomainId": "UKA-D0455"
+      },
+      {
+        "id": "CO-1015",
+        "name": "Geospatial Information Model",
+        "parentDomainId": "UKA-D0456"
+      },
+      {
+        "id": "CO-1016",
+        "name": "Geospatial Intelligence Framework",
+        "parentDomainId": "UKA-D0457"
+      },
+      {
+        "id": "CO-1017",
+        "name": "Digital Earth Model",
+        "parentDomainId": "UKA-D0458"
+      },
+      {
+        "id": "CO-1018",
+        "name": "Geodetic Reference Model",
+        "parentDomainId": "UKA-D0459"
+      },
+      {
+        "id": "CO-1019",
+        "name": "Water Information Model",
+        "parentDomainId": "UKA-D0460"
+      },
+      {
+        "id": "CO-1020",
+        "name": "Coastal Infrastructure Model",
+        "parentDomainId": "UKA-D0461"
+      },
+      {
+        "id": "CO-1021",
+        "name": "Industrial AI Framework",
+        "parentDomainId": "UKA-D0462"
+      },
+      {
+        "id": "CO-1022",
+        "name": "Smart Factory Architecture",
+        "parentDomainId": "UKA-D0463"
+      },
+      {
+        "id": "CO-1023",
+        "name": "Digital Manufacturing Workflow",
+        "parentDomainId": "UKA-D0464"
+      },
+      {
+        "id": "CO-1024",
+        "name": "Manufacturing Execution Platform",
+        "parentDomainId": "UKA-D0465"
+      },
+      {
+        "id": "CO-1025",
+        "name": "Industrial Automation Architecture",
+        "parentDomainId": "UKA-D0466"
+      },
+      {
+        "id": "CO-1026",
+        "name": "Process Systems Model",
+        "parentDomainId": "UKA-D0467"
+      },
+      {
+        "id": "CO-1027",
+        "name": "Defense Systems Architecture",
+        "parentDomainId": "UKA-D0468"
+      },
+      {
+        "id": "CO-1028",
+        "name": "Military Logistics Network",
+        "parentDomainId": "UKA-D0469"
+      },
+      {
+        "id": "CO-1029",
+        "name": "Intelligence Analysis Framework",
+        "parentDomainId": "UKA-D0470"
+      },
+      {
+        "id": "CO-1030",
+        "name": "Strategic Defense Simulation",
+        "parentDomainId": "UKA-D0471"
+      },
+      {
+        "id": "CO-1031",
+        "name": "Cyber Warfare Framework",
+        "parentDomainId": "UKA-D0472"
+      },
+      {
+        "id": "CO-1032",
+        "name": "Film Production Pipeline",
+        "parentDomainId": "UKA-D0473"
+      },
+      {
+        "id": "CO-1033",
+        "name": "Music Production Workflow",
+        "parentDomainId": "UKA-D0474"
+      },
+      {
+        "id": "CO-1034",
+        "name": "Game Development Pipeline",
+        "parentDomainId": "UKA-D0475"
+      },
+      {
+        "id": "CO-1035",
+        "name": "Interactive Media Framework",
+        "parentDomainId": "UKA-D0476"
+      },
+      {
+        "id": "CO-1036",
+        "name": "XR System Architecture",
+        "parentDomainId": "UKA-D0477"
+      },
+      {
+        "id": "CO-1037",
+        "name": "Virtual Production Pipeline",
+        "parentDomainId": "UKA-D0478"
+      },
+      {
+        "id": "CO-1038",
+        "name": "Terminology Management Framework",
+        "parentDomainId": "UKA-D0479"
+      },
+      {
+        "id": "CO-1039",
+        "name": "Lexicographic Database",
+        "parentDomainId": "UKA-D0480"
+      },
+      {
+        "id": "CO-1040",
+        "name": "Corpus Analysis Framework",
+        "parentDomainId": "UKA-D0481"
+      },
+      {
+        "id": "CO-1041",
+        "name": "Knowledge Classification Framework",
+        "parentDomainId": "UKA-D0482"
+      },
+      {
+        "id": "CO-1042",
+        "name": "Information Organization Framework",
+        "parentDomainId": "UKA-D0170"
+      },
+      {
+        "id": "CO-1043",
+        "name": "Knowledge Curation Workflow",
+        "parentDomainId": "UKA-D0483"
+      },
+      {
+        "id": "CO-1044",
+        "name": "Canonical Governance Framework",
+        "parentDomainId": "UKA-D0484"
+      },
+      {
+        "id": "CO-1045",
+        "name": "Semantic Version Registry",
+        "parentDomainId": "UKA-D0486"
+      },
+      {
+        "id": "CO-1046",
+        "name": "Provenance Engineering Framework",
+        "parentDomainId": "UKA-D0487"
+      },
+      {
+        "id": "CO-1047",
+        "name": "Knowledge Trust Model",
+        "parentDomainId": "UKA-D0488"
+      },
+      {
+        "id": "CO-1048",
+        "name": "Canonical Lifecycle Framework",
+        "parentDomainId": "UKA-D0489"
+      },
+      {
+        "id": "CO-1049",
+        "name": "Knowledge Quality Framework",
+        "parentDomainId": "UKA-D0490"
+      },
+      {
+        "id": "CO-1050",
+        "name": "Conflict Resolution Protocol",
+        "parentDomainId": "UKA-D0491"
+      },
+      {
+        "id": "CO-1051",
+        "name": "Knowledge Merge Framework",
+        "parentDomainId": "UKA-D0492"
+      },
+      {
+        "id": "CO-1052",
+        "name": "Canonical Approval Pipeline",
+        "parentDomainId": "UKA-D0493"
+      },
+      {
+        "id": "CO-1053",
+        "name": "Ontology Change Workflow",
+        "parentDomainId": "UKA-D0494"
+      },
+      {
+        "id": "CO-1054",
+        "name": "Semantic Compliance Model",
+        "parentDomainId": "UKA-D0495"
+      },
+      {
+        "id": "CO-1055",
+        "name": "Knowledge Audit Framework",
+        "parentDomainId": "UKA-D0496"
+      },
+      {
+        "id": "CO-1056",
+        "name": "Knowledge Lineage Model",
+        "parentDomainId": "UKA-D0497"
+      },
+      {
+        "id": "CO-1057",
+        "name": "Knowledge Certification Framework",
+        "parentDomainId": "UKA-D0498"
+      },
+      {
+        "id": "CO-1058",
+        "name": "Canonical Registry Platform",
+        "parentDomainId": "UKA-D0499"
+      },
+      {
+        "id": "CO-1059",
+        "name": "Ontology Federation Framework",
+        "parentDomainId": "UKA-D0500"
+      },
+      {
+        "id": "CO-1060",
+        "name": "Semantic Exchange Standard",
+        "parentDomainId": "UKA-D0501"
+      },
+      {
+        "id": "CO-1061",
+        "name": "Knowledge Integrity Framework",
+        "parentDomainId": "UKA-D0502"
+      },
+      {
+        "id": "CO-1062",
+        "name": "Universal Knowledge Governance Framework",
+        "parentDomainId": "UKA-D0503"
+      },
+      {
+        "id": "CO-1101",
+        "name": "Islamic Civilization Knowledge Framework",
+        "parentDomainId": "UKA-D0504"
+      },
+      {
+        "id": "CO-1102",
+        "name": "Muslim Governance Framework",
+        "parentDomainId": "UKA-D0505"
+      },
+      {
+        "id": "CO-1103",
+        "name": "Muslim Community Structure Model",
+        "parentDomainId": "UKA-D0506"
+      },
+      {
+        "id": "CO-1104",
+        "name": "Quranic Knowledge Base",
+        "parentDomainId": "UKA-D0507"
+      },
+      {
+        "id": "CO-1105",
+        "name": "Hadith Knowledge Base",
+        "parentDomainId": "UKA-D0508"
+      },
+      {
+        "id": "CO-1106",
+        "name": "Arabic Linguistic Framework",
+        "parentDomainId": "UKA-D0509"
+      },
+      {
+        "id": "CO-1107",
+        "name": "Arabic Literary Corpus",
+        "parentDomainId": "UKA-D0510"
+      },
+      {
+        "id": "CO-1108",
+        "name": "Islamicjerusalem Historical Atlas",
+        "parentDomainId": "UKA-D0511"
+      },
+      {
+        "id": "CO-1109",
+        "name": "Levant Historical Atlas",
+        "parentDomainId": "UKA-D0512"
+      },
+      {
+        "id": "CO-1110",
+        "name": "Al-Andalus Civilization Repository",
+        "parentDomainId": "UKA-D0513"
+      },
+      {
+        "id": "CO-1111",
+        "name": "Ottoman Civilization Knowledge Base",
+        "parentDomainId": "UKA-D0514"
+      },
+      {
+        "id": "CO-1112",
+        "name": "Mediterranean Civilization Framework",
+        "parentDomainId": "UKA-D0515"
+      },
+      {
+        "id": "CO-1113",
+        "name": "Islamization of Knowledge Framework",
+        "parentDomainId": "UKA-D0516"
+      },
+      {
+        "id": "CO-1114",
+        "name": "Madani Civilization Framework",
+        "parentDomainId": "UKA-D0517"
+      },
+      {
+        "id": "CO-1115",
+        "name": "Adab Framework",
+        "parentDomainId": "UKA-D0518"
+      },
+      {
+        "id": "CO-1116",
+        "name": "Muslim Knowledge Hub",
+        "parentDomainId": "UKA-D0519"
+      },
+      {
+        "id": "CO-1117",
+        "name": "Decision Science Framework",
+        "parentDomainId": "UKA-D0520"
+      },
+      {
+        "id": "CO-1118",
+        "name": "Decision Intelligence Platform",
+        "parentDomainId": "UKA-D0521"
+      },
+      {
+        "id": "CO-1119",
+        "name": "Decision Analytics Pipeline",
+        "parentDomainId": "UKA-D0522"
+      },
+      {
+        "id": "CO-1120",
+        "name": "Behavioral Decision Model",
+        "parentDomainId": "UKA-D0523"
+      },
+      {
+        "id": "CO-1121",
+        "name": "Strategic Decision Framework",
+        "parentDomainId": "UKA-D0524"
+      },
+      {
+        "id": "CO-1122",
+        "name": "AI Decision Engine",
+        "parentDomainId": "UKA-D0525"
+      },
+      {
+        "id": "CO-1123",
+        "name": "Risk Decision Framework",
+        "parentDomainId": "UKA-D0526"
+      },
+      {
+        "id": "CO-1124",
+        "name": "Executive Decision Dashboard",
+        "parentDomainId": "UKA-D0527"
+      },
+      {
+        "id": "CO-1125",
+        "name": "Disease Ecology Framework",
+        "parentDomainId": "UKA-D0528"
+      },
+      {
+        "id": "CO-1126",
+        "name": "Fish Science Framework",
+        "parentDomainId": "UKA-D0529"
+      },
+      {
+        "id": "UKA-CO0001",
+        "name": "Website Architecture",
+        "parentDomainId": "UKA-D0026"
+      },
+      {
+        "id": "UKA-CO0002",
+        "name": "Strategic Planning",
+        "parentDomainId": "UKA-D0116"
+      },
+      {
+        "id": "UKA-CO0003",
+        "name": "Program Evaluation",
+        "parentDomainId": "UKA-D0119"
+      },
+      {
+        "id": "UKA-CO0004",
+        "name": "Clinical Diagnosis",
+        "parentDomainId": "UKA-D0120"
+      },
+      {
+        "id": "UKA-CO0005",
+        "name": "Psychological Assessment",
+        "parentDomainId": "UKA-D0121"
+      },
+      {
+        "id": "UKA-CO0006",
+        "name": "Environmental Management",
+        "parentDomainId": "UKA-D0122"
+      },
+      {
+        "id": "UKA-CO0007",
+        "name": "Manufacturing Operations",
+        "parentDomainId": "UKA-D0123"
+      },
+      {
+        "id": "UKA-CO0008",
+        "name": "Landscape Architecture",
+        "parentDomainId": "UKA-D0126"
+      },
+      {
+        "id": "UKA-CO0009",
+        "name": "Technical Writing",
+        "parentDomainId": "UKA-D0131"
+      },
+      {
+        "id": "UKA-CO0010",
+        "name": "Financial Accounting",
+        "parentDomainId": "UKA-D0134"
+      },
+      {
+        "id": "UKA-CO0011",
+        "name": "Talent Acquisition",
+        "parentDomainId": "UKA-D0135"
+      },
+      {
+        "id": "UKA-CO0012",
+        "name": "AI Benchmarking",
+        "parentDomainId": "UKA-D0419"
+      },
+      {
+        "id": "UKA-CO0013",
+        "name": "Ontology Design",
+        "parentDomainId": "UKA-D0485"
+      }
+    ],
+    "relationships": []
+  }
+}
