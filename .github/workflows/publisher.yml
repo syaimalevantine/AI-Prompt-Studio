@@ -1,4 +1,4 @@
- name: Knowledge Publisher
+name: Knowledge Publisher
 
 on:
   workflow_dispatch:
