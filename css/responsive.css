@@ -80,7 +80,7 @@ Created with ChatGPT
 
     }
     
-    main {
+    .app-layout {
     grid-template-columns: 1fr;
 }
 
