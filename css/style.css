@@ -509,3 +509,27 @@ aside:focus-within{
     margin-bottom:12px;
 
 }
+
+/* =========================================================
+   MOBILE LONG PROMPT WRAPPING
+   Prevent generated prompt content from causing
+   horizontal page overflow.
+   ========================================================= */
+
+.generated-prompt,
+.generated-prompt * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.generated-prompt pre,
+.generated-prompt code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
