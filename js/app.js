@@ -160,8 +160,7 @@ function applyUiLanguage(language) {
     const translations =
         uiTranslations[language] || uiTranslations.en;
 
-    document.documentElement.lang = language;
-document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+document.documentElement.lang = language;
 
     document.querySelector(".tagline").textContent =
         translations.tagline;
