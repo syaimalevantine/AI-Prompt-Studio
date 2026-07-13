@@ -63,11 +63,19 @@ function buildRequirements() {
 }
 
 function buildOutputLanguage(data) {
+    const languageLabels = {
+        ar: "العربية",
+        id: "Bahasa Indonesia",
+        en: "English",
+        tr: "Türkçe"
+    };
+
+    const languageLabel =
+        languageLabels[data.language] || data.language;
 
     return `OUTPUT LANGUAGE
 
-${data.language}`;
-
+${languageLabel}`;
 }
 
 function buildModel(data) {
