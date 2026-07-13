@@ -161,7 +161,7 @@ function applyUiLanguage(language) {
         uiTranslations[language] || uiTranslations.en;
 
 document.documentElement.lang = language;
-
+document.body.classList.toggle("arabic-ui", language === "ar");
     document.querySelector(".tagline").textContent =
         translations.tagline;
 

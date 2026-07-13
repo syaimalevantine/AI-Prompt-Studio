@@ -566,3 +566,12 @@ body {
   font-size: 15px;
   cursor: pointer;
 }
+/* Arabic UI text direction */
+body.arabic-ui .tagline,
+body.arabic-ui .prompt-canvas h2,
+body.arabic-ui .section-description,
+body.arabic-ui label,
+body.arabic-ui textarea {
+  direction: rtl;
+  text-align: right;
+}
