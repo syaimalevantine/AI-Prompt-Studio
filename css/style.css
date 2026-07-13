@@ -544,3 +544,25 @@ aside:focus-within{
 body {
   overflow-x: hidden;
 }
+
+/* =========================================
+   COMPACT INTERFACE LANGUAGE CONTROL
+   ========================================= */
+
+.ui-language-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ui-language-control select {
+  width: auto;
+  min-width: 140px;
+  padding: 10px 36px 10px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  background-color: transparent;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
