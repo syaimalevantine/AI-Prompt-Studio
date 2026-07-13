@@ -297,13 +297,15 @@ function renderPrompt() {
 
     });
 
-    previewContent.className = "generated-content";
+    const outputDirection =
+    languageSelect.value === "ar" ? "rtl" : "ltr";
 
-    previewContent.innerHTML = `
+previewContent.className = "generated-content";
+previewContent.dir = outputDirection;
 
-        <pre>${generatedPrompt}</pre>
-
-    `;
+previewContent.innerHTML = `
+    <pre dir="${outputDirection}">${generatedPrompt}</pre>
+`;
 
     copyButton.disabled = false;
 
