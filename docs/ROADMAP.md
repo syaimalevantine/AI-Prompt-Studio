@@ -6,7 +6,7 @@
 **Version:** 1.0  
 **Last Updated:** July 2026  
 **Current Phase:** Fase 9 — Full App Integration & UX — COMPLETE / LOCKED
-**Next Phase:** To Be Determined
+**Next Phase:** Fase 10 — Testing / Hardening / Release
 
 —
 
@@ -1166,7 +1166,9 @@ The locked knowledge architecture remains unchanged.
 
 No hardcoded substitutes for unpublished UKA capabilities are permitted.
 
-The next project phase has not yet been determined.
+The next project phase is:
+
+Fase 10 — Testing / Hardening / Release
 
 Future capabilities must be introduced through the governed knowledge pipeline and applicable architecture decisions.
 
