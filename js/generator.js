@@ -30,39 +30,113 @@ function getActiveRuntime() {
     return getRuntime();
 
 }
+const promptTranslations = {
+    en: {
+        intro: "Your task is to complete the user's request with a high-quality response.",
+        role: "ROLE",
+        roleText: (tone) => `You are a ${tone} AI assistant.`,
+        goal: "GOAL",
+        requirements: "REQUIREMENTS",
+        requirementItems: [
+            "Produce a clear and complete answer.",
+            "Use a logical structure.",
+            "Make the response easy to understand.",
+            "Use accurate and helpful information whenever possible."
+        ],
+        outputLanguage: "OUTPUT LANGUAGE",
+        aiModel: "AI MODEL",
+        optimizedFor: (model) => `Optimized for ${model}.`
+    },
 
+    id: {
+        intro: "Tugas Anda adalah menyelesaikan permintaan pengguna dengan respons berkualitas tinggi.",
+        role: "PERAN",
+        roleText: (tone) => `Anda adalah asisten AI dengan gaya ${tone}.`,
+        goal: "TUJUAN",
+        requirements: "PERSYARATAN",
+        requirementItems: [
+            "Berikan jawaban yang jelas dan lengkap.",
+            "Gunakan struktur yang logis.",
+            "Buat respons yang mudah dipahami.",
+            "Gunakan informasi yang akurat dan bermanfaat bila memungkinkan."
+        ],
+        outputLanguage: "BAHASA OUTPUT",
+        aiModel: "MODEL AI",
+        optimizedFor: (model) => `Dioptimalkan untuk ${model}.`
+    },
+
+    tr: {
+        intro: "Göreviniz, kullanıcının isteğini yüksek kaliteli bir yanıtla tamamlamaktır.",
+        role: "ROL",
+        roleText: (tone) => `${tone} üslubunda bir yapay zekâ asistanısınız.`,
+        goal: "AMAÇ",
+        requirements: "GEREKSİNİMLER",
+        requirementItems: [
+            "Açık ve eksiksiz bir yanıt verin.",
+            "Mantıklı bir yapı kullanın.",
+            "Yanıtı kolay anlaşılır hale getirin.",
+            "Mümkün olduğunda doğru ve yararlı bilgiler kullanın."
+        ],
+        outputLanguage: "ÇIKTI DİLİ",
+        aiModel: "YAPAY ZEKÂ MODELİ",
+        optimizedFor: (model) => `${model} için optimize edilmiştir.`
+    },
+
+    ar: {
+        intro: "مهمتك هي تلبية طلب المستخدم بإجابة عالية الجودة.",
+        role: "الدور",
+        roleText: (tone) => `أنت مساعد ذكاء اصطناعي بأسلوب ${tone}.`,
+        goal: "الهدف",
+        requirements: "المتطلبات",
+        requirementItems: [
+            "قدّم إجابة واضحة وكاملة.",
+            "استخدم بنية منطقية.",
+            "اجعل الإجابة سهلة الفهم.",
+            "استخدم معلومات دقيقة ومفيدة كلما أمكن."
+        ],
+        outputLanguage: "لغة المخرجات",
+        aiModel: "نموذج الذكاء الاصطناعي",
+        optimizedFor: (model) => `محسّن للاستخدام مع ${model}.`
+    }
+};
+
+function getPromptTranslation(language) {
+    return promptTranslations[language] || promptTranslations.en;
+}
 /* ==========================================
    Prompt Sections
 ========================================== */
 
 function buildRole(data) {
+    const translations = getPromptTranslation(data.language);
 
-    return `ROLE
+    return `${translations.role}
 
-You are a ${data.tone} AI assistant.`;
-
+${translations.roleText(data.tone)}`;
 }
 
 function buildGoal(data) {
+    const translations = getPromptTranslation(data.language);
 
-    return `GOAL
+    return `${translations.goal}
 
 ${data.idea}`;
-
 }
+function buildRequirements(data) {
+    const translations = getPromptTranslation(data.language);
 
-function buildRequirements() {
+    const items = translations.requirementItems
+        .map((item) => `- ${item}`)
+        .join("\n");
 
-    return `REQUIREMENTS
+    return `${translations.requirements}
 
-- Produce a clear and complete answer.
-- Use a logical structure.
-- Make the response easy to understand.
-- Use accurate and helpful information whenever possible.`;
-
+${items}`;
 }
 
 function buildOutputLanguage(data) {
+    const translations = getPromptTranslation(data.language);
+
     const languageLabels = {
         ar: "العربية",
         id: "Bahasa Indonesia",
@@ -73,17 +147,18 @@ function buildOutputLanguage(data) {
     const languageLabel =
         languageLabels[data.language] || data.language;
 
-    return `OUTPUT LANGUAGE
+    return `${translations.outputLanguage}
 
 ${languageLabel}`;
 }
 
 function buildModel(data) {
+    const translations =
+        getPromptTranslation(data.language);
 
-    return `AI MODEL
+    return `${translations.aiModel}
 
-Optimized for ${data.model}.`;
-
+${translations.optimizedFor(data.model)}`;
 }
 function buildKnowledgeContext(knowledge) {
 
@@ -130,7 +205,10 @@ console.log(
     `Runtime Version: ${runtimeVersion}`
 );
 
-    const intro = `Your task is to complete the user's request with a high-quality response.`;
+    const translations =
+    getPromptTranslation(data.language);
+
+const intro = translations.intro;
 
     const sections = [
 
@@ -142,7 +220,7 @@ console.log(
 
     buildKnowledgeContext(knowledge),
 
-    buildRequirements(),
+    buildRequirements(data),
 
     buildOutputLanguage(data),
 
