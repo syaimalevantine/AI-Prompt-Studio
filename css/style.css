@@ -530,6 +530,17 @@ aside:focus-within{
   max-width: 100%;
 }
 
+.generated-content[dir="rtl"] pre {
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: plaintext;
+}
+
+.generated-content[dir="ltr"] pre {
+  direction: ltr;
+  text-align: left;
+}
+
 body {
   overflow-x: hidden;
 }
