@@ -1148,6 +1148,315 @@ COMPLETE / LOCKED
 
 —
 
+# Fase 10 — Testing / Hardening / Release
+**Status:** CURRENT
+
+Fase 10 validates, hardens, and prepares the completed AI Prompt Studio application for release.
+
+The objective is not to redesign the locked architecture or introduce speculative product capabilities.
+
+The objective is to verify release readiness, identify and resolve real defects, strengthen application reliability, and establish a validated release baseline.
+
+Fase 10 preserves all locked architecture and product boundaries established through Fase 9.
+
+—
+
+## Fase 10 Primary Goal
+
+The primary Fase 10 goal is:
+
+```text
+Completed Application
+        +
+Systematic Testing
+        +
+Reliability Hardening
+        +
+Release Validation
+        ↓
+Validated Release Baseline
+
+## Fase 10 Workstream 1 — Release Baseline Audit
+
+Establish the exact application baseline entering Fase 10.
+
+Audit:
+
+- Current committed source state
+- Production deployment state
+- Application file structure
+- Active JavaScript modules
+- Active runtime package
+- Current documentation state
+- Known locked architecture boundaries
+- Known defects and unresolved issues
+
+The goal is to establish a traceable baseline before hardening begins.
+
+No defect should be fixed before its current behavior and impact are understood.
+
+—
+
+## Fase 10 Workstream 2 — Functional Regression Testing
+
+Systematically verify that functionality completed through Fase 9 remains operational.
+
+Test:
+
+- Creator Idea input
+- Character counter
+- 500-character limit
+- Tone selection
+- AI Model selection
+- Output Language selection
+- Prompt generation
+- Strong canonical resolution
+- Reordered canonical phrase resolution
+- Generic input rejection
+- Unsupported knowledge concept behavior
+- Null runtime resolution
+- Knowledge Context inclusion and omission
+- Copy action
+- Clear action
+- Repeated generation
+- State isolation between generations
+
+The goal is to detect regressions without changing intended product behavior.
+
+—
+
+## Fase 10 Workstream 3 — Runtime and Integration Hardening
+
+Validate reliability across the active runtime flow:
+
+```text
+Knowledge Runtime Package
+ ↓
+runtime-loader.js
+ ↓
+runtime-resolver.js
+ ↓
+generator.js
+ ↓
+Generated Prompt
+
+```
+
+Audit and harden:
+
+- Runtime loading reliability
+- Runtime JSON availability
+- Module dependency behavior
+- Resolver invocation
+- Generator consumption
+- Null resolution continuation
+- Runtime failure boundaries
+- Unexpected data handling
+- Deterministic behavior
+- Production runtime consistency
+
+Hardening must preserve the locked UKA v1.0 capability scope.
+
+—
+
+## Fase 10 Workstream 4 — Error and Failure-State Hardening
+
+Audit application behavior when expected operations cannot complete normally.
+
+Test and harden:
+
+- Empty input behavior
+- Runtime loading failure behavior
+- Invalid or unavailable runtime data
+- JavaScript execution failures where observable
+- Clipboard failure behavior
+- Production asset loading failures where testable
+- User-facing error feedback
+- Recovery after recoverable failures
+
+Errors must fail safely and must not fabricate knowledge or produce misleading success states.
+
+—
+
+## Fase 10 Workstream 5 — Mobile and Safari Reliability
+
+Validate the application as a mobile-first product.
+
+Audit:
+
+- iPhone interaction
+- Safari behavior
+- Refresh behavior
+- Cache behavior
+- Keyboard interaction
+- Input focus
+- Dropdown interaction
+- Touch targets
+- Vertical scrolling
+- Horizontal overflow
+- Long generated prompt wrapping
+- 500-character input rendering
+- Copy and Clear interaction
+- Repeated use within one browser session
+
+The experience should remain lightweight, stable, and usable on the primary mobile environment.
+
+—
+
+## Fase 10 Workstream 6 — Performance and Loading Validation
+
+Audit application loading and runtime behavior without introducing unnecessary complexity.
+
+Validate:
+
+- Initial application loading
+- Static asset loading
+- JavaScript module loading
+- Runtime JSON loading
+- Prompt generation responsiveness
+- Repeated generation responsiveness
+- Avoidance of unnecessary blocking behavior
+- Avoidance of unnecessary application weight
+
+Performance work must be evidence-driven.
+
+Fase 10 must not introduce speculative optimization that weakens maintainability or architecture clarity.
+
+—
+## Fase 10 Workstream 7 — Accessibility and Interaction Quality
+
+Audit the creator experience for basic accessibility and interaction reliability.
+
+Validate:
+
+- Semantic controls
+- Form labels
+- Keyboard-accessible interaction where applicable
+- Focus visibility
+- Readable text
+- Sufficient interaction clarity
+- Button state clarity
+- Error feedback clarity
+- Generated prompt readability
+- Mobile interaction consistency
+
+Accessibility improvements must preserve the Levantine Minimal visual direction.
+
+—
+
+## Fase 10 Workstream 8 — Production Deployment Hardening
+
+Verify that committed source changes are reflected reliably in production.
+
+Audit:
+
+- Deployment success
+- Production source consistency
+- Static asset availability
+- JavaScript module availability
+- Runtime JSON availability
+- Cache-related update behavior
+- Safari production refresh behavior
+- Production generation behavior
+- Recovery after deployment updates
+
+The production application must reliably reflect the committed release candidate.
+
+—
+
+## Fase 10 Workstream 9 — Documentation and Release Readiness
+
+Synchronize release-relevant documentation with the validated implementation.
+
+Audit and update where required:
+
+- ROADMAP.md
+- CHANGELOG.md, if present
+- README.md, if release-facing information requires synchronization
+- Architecture documentation only if implementation changes require it
+- Product documentation only if product behavior changes require it
+- Release version information
+- Known limitations
+- Active UKA v1.0 capability scope
+
+Historical locked decisions must remain preserved.
+
+Documentation must reflect actual implementation rather than planned or speculative behavior.
+
+—
+
+## Fase 10 Workstream 10 — Final Release Candidate Validation
+
+Perform a final end-to-end validation of the release candidate after all approved hardening changes are complete.
+
+The final validation must include:
+
+- Fresh production load
+- Creator Idea entry
+- Application control selection
+- Strong canonical match
+- Reordered canonical phrase
+- Generic input
+- Unsupported knowledge concept
+- Null runtime resolution
+- Prompt generation with Knowledge Context
+- Prompt generation without Knowledge Context
+- Tone selection
+- AI Model selection
+- Output Language selection
+- Copy action
+- Clear action
+- 500-character boundary
+- Long-content rendering
+- Repeated generation
+- Mobile interaction
+- Safari refresh behavior
+- Production deployment behavior
+
+The release candidate must be tested as a complete creator experience.
+
+—
+
+## Fase 10 Completion Criteria
+
+Fase 10 is complete when:
+
+- A traceable release baseline is established
+- Functional regression testing passes
+- Critical runtime and integration paths are validated
+- Known release-blocking defects are resolved
+- Error and failure states fail safely
+- Mobile and Safari reliability are validated
+- Long-content and 500-character behavior remain stable
+- Performance and loading behavior are acceptable for the current product scope
+- Accessibility and interaction quality are validated
+- Production deployment behavior is reliable
+- Release-relevant documentation reflects the validated implementation
+- No unpublished UKA capability is fabricated or hardcoded
+- The locked knowledge architecture remains preserved
+- Final release candidate validation passes
+
+—
+
+## Fase 10 Non-Goals
+
+Fase 10 does not redesign the locked knowledge architecture.
+
+Fase 10 does not activate unpublished UKA capabilities.
+
+The following remain outside the active UKA v1.0 runtime scope:
+
+- Intent Resolution
+- Alias Resolution
+- Relationship Resolution
+- Structured Context Resolution
+
+Fase 10 does not add speculative features merely to expand release scope.
+
+New product capabilities should be evaluated separately and introduced through the appropriate product, architecture, and knowledge governance processes.
+
+—
+
 # Final Status
 
 **Status: ACTIVE**
