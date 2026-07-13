@@ -70,8 +70,7 @@ const initialUiLanguage =
 uiLanguageSelect.value = initialUiLanguage;
 
 document.documentElement.lang = initialUiLanguage;
-document.documentElement.dir =
-    initialUiLanguage === "ar" ? "rtl" : "ltr";
+
 const uiTranslations = {
     en: {
         tagline: "Type Ideas into Perfect Prompts",
@@ -162,8 +161,6 @@ function applyUiLanguage(language) {
         uiTranslations[language] || uiTranslations.en;
 
     document.documentElement.lang = language;
-    document.documentElement.dir =
-        language === "ar" ? "rtl" : "ltr";
 
     document.querySelector(".tagline").textContent =
         translations.tagline;
