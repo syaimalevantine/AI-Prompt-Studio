@@ -37,7 +37,8 @@ const toneSelect = document.getElementById("tone");
 const modelSelect = document.getElementById("model");
 
 const languageSelect = document.getElementById("language");
-
+const uiLanguageSelect =
+    document.getElementById("uiLanguage");
 const generateButton = document.getElementById("generateButton");
 
 const copyButton = document.getElementById("copyButton");
@@ -54,37 +55,196 @@ const characterCounter =
 ========================================== */
 
 let generatedPrompt = "";
+const supportedUiLanguages = ["ar", "id", "tr", "en"];
 
+const browserLanguage =
+    (navigator.language || "en")
+        .toLowerCase()
+        .split("-")[0];
+
+const initialUiLanguage =
+    supportedUiLanguages.includes(browserLanguage)
+        ? browserLanguage
+        : "en";
+
+uiLanguageSelect.value = initialUiLanguage;
+
+document.documentElement.lang = initialUiLanguage;
+document.documentElement.dir =
+    initialUiLanguage === "ar" ? "rtl" : "ltr";
+const uiTranslations = {
+    en: {
+        tagline: "Type Ideas into Perfect Prompts",
+        interfaceLanguage: "Interface Language",
+        promptCanvas: "Prompt Canvas",
+        sectionDescription:
+            "Transform your ideas into clear and effective AI prompts.",
+        yourIdea: "Your Idea",
+        ideaPlaceholder: "Describe your idea here...",
+        characters: "characters",
+        tone: "Tone",
+        targetAI: "Target AI",
+        outputLanguage: "Output Language",
+        generatePrompt: "Generate Prompt",
+        generatedPrompt: "Generated Prompt",
+        emptyTitle: "Every great prompt begins with an idea.",
+        emptyDescription:
+            "Your generated prompt will appear here after you press Generate.",
+        copyPrompt: "Copy Prompt",
+        clear: "Clear"
+    },
+
+    id: {
+        tagline: "Ubah Ide menjadi Prompt yang Sempurna",
+        interfaceLanguage: "Bahasa Antarmuka",
+        promptCanvas: "Kanvas Prompt",
+        sectionDescription:
+            "Ubah ide Anda menjadi prompt AI yang jelas dan efektif.",
+        yourIdea: "Ide Anda",
+        ideaPlaceholder: "Jelaskan ide Anda di sini...",
+        characters: "karakter",
+        tone: "Nada",
+        targetAI: "Target AI",
+        outputLanguage: "Bahasa Output",
+        generatePrompt: "Buat Prompt",
+        generatedPrompt: "Prompt yang Dihasilkan",
+        emptyTitle: "Setiap prompt hebat dimulai dengan sebuah ide.",
+        emptyDescription:
+            "Prompt yang dihasilkan akan muncul di sini setelah Anda menekan Buat Prompt.",
+        copyPrompt: "Salin Prompt",
+        clear: "Hapus"
+    },
+
+    tr: {
+        tagline: "Fikirleri Mükemmel Promptlara Dönüştürün",
+        interfaceLanguage: "Arayüz Dili",
+        promptCanvas: "Prompt Tuvali",
+        sectionDescription:
+            "Fikirlerinizi açık ve etkili AI promptlarına dönüştürün.",
+        yourIdea: "Fikriniz",
+        ideaPlaceholder: "Fikrinizi buraya açıklayın...",
+        characters: "karakter",
+        tone: "Ton",
+        targetAI: "Hedef AI",
+        outputLanguage: "Çıktı Dili",
+        generatePrompt: "Prompt Oluştur",
+        generatedPrompt: "Oluşturulan Prompt",
+        emptyTitle: "Her harika prompt bir fikirle başlar.",
+        emptyDescription:
+            "Oluşturulan prompt, Prompt Oluştur düğmesine bastıktan sonra burada görünecektir.",
+        copyPrompt: "Promptu Kopyala",
+        clear: "Temizle"
+    },
+
+    ar: {
+        tagline: "حوّل الأفكار إلى مطالبات مثالية",
+        interfaceLanguage: "لغة الواجهة",
+        promptCanvas: "لوحة المطالبة",
+        sectionDescription:
+            "حوّل أفكارك إلى مطالبات ذكاء اصطناعي واضحة وفعالة.",
+        yourIdea: "فكرتك",
+        ideaPlaceholder: "اشرح فكرتك هنا...",
+        characters: "حرف",
+        tone: "النبرة",
+        targetAI: "الذكاء الاصطناعي المستهدف",
+        outputLanguage: "لغة المخرجات",
+        generatePrompt: "إنشاء المطالبة",
+        generatedPrompt: "المطالبة المُنشأة",
+        emptyTitle: "كل مطالبة رائعة تبدأ بفكرة.",
+        emptyDescription:
+            "ستظهر المطالبة التي تم إنشاؤها هنا بعد الضغط على إنشاء المطالبة.",
+        copyPrompt: "نسخ المطالبة",
+        clear: "مسح"
+    }
+};
+function applyUiLanguage(language) {
+    const translations =
+        uiTranslations[language] || uiTranslations.en;
+
+    document.documentElement.lang = language;
+    document.documentElement.dir =
+        language === "ar" ? "rtl" : "ltr";
+
+    document.querySelector(".tagline").textContent =
+        translations.tagline;
+
+    document.querySelector(
+        'label[for="uiLanguage"]'
+    ).textContent = translations.interfaceLanguage;
+
+    document.querySelector(
+        ".prompt-canvas h2"
+    ).textContent = translations.promptCanvas;
+
+    document.querySelector(
+        ".section-description"
+    ).textContent = translations.sectionDescription;
+
+    document.querySelector(
+        'label[for="idea"]'
+    ).textContent = translations.yourIdea;
+
+    ideaInput.placeholder =
+        translations.ideaPlaceholder;
+
+    document.querySelector(
+        'label[for="tone"]'
+    ).textContent = translations.tone;
+
+    document.querySelector(
+        'label[for="model"]'
+    ).textContent = translations.targetAI;
+
+    document.querySelector(
+        'label[for="language"]'
+    ).textContent = translations.outputLanguage;
+
+    generateButton.textContent =
+        translations.generatePrompt;
+
+    document.querySelector(
+        ".generated-prompt h2"
+    ).textContent = translations.generatedPrompt;
+
+    copyButton.textContent =
+        translations.copyPrompt;
+
+    clearButton.textContent =
+        translations.clear;
+
+    renderEmptyState();
+}
+
+uiLanguageSelect.addEventListener("change", () => {
+    applyUiLanguage(uiLanguageSelect.value);
+});
 /* ==========================================
    Preview
 ========================================== */
 
 function renderEmptyState() {
+    const language =
+        uiLanguageSelect.value || initialUiLanguage;
+
+    const translations =
+        uiTranslations[language] || uiTranslations.en;
 
     previewContent.className = "empty-state";
 
     previewContent.innerHTML = `
-
         <h3>
-
-            Every great prompt begins with an idea.
-
+            ${translations.emptyTitle}
         </h3>
 
         <p>
-
-            Your generated prompt will appear here after you press Generate.
-
+            ${translations.emptyDescription}
         </p>
-
     `;
 
     generatedPrompt = "";
 
     copyButton.disabled = true;
-
     clearButton.disabled = true;
-
 }
 
 /* ==========================================
@@ -243,7 +403,7 @@ async function initializeApp() {
     }
     updateCharacterCounter();
 
-renderEmptyState();
+applyUiLanguage(initialUiLanguage);
 
 console.log("AI Prompt Studio initialized.");
 
@@ -269,8 +429,6 @@ console.log("AI Prompt Studio initialized.");
     updateCharacterCounter
 
 );
-
-    renderEmptyState();
 
 }
 
