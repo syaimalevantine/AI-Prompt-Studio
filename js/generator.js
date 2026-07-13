@@ -122,9 +122,7 @@ console.log(
     `Runtime Version: ${runtimeVersion}`
 );
 
-    const intro = `You are an expert AI assistant.
-
-Your task is to complete the user's request with a high-quality response.`;
+    const intro = `Your task is to complete the user's request with a high-quality response.`;
 
     const sections = [
 
