@@ -22,7 +22,6 @@ Created with ChatGPT
 ========================================== */
 
 import { buildPrompt } from "./generator.js";
-import { promptTemplates } from "./templates.js";
 import { loadRuntime } from "./runtime-loader.js";
 
 const MAX_CHARACTERS = 500;
@@ -55,14 +54,6 @@ const characterCounter =
 ========================================== */
 
 let generatedPrompt = "";
-
-/* ==========================================
-   Template Registry
-========================================== */
-
-console.log("Available Templates:");
-
-console.log(promptTemplates);
 
 /* ==========================================
    Preview
