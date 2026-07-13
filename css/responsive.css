@@ -79,5 +79,9 @@ Created with ChatGPT
         font-size:1.3rem;
 
     }
+    
+    main {
+    grid-template-columns: 1fr;
+}
 
 }
