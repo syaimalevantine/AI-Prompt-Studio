@@ -202,12 +202,6 @@ function clearWorkspace() {
 
     ideaInput.value = "";
 
-    toneSelect.selectedIndex = 0;
-
-    modelSelect.selectedIndex = 0;
-
-    languageSelect.selectedIndex = 0;
-
     updateCharacterCounter();
     
     renderEmptyState();
