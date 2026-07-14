@@ -64,7 +64,42 @@ Type Ideas into Perfect Prompts
     <option value="en">English</option>
   </select>
 </div>
+<div class="auth-control">
+  <input
+    type="text"
+    id="creator-name"
+    placeholder="Creator Name"
+    autocomplete="username"
+  >
 
+  <input
+    type="email"
+    id="creator-email"
+    placeholder="Email"
+    autocomplete="email"
+  >
+
+  <input
+    type="password"
+    id="creator-password"
+    placeholder="Password"
+    autocomplete="current-password"
+  >
+
+  <button type="button" id="sign-up-button">
+    Sign Up
+  </button>
+
+  <button type="button" id="sign-in-button">
+    Sign In
+  </button>
+
+  <button type="button" id="sign-out-button" hidden>
+    Sign Out
+  </button>
+
+  <p id="auth-status"></p>
+</div>
 </div>
 
 </header>
