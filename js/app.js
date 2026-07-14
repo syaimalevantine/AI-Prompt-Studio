@@ -23,7 +23,13 @@ Created with ChatGPT
 
 import { buildPrompt } from "./generator.js";
 import { loadRuntime } from "./runtime-loader.js";
-
+import {
+  signUpWithEmail,
+  signInWithEmail,
+  signOut,
+  getCurrentCreator,
+  onAuthStateChange
+} from "./auth.js";
 const MAX_CHARACTERS = 500;
 
 /* ==========================================
@@ -49,7 +55,14 @@ const previewContent = document.getElementById("previewContent");
 
 const characterCounter =
     document.getElementById("characterCounter");
+const creatorNameInput = document.getElementById("creator-name");
+const creatorEmailInput = document.getElementById("creator-email");
+const creatorPasswordInput = document.getElementById("creator-password");
 
+const signUpButton = document.getElementById("sign-up-button");
+const signInButton = document.getElementById("sign-in-button");
+const signOutButton = document.getElementById("sign-out-button");
+const authStatus = document.getElementById("auth-status");
 /* ==========================================
    Application State
 ========================================== */
@@ -427,5 +440,54 @@ console.log("AI Prompt Studio initialized.");
 
 }
 
+signUpButton.addEventListener("click", async () => {
+  try {
+    authStatus.textContent = "Creating account...";
 
+    await signUpWithEmail(
+      creatorEmailInput.value.trim(),
+      creatorPasswordInput.value,
+      creatorNameInput.value.trim()
+    );
+
+    authStatus.textContent = "Account created. Check your email if confirmation is required.";
+  } catch (error) {
+    authStatus.textContent = error.message;
+    console.error(error);
+  }
+});
+
+signInButton.addEventListener("click", async () => {
+  try {
+    authStatus.textContent = "Signing in...";
+
+    await signInWithEmail(
+      creatorEmailInput.value.trim(),
+      creatorPasswordInput.value
+    );
+
+    authStatus.textContent = "Signed in.";
+  } catch (error) {
+    authStatus.textContent = error.message;
+    console.error(error);
+  }
+});
+
+signOutButton.addEventListener("click", async () => {
+  try {
+    await signOut();
+    authStatus.textContent = "Signed out.";
+  } catch (error) {
+    authStatus.textContent = error.message;
+    console.error(error);
+  }
+});
+
+onAuthStateChange((_event, session) => {
+  const isSignedIn = Boolean(session?.user);
+
+  signUpButton.hidden = isSignedIn;
+  signInButton.hidden = isSignedIn;
+  signOutButton.hidden = !isSignedIn;
+});
 initializeApp().catch(console.error);
