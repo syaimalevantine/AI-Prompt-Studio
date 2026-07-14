@@ -166,10 +166,6 @@ document.body.classList.toggle("arabic-ui", language === "ar");
         translations.tagline;
 
     document.querySelector(
-        'label[for="uiLanguage"]'
-    ).textContent = translations.interfaceLanguage;
-
-    document.querySelector(
         ".prompt-canvas h2"
     ).textContent = translations.promptCanvas;
 
